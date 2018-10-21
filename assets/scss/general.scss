@@ -77,6 +77,10 @@ table {
   td {
     padding: 1rem;
 
+    &:first-child {
+      width: 20%;
+    }
+
     @media only screen and (max-width: 768px) {
       display: block;
       width: 100%;
