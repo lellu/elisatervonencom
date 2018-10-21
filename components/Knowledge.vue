@@ -17,14 +17,14 @@
 
     <h3>Kielitaito</h3>
     <ul>
-      <li v-for="language in languages" :key="language.id">
+      <li v-for="language in languages" v-if="language.type==filter||filter=='all'||language.type==''" :key="language.id">
         <span class="stars">{{ language.levelnumber }}</span> {{ language.name }} ({{ language.level }})
       </li>
     </ul>
 
     <h3 class="web">Ohjelmistot</h3>
     <ul>
-      <li v-for="software in softwares" :key="software.id">
+      <li v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="software.id">
         {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
       </li>
     </ul>
@@ -32,7 +32,7 @@
     <h3 class="web">Palvelut</h3>
 
     <ul>
-      <li v-for="service in services" :key="service.id">
+      <li v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="service.id">
         {{ service.name }} <span v-show="service.level">({{ service.level }})</span>
       </li>
     </ul>
@@ -40,7 +40,7 @@
     <h3 class="web">Ohjelmointikielet</h3>
 
     <ul>
-      <li v-for="codelanguage in codelanguages" :key="codelanguage.id">
+      <li v-for="codelanguage in codelanguages" v-if="codelanguage.type==filter||filter=='all'||codelanguage.type==''" :key="codelanguage.id">
         {{ codelanguage.name }} <span v-show="codelanguage.level">({{ codelanguage.level }})</span>
       </li>
     </ul>
@@ -48,7 +48,7 @@
     <h3 class="web">Muut</h3>
 
     <ul>
-      <li v-for="other in others" :key="other.id">
+      <li v-for="other in others" v-if="other.type==filter||filter=='all'||other.type==''" :key="other.id">
         {{ other.name }} <span v-show="other.level">({{ other.level }})</span>
       </li>
     </ul>
@@ -57,6 +57,12 @@
 
 <script>
 export default {
+  props: {
+    filter: {
+      type: String,
+      default: 'all'
+    }
+  },
   data: function () {
     return {
       languages: [
@@ -89,13 +95,13 @@ export default {
       ],
       codelanguages: [
         {id: 1, name: 'CSS3', level: '', type: 'web' },
-        {id: 1, name: 'HTML5', level: '', type: 'web' },
-        {id: 1, name: 'JavaScript', level: '', type: 'web' },
-        {id: 1, name: 'SASS', level: '', type: 'web' },
-        {id: 1, name: 'LESS', level: '', type: 'web' },
-        {id: 1, name: 'Angular', level: 'perusteet', type: 'web' },
-        {id: 1, name: 'Vue.js', level: 'perusteet', type: 'web' },
-        {id: 1, name: 'PHP/MySQL', level: 'perusteet', type: 'web' }
+        {id: 2, name: 'HTML5', level: '', type: 'web' },
+        {id: 3, name: 'JavaScript', level: '', type: 'web' },
+        {id: 4, name: 'SASS', level: '', type: 'web' },
+        {id: 5, name: 'LESS', level: '', type: 'web' },
+        {id: 6, name: 'Angular', level: 'perusteet', type: 'web' },
+        {id: 7, name: 'Vue.js', level: 'perusteet', type: 'web' },
+        {id: 8, name: 'PHP/MySQL', level: 'perusteet', type: 'web' }
       ],
       others: [
         {id: 1, name: 'SEO', level: '', type: 'web' },

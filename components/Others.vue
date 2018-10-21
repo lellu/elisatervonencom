@@ -4,32 +4,40 @@
 
     <h3>Luottamustoiminta</h3>
     <table>
-      <tr>
-        <th>Nimike</th>
-        <th>Aika</th>
-        <th>Paikka</th>
-      </tr>
-      <tr v-for="confidence in confidences" :key="confidence.id">
-        <td>{{ confidence.name }}</td>
-        <td class="nowrap">{{ confidence.time }}</td>
-        <td>{{ confidence.place }}</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Nimike</th>
+          <th>Aika</th>
+          <th>Paikka</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="confidence in confidences" v-if="confidence.type==filter||filter=='all'||confidence.type==''" :key="confidence.id">
+          <td>{{ confidence.name }}</td>
+          <td class="nowrap">{{ confidence.time }}</td>
+          <td>{{ confidence.place }}</td>
+        </tr>
+      </tbody>
     </table>
 
     <h3>Vapaaehtoistyö</h3>
     <table>
-      <tr>
-        <th>Järjestö</th>
-        <th>Aika</th>
-        <th>Toiminta</th>
-        <th>Työnkuva</th>
-      </tr>
-      <tr v-for="activity in activities" :key="activity.id">
-        <td>{{ activity.name }}</td>
-        <td class="nowrap">{{ activity.time }}</td>
-        <td>{{ activity.title }}</td>
-        <td>{{ activity.duties }}</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Järjestö</th>
+          <th>Aika</th>
+          <th>Toiminta</th>
+          <th>Työnkuva</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="activity in activities" v-if="activity.type==filter||filter=='all'||activity.type==''" :key="activity.id">
+          <td>{{ activity.name }}</td>
+          <td class="nowrap">{{ activity.time }}</td>
+          <td>{{ activity.title }}</td>
+          <td>{{ activity.duties }}</td>
+        </tr>
+      </tbody>
     </table>
 
   </section>
@@ -37,6 +45,12 @@
 
 <script>
 export default {
+  props: {
+    filter: {
+      type: String,
+      default: 'all'
+    }
+  },
   data: function () {
     return {
       activities: [

@@ -1,13 +1,13 @@
 <template>
   <main>
     <Info />
-    <Filters/>
-    <div class="bg-gray"><Work/></div>
-    <Education/>
-    <div class="bg-gray"><Courses/></div>
-    <Knowledge/>
-    <div class="bg-gray"><Others/></div>
-    <Hobbies/>
+    <Filters @filter-changed="filter=$event"/>
+    <div class="bg-gray"><Work :filter="filter"/></div>
+    <Education :filter="filter"/>
+    <div class="bg-gray"><Courses :filter="filter"/></div>
+    <Knowledge :filter="filter"/>
+    <div class="bg-gray"><Others :filter="filter"/></div>
+    <Hobbies :filter="filter"/>
   </main>
 </template>
 
@@ -31,6 +31,11 @@ export default {
     Others,
     Hobbies,
     Info
+  },
+  data: function () {
+    return {
+      filter: 'all'
+    }
   }
 }
 </script>

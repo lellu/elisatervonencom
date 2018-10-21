@@ -3,24 +3,34 @@
     <h2>Kurssit</h2>
 
     <table id="v-for-object" class="demo">
-      <tr>
-        <th>Kurssi</th>
-        <th>Aika</th>
-        <th>Kesto</th>
-        <th>Kouluttaja</th>
-      </tr>
-      <tr v-for="course in courses" :key="course.id">
-        <td>{{ course.name }}</td>
-        <td class="nowrap">{{ course.time }}</td>
-        <td class="nowrap"><span v-show="course.duration">({{ course.duration }})</span></td>
-        <td>{{ course.trainer }}</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Kurssi</th>
+          <th>Aika</th>
+          <th>Kesto</th>
+          <th>Kouluttaja</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="course in courses" v-if="course.type==filter||filter=='all'||course.type==''" :key="course.id">
+          <td>{{ course.name }}</td>
+          <td class="nowrap">{{ course.time }}</td>
+          <td class="nowrap"><span v-show="course.duration">({{ course.duration }})</span></td>
+          <td>{{ course.trainer }}</td>
+        </tr>
+      </tbody>
     </table>
   </section>
 </template>
 
 <script>
 export default {
+  props: {
+    filter: {
+      type: String,
+      default: 'all'
+    }
+  },
   data: function () {
     return {
       courses: [

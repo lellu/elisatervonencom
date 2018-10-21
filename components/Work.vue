@@ -3,18 +3,22 @@
     <h2>Työkokemus</h2>
 
     <table>
-      <tr>
-        <th>Työpaikka</th>
-        <th>Aika</th>
-        <th>Titteli</th>
-        <th>Työtehtävät</th>
-      </tr>
-      <tr v-for="work in works" :key="work.id">
-        <td>{{ work.name }}</td>
-        <td class="nowrap">{{ work.time }}</td>
-        <td>{{ work.title }}</td>
-        <td>{{ work.duties }}</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Työpaikka</th>
+          <th>Aika</th>
+          <th>Titteli</th>
+          <th>Työtehtävät</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="work in works" v-if="work.type==filter||filter=='all'||work.type==''" :key="work.id">
+          <td>{{ work.name }}</td>
+          <td class="nowrap">{{ work.time }}</td>
+          <td>{{ work.title }}</td>
+          <td>{{ work.duties }}</td>
+        </tr>
+      </tbody>
     </table>
 
   </section>
@@ -22,6 +26,12 @@
 
 <script>
 export default {
+  props: {
+    filter: {
+      type: String,
+      default: 'all'
+    }
+  },
   data: function () {
     return {
       works: [
