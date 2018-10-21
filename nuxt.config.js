@@ -11,7 +11,16 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'og:description', name: 'description', content: pkg.description },
+      { hid: 'og:title', name: 'og:title', content: pkg.name },
+      { hid: 'og:site', name: 'og:site', content: pkg.link },
+      { hid: 'og:url', name: 'og:url', content: pkg.link },
+      { hid: 'og:image', name: 'og:image', content: '/own.jpg' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@elisatervonen' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@elisatervonen' },
+      { hid: 'twitter:url', name: 'twitter:url', content: pkg.link }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -27,6 +36,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    { src: 'bulma/bulma.sass', lang: 'sass' },
+    { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
   ],
 
   /*
@@ -39,6 +50,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+
   ],
 
   /*
