@@ -1,19 +1,17 @@
 <template>
   <section rel="knowledge">
     <h2>Osaaminen</h2>
-    <p class="web">Responsiivisten web-sivustojen, verkkokauppojen sekä graafisten uutiskirjeiden suunnittelu, rakentaminen ja testaus<br>
-      Valokuvaus ja kuvankäsittely (Photoshop)<br>
+    <p>
+      <span v-show="filter=='web'||filter=='all'">Responsiivisten web-sivustojen, verkkokauppojen sekä graafisten uutiskirjeiden suunnittelu, rakentaminen ja testaus<br></span>
+      <span v-show="filter=='other'||filter=='all'">Vanhusten avustaminen (liikunta- ja asiointiavustustus)<br></span>
+      <span v-show="filter=='other'||filter=='all'">Muistisairaan kanssa toimiminen<br></span>
+      <span v-show="filter=='other'||filter=='all'">Kotitaloustyöt (Siivous, ikkunoidenpesu, ruuanlaitto, haravointi, ruohon- ja pensaidenleikkaus)<br></span>
+      Valokuvaus ja kuvankäsittely<br>
       Projektin hallinta<br>
       Tiimin vetäminen<br>
-      Pienien koulutuksien järjestäminen (materiaalit, koulutustapahtuma, yhteenveto),
-      Ohjeiden ja raporttien laatiminen, dokumentointi.</p>
-
-    <p class="other">Vanhusten avustaminen (liikunta- ja asiointiavustustus)<br>
-      Muistisairaan kanssa toimiminen<br>
-      Kotitaloustyöt (Siivous, ikkunanapesu, ruuanlaitto, haravointi, ruohon- ja pensaidenleikkaus)<br>
-      Valokuvaus ja kuvankäsittely<br>
-      Pienien koulutuksien järjestäminen (materiaalien laatiminen, koulutustapahtuma, yhteenveto)<br>
-      Ohjeiden ja raporttien laatiminen, dokumentointi.</p>
+      Pienien koulutuksien järjestäminen (materiaalit, koulutustapahtuma, yhteenveto)<br>
+      Ohjeiden ja raporttien laatiminen, dokumentointi
+    </p>
 
     <h3>Kielitaito</h3>
     <ul>
@@ -22,31 +20,28 @@
       </li>
     </ul>
 
-    <h3 class="web">Ohjelmistot</h3>
+    <h3>Ohjelmistot</h3>
     <ul>
       <li v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="software.id">
         {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
       </li>
     </ul>
 
-    <h3 class="web">Palvelut</h3>
-
+    <h3 v-show="filter=='web'||filter=='all'">Palvelut</h3>
     <ul>
       <li v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="service.id">
         {{ service.name }} <span v-show="service.level">({{ service.level }})</span>
       </li>
     </ul>
 
-    <h3 class="web">Ohjelmointikielet</h3>
-
+    <h3 v-show="filter=='web'||filter=='all'" class="web">Ohjelmointikielet</h3>
     <ul>
       <li v-for="codelanguage in codelanguages" v-if="codelanguage.type==filter||filter=='all'||codelanguage.type==''" :key="codelanguage.id">
         {{ codelanguage.name }} <span v-show="codelanguage.level">({{ codelanguage.level }})</span>
       </li>
     </ul>
 
-    <h3 class="web">Muut</h3>
-
+    <h3>Muut</h3>
     <ul>
       <li v-for="other in others" v-if="other.type==filter||filter=='all'||other.type==''" :key="other.id">
         {{ other.name }} <span v-show="other.level">({{ other.level }})</span>
@@ -106,7 +101,7 @@ export default {
       others: [
         {id: 1, name: 'SEO', level: '', type: 'web' },
         {id: 2, name: 'Saavutettavuus (wcag)', level: '', type: 'web' },
-        {id: 3, name: 'Statistiikkojen visualisointi', level: '', type: 'web' },
+        {id: 3, name: 'Statistiikkojen ja prosessien visualisointi', level: '', type: 'web' },
         {id: 4, name: 'Validaatio-menetelmä', level: '', type: 'other' },
         {id: 5, name: 'Hygieniapassi', level: '', type: 'other' },
       ],

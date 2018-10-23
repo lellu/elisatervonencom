@@ -60,7 +60,7 @@
       right: 45px;
       visibility: hidden;
       height: 45px;
-      padding: 0 0.5rem;
+      padding: 0 0.7rem;
       text-align: right;
       background-color: $orange;
     }
