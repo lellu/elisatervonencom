@@ -54,15 +54,15 @@ export default {
   data: function () {
     return {
       activities: [
-        {id: 1, name: 'Oulun muistiyhdistys', time: '2016 alkaen', title: 'MuistiKaVeRi', duties: 'Muistisairaan avustaminen ja ulkoilutus'},
-        {id: 2, name: 'Suomen Punainen Risti', time: '2014 alkaen', title: 'Ystäväpalvelu', duties: 'Vanhuksen avustaminen ja ulkoilutus'},
-        {id: 3, name: 'Kempeleen seurakunta', time: '2015-2017', title: 'Verkkotoimittaja', duties: 'Valokuvaaminen tapahtumissa sekä haastattelujen tekeminen ja kirjoittaminen'},
-        {id: 4, name: 'Kempeleen seurakunta', time: '2014 alkaen', title: 'Keittiöapulainen', duties: 'Keittiössä avustaminen erilaisissa tapahtumissa'},
-        {id: 5, name: 'ODL', time: '2014-2015', title: 'Ystäväpalvelu', duties: 'Vanhusten luona vierailu ja kävelytys'}
+        {id: 1, name: 'Oulun muistiyhdistys', time: '2016 alkaen', title: 'MuistiKaVeRi', duties: 'Muistisairaan avustaminen ja ulkoilutus', type: 'other'},
+        {id: 2, name: 'Suomen Punainen Risti', time: '2014 alkaen', title: 'Ystäväpalvelu', duties: 'Vanhuksen avustaminen ja ulkoilutus', type: 'other'},
+        {id: 3, name: 'Kempeleen seurakunta', time: '2015-2017', title: 'Verkkotoimittaja', duties: 'Valokuvaaminen tapahtumissa sekä haastattelujen tekeminen ja kirjoittaminen', type: 'web'},
+        {id: 4, name: 'Kempeleen seurakunta', time: '2014 alkaen', title: 'Keittiöapulainen', duties: 'Keittiössä avustaminen erilaisissa tapahtumissa', type: 'other'},
+        {id: 5, name: 'ODL', time: '2014-2015', title: 'Ystäväpalvelu', duties: 'Vanhusten luona vierailu ja kävelytys', type: 'other'}
       ],
       confidences: [
-        {id: 1, name: 'Varaluottamusvaltuutettu', time: '2016-2017', place: 'Koodiviidakko Oy'},
-        {id: 2, name: 'Varaluottamusvaltuutettu', time: '2014-2016', place: 'Koodiviidakko Oy'},
+        {id: 1, name: 'Varaluottamusvaltuutettu', time: '2016-2017', place: 'Koodiviidakko Oy', type: ''},
+        {id: 2, name: 'Varaluottamusvaltuutettu', time: '2014-2016', place: 'Koodiviidakko Oy', type: ''},
       ]
     }
   }

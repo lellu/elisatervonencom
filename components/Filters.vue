@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="filters">
-      <button :class="{ active: filter == 'all' }" @click="onFilterChanged('all')">Kaikki alat</button>
+      <button :class="{ active: filter == 'all' }" @click="onFilterChanged('all')">Kaikki</button>
       <button :class="{ active: filter == 'web' }" @click="onFilterChanged('web')">Web-kehitys</button>
       <button :class="{ active: filter == 'other' }" @click="onFilterChanged('other')">Sosiaalinen ala</button>
     </div>
@@ -31,15 +31,18 @@ export default {
   display: flex;
 
   button {
-    padding: 1.5rem;
+    padding: 1rem;
     width: 33.33%;
+    color: $white;
+    text-transform: uppercase;
     border: none;
-    background-color: $graybg;
+    background-color: $green;
     font-size: 1.5rem;
     outline: none;
+    cursor: pointer;
 
     &.active {
-      background-color: $white;
+      background-color: $greendark;
     }
   }
 }
