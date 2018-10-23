@@ -69,15 +69,20 @@ nav {
   a {
     color: $white;
     display: inline-block;
-    padding: 1rem .5rem;
+    padding: 1rem 1rem;
     text-transform: uppercase;
 
     .first & {
       padding: 1rem;
     }
 
-    .current & {
+    .current &,
+    &:hover {
       background-color: $greendark;
+    }
+
+    @media only screen and (max-width: 550px) {
+      width: 100%;
     }
   }
 }
@@ -97,7 +102,7 @@ nav {
   a {
     color: $white;
     display: inline-block;
-    padding: 1rem .5rem;
+    padding: 1rem 1rem;
     text-transform: uppercase;
 
     .first & {
@@ -105,6 +110,10 @@ nav {
     }
 
     &.nuxt-link-exact-active {
+      display: none;
+    }
+
+    &:hover {
       background-color: $greendark;
     }
   }
