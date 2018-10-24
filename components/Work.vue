@@ -1,5 +1,5 @@
 <template>
-  <section rel="work">
+  <section id="work">
     <h2>Työkokemus</h2>
 
     <table>

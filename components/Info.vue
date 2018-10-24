@@ -1,7 +1,7 @@
 <template>
-  <section class="info">
+  <section id="info" class="info">
     <p><img class="profile-image" src="assets/mie.jpg" alt=""></p>
-    <h2>Kuka Elisa?</h2>
+    <h1>Kuka Elisa?</h1>
     <p>Työskentelen kymmenettä vuotta web-kehityksen parissa. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua. Tästä kombinaatiosta pidän eniten työssäni. Tekniikan vastapainoksi käytän vapaa-aikaani vanhuksien avustamiseen ja itseni kehittämiseen erilaisilla sosiaalialan kursseilla. Harrastan myös luonnossa liikkumista sekä kaikenlaista käsillä puuhastelua.</p>
     <p>"Voi oppia mitä vain, kunhan omistaa intohimon, motivaation ja hyvän opettajan"</p>
   </section>

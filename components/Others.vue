@@ -1,5 +1,5 @@
 <template>
-  <section rel="others">
+  <section id="others">
     <h2>Muu toiminta</h2>
 
     <h3>Luottamustoiminta</h3>

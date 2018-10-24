@@ -1,10 +1,10 @@
 <template>
   <nav>
     <ul class="nav">
-      <li><a href="#work">Työ</a></li>
-      <li><a href="#education">Koulutus</a></li>
-      <li><a href="#knowledge">Osaaminen</a></li>
-      <li><a href="#hobbies">Muu toiminta</a></li>
+      <li><a @click="scrollTo('#work')">Työ</a></li>
+      <li><a @click="scrollTo('#education')">Koulutus</a></li>
+      <li><a @click="scrollTo('#knowledge')">Osaaminen</a></li>
+      <li><a @click="scrollTo('#others')">Muu toiminta</a></li>
     </ul>
 
     <ul class="languages">
@@ -15,11 +15,15 @@
 </template>
 
 <script>
-//import vueSmoothScroll from 'vue2-smooth-scroll'
-//Vue.use(vueSmoothScroll)
+import VueScrollTo from 'vue-scrollto';
 
 export default {
   components: {
+  },
+  methods: {
+    scrollTo: function (target) {
+      VueScrollTo.scrollTo(target);
+    }
   }
 }
 </script>
@@ -52,6 +56,7 @@ nav {
 .nav {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: block;
 
   @media only screen and (max-width: 768px) {
@@ -69,11 +74,11 @@ nav {
   a {
     color: $white;
     display: inline-block;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1rem;
     text-transform: uppercase;
 
     .first & {
-      padding: 1rem;
+      padding: 1rem .5rem;
     }
 
     .current &,
@@ -90,6 +95,8 @@ nav {
 .languages {
   display: block;
   text-align: right;
+  margin: 0;
+  padding: 0;
 
   @media only screen and (max-width: 550px) {
     white-space: nowrap;
@@ -102,7 +109,7 @@ nav {
   a {
     color: $white;
     display: inline-block;
-    padding: 1rem 1rem;
+    padding: 1.5rem 1rem;
     text-transform: uppercase;
 
     .first & {

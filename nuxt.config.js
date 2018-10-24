@@ -36,7 +36,6 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    { src: 'bulma/bulma.sass', lang: 'sass' },
     { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
   ],
 
@@ -44,6 +43,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    'vue-scrollto'
   ],
 
   /*

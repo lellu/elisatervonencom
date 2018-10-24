@@ -1,5 +1,5 @@
 <template>
-  <section rel="knowledge">
+  <section id="knowledge">
     <h2>Osaaminen</h2>
     <p>
       <span v-show="filter=='web'||filter=='all'">Responsiivisten web-sivustojen, verkkokauppojen sekä graafisten uutiskirjeiden suunnittelu, rakentaminen ja testaus<br></span>

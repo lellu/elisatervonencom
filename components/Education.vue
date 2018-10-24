@@ -1,5 +1,5 @@
 <template>
-  <section rel="education">
+  <section id="education">
     <h2>Koulutus</h2>
 
     <table id="v-for-object" class="demo">

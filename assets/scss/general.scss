@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: $green;
 
   &:hover {
     text-decoration: none;
@@ -30,19 +31,16 @@ p {
 
 h1 {
   color: $orange;
-  font-size: 3rem;
   margin: 0;
   text-transform: uppercase;
 
   span {
     color: $black;
-    font-size: 1.5rem;
     text-transform: none;
   }
 }
 
 h2 {
-  font-size: 1.5rem;
   border-bottom: solid .3rem $gray;
   color: $orange;
   font-weight: normal;
@@ -52,7 +50,6 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
   color: $black;
   font-weight: normal;
   margin: 1rem 0;

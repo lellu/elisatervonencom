@@ -1,5 +1,5 @@
 <template>
-  <section rel="hobbies">
+  <section id="hobbies">
     <h2>Harrastukset</h2>
     <ul>
       <li><a href="https://www.martimoaapa.com" target="_blank">Martimoaapa.com</a> sivuston ylläpito ja blogin kirjoitus</li>
