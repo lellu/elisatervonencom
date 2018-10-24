@@ -76,6 +76,7 @@ nav {
     display: inline-block;
     padding: 1.5rem 1rem;
     text-transform: uppercase;
+    cursor: pointer;
 
     .first & {
       padding: 1rem .5rem;
