@@ -20,11 +20,10 @@
     </div>
 
     <h3>Ohjelmistot</h3>
-    <ul>
-      <li v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="software.id">
-        {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
-      </li>
-    </ul>
+    <div v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="software.id">
+      {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
+      <Bar :number="software.levelnumber" />
+    </div>
 
     <h3 v-show="filter=='web'||filter=='all'">Sosiaalisen median palvelut</h3>
     <ul>
@@ -58,10 +57,12 @@
 
 <script>
 import Stars from '~/components/Stars.vue';
+import Bar from '~/components/Bar.vue';
 
 export default {
   components: {
-    Stars
+    Stars,
+    Bar
   },
   props: {
     filter: {
@@ -78,42 +79,42 @@ export default {
         {id: 4, name: 'Suomalainen Viittomakieli', level: 'perusteet', levelnumber: 1, type: ''}
       ],
       softwares: [
-        {id: 1, name: 'LianaCMS', level: '', type: 'web' },
-        {id: 2, name: 'LianaMailer', level: '', type: 'web' },
-        {id: 3, name: 'LianaCommerce', level: '', type: 'web' },
-        {id: 4, name: 'Indesign', level: 'perusteet', type: 'web' },
-        {id: 5, name: 'Atom', level: '', type: 'web' },
-        {id: 6, name: 'Visual Code', level: '', type: 'web' },
-        {id: 7, name: 'Gitlab / Github', level: '', type: 'web' },
-        {id: 8, name: 'Git', level: '', type: 'web' },
-        {id: 9, name: 'WooCommerce', level: 'perusteet', type: 'web' },
-        {id: 10, name: 'Open Office', level: '', type: 'other' },
-        {id: 11, name: 'Numbers', level: '', type: '' },
-        {id: 12, name: 'Excell', level: '', type: '' },
-        {id: 13, name: 'Word', level: '', type: '' },
-        {id: 14, name: 'PowerPoint', level: '', type: '' },
-        {id: 15, name: 'Pages', level: '', type: '' },
-        {id: 16, name: 'Photoshop', type: '' }
+        {id: 1, name: 'LianaCMS', level: '', levelnumber: 100, type: 'web' },
+        {id: 2, name: 'LianaMailer', level: '', levelnumber: 80, type: 'web' },
+        {id: 3, name: 'LianaCommerce', level: '', levelnumber: 70, type: 'web' },
+        {id: 4, name: 'Indesign', level: 'perusteet', levelnumber: 40, type: 'web' },
+        {id: 5, name: 'Atom', level: '', levelnumber: 80, type: 'web' },
+        {id: 6, name: 'Visual Code', level: '', levelnumber: 80, type: 'web' },
+        {id: 7, name: 'Gitlab / Github', level: '', levelnumber: 70, type: 'web' },
+        {id: 8, name: 'Git', level: '', levelnumber: 70, type: 'web' },
+        {id: 9, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' },
+        {id: 10, name: 'Open Office', level: '', levelnumber: 90, type: 'other' },
+        {id: 11, name: 'Numbers', level: '', levelnumber: 80, type: '' },
+        {id: 12, name: 'Excell', level: '', levelnumber: 80, type: '' },
+        {id: 13, name: 'Word', level: '', levelnumber: 90, type: '' },
+        {id: 14, name: 'PowerPoint', level: '', levelnumber: 70, type: '' },
+        {id: 15, name: 'Pages', level: '', levelnumber: 80, type: '' },
+        {id: 16, name: 'Photoshop', level: '', levelnumber: 80, type: '' }
       ],
       testing: [
-        {id: 1, name: 'Litmus', level: '', type: 'web' },
-        {id: 2, name: 'BrowserStack', level: '', type: 'web' },
-        {id: 3, name: 'ChromeDevTools', level: '', type: 'web' }
+        {id: 1, name: 'Litmus', level: '', levelnumber: 100, type: 'web' },
+        {id: 2, name: 'BrowserStack', level: '', levelnumber: 90, type: 'web' },
+        {id: 3, name: 'ChromeDevTools', level: '', levelnumber: 90, type: 'web' }
       ],
       services: [
-        {id: 1, name: 'Facebook API', level: '', type: 'web' },
-        {id: 2, name: 'Twitter API', level: '', type: 'web' },
-        {id: 3, name: 'LinkedIn API', level: '', type: 'web' }
+        {id: 1, name: 'Facebook API', level: '', levelnumber: 80, type: 'web' },
+        {id: 2, name: 'Twitter API', level: '', levelnumber: 75, type: 'web' },
+        {id: 3, name: 'LinkedIn API', level: '', levelnumber: 75, type: 'web' }
       ],
       coding: [
-        {id: 1, name: 'CSS3', level: '', type: 'web' },
-        {id: 2, name: 'HTML5', level: '', type: 'web' },
-        {id: 3, name: 'JavaScript', level: '', type: 'web' },
-        {id: 4, name: 'SASS', level: '', type: 'web' },
-        {id: 5, name: 'LESS', level: '', type: 'web' },
-        {id: 6, name: 'Angular', level: 'perusteet', type: 'web' },
-        {id: 7, name: 'Vue.js', level: 'perusteet', type: 'web' },
-        {id: 8, name: 'PHP/MySQL', level: 'perusteet', type: 'web' }
+        {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web' },
+        {id: 2, name: 'HTML5', level: '', levelnumber: 100, type: 'web' },
+        {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web' },
+        {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web' },
+        {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web' },
+        {id: 6, name: 'Angular', level: 'perusteet', levelnumber: 20, type: 'web' },
+        {id: 7, name: 'Vue.js', level: 'perusteet', levelnumber: 40, type: 'web' },
+        {id: 8, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web' }
       ],
       others: [
         {id: 1, name: 'SEO', level: '', type: 'web' },
