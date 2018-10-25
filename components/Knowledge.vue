@@ -14,11 +14,10 @@
     </p>
 
     <h3>Kielitaito</h3>
-    <ul>
-      <li v-for="language in languages" v-if="language.type==filter||filter=='all'||language.type==''" :key="language.id">
-        <span class="stars">{{ language.levelnumber }}</span> {{ language.name }} ({{ language.level }})
-      </li>
-    </ul>
+    <div v-for="language in languages" v-if="language.type==filter||filter=='all'||language.type==''" :key="language.id" class="t-row">
+      <div class="t-cell">{{ language.name }} ({{ language.level }})</div>
+      <div class="t-cell"><Stars :number="language.levelnumber" /></div>
+    </div>
 
     <h3>Ohjelmistot</h3>
     <ul>
@@ -58,7 +57,12 @@
 </template>
 
 <script>
+import Stars from '~/components/Stars.vue';
+
 export default {
+  components: {
+    Stars
+  },
   props: {
     filter: {
       type: String,
@@ -68,10 +72,10 @@ export default {
   data: function () {
     return {
       languages: [
-        {id: 1, name: 'Suomi', level: 'äidinkieli', levelnumber: '*****', type: '' },
-        {id: 2, name: 'Englanti', level: 'sujuva', levelnumber: '****', type: '' },
-        {id: 3, name: 'Ruotsi', level: 'heikko', levelnumber: '**', type: '' },
-        {id: 4, name: 'Suomalainen Viittomakieli', levelnumber: '*', level: 'perusteet', type: ''}
+        {id: 1, name: 'Suomi', level: 'äidinkieli', levelnumber: 5, type: '' },
+        {id: 2, name: 'Englanti', level: 'sujuva', levelnumber: 4, type: '' },
+        {id: 3, name: 'Ruotsi', level: 'heikko', levelnumber: 2, type: '' },
+        {id: 4, name: 'Suomalainen Viittomakieli', level: 'perusteet', levelnumber: 1, type: ''}
       ],
       softwares: [
         {id: 1, name: 'LianaCMS', level: '', type: 'web' },
@@ -124,9 +128,7 @@ export default {
 </script>
 
 <style lang="scss">
-.stars {
-  font-size: 2rem;
-}
+@import 'assets/scss/colors.scss';
 
 .icon-list {
   list-style: none;
@@ -140,4 +142,23 @@ export default {
     margin-right: 0.2rem;
   }
 }
+
+.t-row {
+  display: table-row;
+
+  .t-cell {
+    display: table-cell;
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
+
+  @media only screen and (max-width: 550px) {
+    display: block;
+
+    .t-cell {
+      display: block;
+      padding: 0.2rem 0rem 0.2rem 0;
+    }
+  }
+}
+
 </style>
