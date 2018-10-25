@@ -27,24 +27,31 @@
       </li>
     </ul>
 
-    <h3 v-show="filter=='web'||filter=='all'">Palvelut</h3>
+    <h3 v-show="filter=='web'||filter=='all'">Sosiaalisen median palvelut</h3>
     <ul>
       <li v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="service.id">
         {{ service.name }} <span v-show="service.level">({{ service.level }})</span>
       </li>
     </ul>
 
-    <h3 v-show="filter=='web'||filter=='all'" class="web">Ohjelmointikielet</h3>
+    <h3 v-show="filter=='web'||filter=='all'" class="web">Web-testaus</h3>
     <ul>
-      <li v-for="codelanguage in codelanguages" v-if="codelanguage.type==filter||filter=='all'||codelanguage.type==''" :key="codelanguage.id">
-        {{ codelanguage.name }} <span v-show="codelanguage.level">({{ codelanguage.level }})</span>
+      <li v-for="test in testing" v-if="test.type==filter||filter=='all'||test.type==''" :key="test.id">
+        {{ test.name }} <span v-show="test.level">({{ test.level }})</span>
+      </li>
+    </ul>
+
+    <h3 v-show="filter=='web'||filter=='all'" class="web">Ohjelmointi</h3>
+    <ul>
+      <li v-for="code in coding" v-if="code.type==filter||filter=='all'||code.type==''" :key="code.id">
+        {{ code.name }} <span v-show="code.level">({{ code.level }})</span>
       </li>
     </ul>
 
     <h3>Muut</h3>
-    <ul>
+    <ul class="icon-list">
       <li v-for="other in others" v-if="other.type==filter||filter=='all'||other.type==''" :key="other.id">
-        {{ other.name }} <span v-show="other.level">({{ other.level }})</span>
+        <i class="fa fa-check"/> {{ other.name }} <span v-show="other.level">({{ other.level }})</span>
       </li>
     </ul>
   </section>
@@ -70,25 +77,31 @@ export default {
         {id: 1, name: 'LianaCMS', level: '', type: 'web' },
         {id: 2, name: 'LianaMailer', level: '', type: 'web' },
         {id: 3, name: 'LianaCommerce', level: '', type: 'web' },
-        {id: 4, name: 'Photoshop', type: '' },
-        {id: 5, name: 'Indesign', level: 'perusteet', type: 'web' },
-        {id: 6, name: 'Atom', level: '', type: 'web' },
-        {id: 7, name: 'Excell', level: '', type: '' },
-        {id: 8, name: 'Word', level: '', type: '' },
-        {id: 9, name: 'PowerPoint', level: '', type: '' },
-        {id: 10, name: 'Visual Code', level: '', type: 'web' },
-        {id: 12, name: 'Open Office', level: '', type: '' },
-        {id: 11, name: 'Numbers', level: '', type: 'web' }
+        {id: 4, name: 'Indesign', level: 'perusteet', type: 'web' },
+        {id: 5, name: 'Atom', level: '', type: 'web' },
+        {id: 6, name: 'Visual Code', level: '', type: 'web' },
+        {id: 7, name: 'Gitlab / Github', level: '', type: 'web' },
+        {id: 8, name: 'Git', level: '', type: 'web' },
+        {id: 9, name: 'WooCommerce', level: 'perusteet', type: 'web' },
+        {id: 10, name: 'Open Office', level: '', type: 'other' },
+        {id: 11, name: 'Numbers', level: '', type: '' },
+        {id: 12, name: 'Excell', level: '', type: '' },
+        {id: 13, name: 'Word', level: '', type: '' },
+        {id: 14, name: 'PowerPoint', level: '', type: '' },
+        {id: 15, name: 'Pages', level: '', type: '' },
+        {id: 16, name: 'Photoshop', type: '' }
+      ],
+      testing: [
+        {id: 1, name: 'Litmus', level: '', type: 'web' },
+        {id: 2, name: 'BrowserStack', level: '', type: 'web' },
+        {id: 3, name: 'ChromeDevTools', level: '', type: 'web' }
       ],
       services: [
-        {id: 1, name: 'Litmus', level: '', type: 'web' },
-        {id: 2, name: 'Facebook API', level: '', type: 'web' },
-        {id: 3, name: 'WordPress', level: 'perusteet', type: 'web' },
-        {id: 4, name: 'WooCommerce', level: 'perusteet', type: 'web' },
-        {id: 5, name: 'Gitlab / Github', level: '', type: 'web' },
-        {id: 6, name: 'Git', level: '', type: 'web' }
+        {id: 1, name: 'Facebook API', level: '', type: 'web' },
+        {id: 2, name: 'Twitter API', level: '', type: 'web' },
+        {id: 3, name: 'LinkedIn API', level: '', type: 'web' }
       ],
-      codelanguages: [
+      coding: [
         {id: 1, name: 'CSS3', level: '', type: 'web' },
         {id: 2, name: 'HTML5', level: '', type: 'web' },
         {id: 3, name: 'JavaScript', level: '', type: 'web' },
@@ -113,5 +126,18 @@ export default {
 <style lang="scss">
 .stars {
   font-size: 2rem;
+}
+
+.icon-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding: 0.2rem 0;
+  }
+
+  .fa {
+    margin-right: 0.2rem;
+  }
 }
 </style>
