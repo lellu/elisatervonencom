@@ -110,11 +110,12 @@ export default {
         {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web' },
         {id: 2, name: 'HTML5', level: '', levelnumber: 100, type: 'web' },
         {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web' },
-        {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web' },
-        {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web' },
-        {id: 6, name: 'Angular', level: 'perusteet', levelnumber: 20, type: 'web' },
-        {id: 7, name: 'Vue.js', level: 'perusteet', levelnumber: 40, type: 'web' },
-        {id: 8, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web' }
+        {id: 4, name: 'ES6', level: '', levelnumber: 90, type: 'web' },
+        {id: 5, name: 'SASS', level: '', levelnumber: 100, type: 'web' },
+        {id: 6, name: 'LESS', level: '', levelnumber: 100, type: 'web' },
+        {id: 7, name: 'Angular', level: 'perusteet', levelnumber: 20, type: 'web' },
+        {id: 8, name: 'Vue.js', level: 'perusteet', levelnumber: 40, type: 'web' },
+        {id: 9, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web' }
       ],
       others: [
         {id: 1, name: 'SEO', level: '', type: 'web' },
