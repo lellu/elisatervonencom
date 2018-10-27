@@ -1,20 +1,47 @@
 <template>
   <section id="hobbies">
     <h2>Harrastukset</h2>
-    <ul>
-      <li><a href="https://www.martimoaapa.com" target="_blank">Martimoaapa.com</a> sivuston ylläpito ja blogin kirjoitus</li>
-      <li>Itsensä kehittäminen (erilaiset kurssit, uusien web-tekniikoiden opiskelu)</li>
-      <li>Vapaaehtoistyö (vanhusten avustaminen, keittiöapu)</li>
-      <li>Liikunta (maastopyöräily, hiihto)</li>
-      <li>Luonnossa liikkuminen (retkeily, valokuvaus)</li>
-      <li>Entisöinti (kalusteet, moottoripyörä, auto)</li>
-    </ul>
+    <div class="cols">
+      <div v-for="hobby in hobbies" :key="hobby.id" class="col">
+        <p><img :src="hobby.image" alt=""></p>
+        <h4>{{ hobby.name }}</h4>
+        <p>{{ hobby.description }}</p>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
+export default {
+  data: function () {
+    return {
+      hobbies: [
+        {id: 1, name: 'Martimoaapa.com', description: 'Sivuston ylläpito ja blogin kirjoitus', image: '/hobbies/hobby1.png', link: 'https://www.martimoaapa.com', type: ''},
+        //{id: 2, name: 'Itsensä kehittäminen', description: 'Erilaiset kurssit, uusien web-tekniikoiden opiskelu', image: '/hobbies/hobby2.jpg', link: '', type: ''},
+        {id: 3, name: 'Vapaaehtoistyö', description: 'Vanhusten avustaminen, keittiöapu', image: '/hobbies/hobby3.jpg', link: '', type: ''},
+        {id: 4, name: 'Liikunta', description: 'Maastopyöräily, hiihto', image: '/hobbies/hobby4.jpg', link: '', type: ''},
+        {id: 5, name: 'Luonnossa liikkuminen', description: 'Retkeily, valokuvaus', image: '/hobbies/hobby5.jpg', link: '', type: ''},
+        {id: 6, name: 'Entisöinti', description: 'Kalusteet, moottoripyörä, auto', image: '/hobbies/hobby6.jpg', link: '', type: ''}
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss">
+.cols {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 
+  .col {
+    width: 20%;
+    padding: 2rem 1rem;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
 </style>
