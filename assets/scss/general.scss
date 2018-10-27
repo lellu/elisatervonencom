@@ -84,6 +84,7 @@ table {
     @media only screen and (max-width: 768px) {
       display: block;
       width: 100%;
+      padding: 0.5rem 1rem;
     }
   }
 
@@ -110,6 +111,10 @@ table {
 
 .nowrap {
   white-space: nowrap;
+
+  @media only screen and (max-width: 480px) {
+    white-space: normal;
+  }
 }
 
 section {
