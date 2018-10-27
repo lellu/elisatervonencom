@@ -38,6 +38,23 @@ export default {
     width: 20%;
     padding: 2rem 1rem;
 
+    @media only screen and (max-width: 1200px) {
+      width: 25%;
+    }
+
+    @media only screen and (max-width: 900px) {
+      width: 33.33333%;
+    }
+
+    @media only screen and (max-width: 550px) {
+      width: 50%;
+      padding: 1rem 1rem;
+    }
+
+    @media only screen and (max-width: 350px) {
+      width: 100%;
+    }
+
     img {
       width: 100%;
       height: auto;
