@@ -22,7 +22,6 @@
     <h3>Ohjelmistot</h3>
     <div v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="software.id">
       {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
-      <Bar :number="software.levelnumber" />
     </div>
 
     <h3 v-show="filter=='web'||filter=='all'">Sosiaalisen median palvelut</h3>
