@@ -42,6 +42,10 @@ nav {
     padding: 0 1rem;
   }
 
+  @media only screen and (max-width: 550px) {
+    padding: 0.5rem;
+  }
+
   .toggle-menu {
     display: none;
   }
@@ -89,6 +93,7 @@ nav {
 
     @media only screen and (max-width: 550px) {
       width: 100%;
+      padding: 0.5rem;
     }
   }
 }
@@ -112,6 +117,10 @@ nav {
     display: inline-block;
     padding: 1.5rem 1rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 550px) {
+      padding: 0.5rem;
+    }
 
     .first & {
       padding: 1rem;
