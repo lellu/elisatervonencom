@@ -1,10 +1,10 @@
 <template>
-  <div class="utilities floating">
-    <a href="javascript:print();" title="Tulosta"><span>Tulosta</span> <i class="fa fa-print" /></a>
-    <a href="#"><span>Tallenna pdf</span> <i class="fa fa-file-pdf-o"/></a>
+  <div class="utilities">
     <a href="https://www.linkedin.com/in/elisa-tervonen-85114592/"><span>LinkedIn</span><i class="fa fa-linkedin-square" /></a>
     <a href="https://www.instagram.com/elllulellu/?hl=fi"><span>Instagram</span><i class="fa fa-instagram" /></a>
     <a href="https://github.com/lellu"><span>Github</span><i class="fa fa-github" /></a>
+    <a href="javascript:print();" title="Tulosta"><span>Tulosta</span> <i class="fa fa-print" /></a>
+    <a href="#"><span>Tallenna pdf</span> <i class="fa fa-file-pdf-o"/></a>
     <a href="mailto:kokkonen.elisa@gmail.com"><span>Ota yhteyttä</span> <i class="fa fa-envelope" /></a>
   </div>
 </template>
@@ -13,35 +13,22 @@
 @import 'assets/scss/colors.scss';
 
 .utilities {
-  ul {
-    list-style: none;
-    margin: 0;
-  }
-
-  li {
-    font-size: .9rem;
-
-    footer & {
-      display: inline-block;
-      padding: .5rem;
-    }
-  }
-
-  .icon {
-    a {
-      color: $black;
-    }
-  }
-}
-
-.floating {
-  bottom: 20%;
+  bottom: 10%;
   position: fixed;
   right: 0;
   z-index: 1;
   -webkit-transition: margin 1s;
   -webkit-transition-delay: 0s;
   transition: margin 1s;
+
+  @media only screen and (max-width: 768px) {
+    bottom: auto;
+    right: auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
 
   a {
     display: block;
@@ -55,6 +42,24 @@
     position: relative;
     white-space: nowrap;
 
+    @media only screen and (max-width: 768px) {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      width: 33.333%;
+      text-align: left;
+      padding: 0 0.5rem;
+      white-space: nowrap;
+    }
+
+    @media only screen and (max-width: 550px) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+    }
+
     span {
       position: absolute;
       top: 0;
@@ -62,18 +67,37 @@
       visibility: hidden;
       height: 45px;
       padding: 0 0.7rem;
-      text-align: right;
+      text-align: left;
       background-color: $orange;
+
+      @media only screen and (max-width: 768px) {
+        display: inline-block;
+        visibility: visible;
+        position: relative;
+        right: auto;
+        top: auto;
+      }
     }
 
     i {
       font-size: 1.5rem;
+
+      @media only screen and (max-width: 768px) {
+        float: left;
+        line-height: 45px;
+      }
     }
 
     &:hover {
       span {
         visibility: visible;
+
+        @media only screen and (max-width: 768px) {
+          background-color: $orangedark;
+        }
       }
+
+      background-color: $orangedark;
     }
 
 

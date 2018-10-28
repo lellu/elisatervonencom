@@ -94,9 +94,13 @@ nav {
   a {
     color: $white;
     display: inline-block;
-    padding: 1.3rem 0.9rem;
+    padding: 1.3rem 0.7rem;
     text-transform: uppercase;
     cursor: pointer;
+
+    @media only screen and (max-width: 922px) {
+      padding: 1.3rem 0.5rem;
+    }
 
     .first & {
       padding: 1rem .5rem;

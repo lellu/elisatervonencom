@@ -69,7 +69,7 @@ export default {
     text-transform: uppercase;
     border: none;
     color: $graydark;
-    background-color: $gray;
+    background-color: $graylight;
     font-size: 1rem;
     outline: none;
     cursor: pointer;
