@@ -1,5 +1,6 @@
 <template>
-  <section id="work">
+  <section>
+    <span id="work" class="anchor" />
     <h2>Työkokemus {{ filter }}</h2>
 
     <table class="work-table">

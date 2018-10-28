@@ -1,5 +1,6 @@
 <template>
-  <section id="courses">
+  <section>
+    <span id="courses" class="anchor" />
     <h2>Kurssit</h2>
 
     <table id="v-for-object" class="demo">

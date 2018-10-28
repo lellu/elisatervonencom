@@ -1,5 +1,6 @@
 <template>
-  <section id="hobbies">
+  <section>
+    <span id="hobbies" class="anchor" />
     <h2>Harrastukset</h2>
     <div class="cols">
       <div v-for="hobby in hobbies" :key="hobby.id" class="col">

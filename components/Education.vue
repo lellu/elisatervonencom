@@ -1,5 +1,6 @@
 <template>
-  <section id="education">
+  <section>
+    <span id="education" class="anchor" />
     <h2>Koulutus</h2>
 
     <div class="history-list">
@@ -39,7 +40,6 @@ export default {
 
 <style lang="scss">
 @import 'assets/scss/colors.scss';
-
 .history-list {
   position: relative;
   padding: 1rem 0;

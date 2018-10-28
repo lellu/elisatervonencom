@@ -1,5 +1,6 @@
 <template>
-  <section id="info" class="info">
+  <section class="info">
+    <span id="info" class="anchor" />
     <p><img class="profile-image" src="/mie.jpg" alt=""></p>
     <h1>Kuka Elisa?</h1>
     <p>Tällä hetkellä toimin web-kehittäjä ja tiimin vetäjänä Koodiviidakko Oy:ssä. Web-kehityksen parissa olen työskennellyt jo yli kymmenen vuotta. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua ja kommukointia eri osapuolten välillä. Tästä kombinaatiosta pidän eniten työssäni.</p>

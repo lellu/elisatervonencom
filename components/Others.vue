@@ -1,5 +1,6 @@
 <template>
-  <section id="others">
+  <section>
+    <span id="others" class="anchor" />
     <h2>Muu toiminta</h2>
 
     <h3>Luottamustoiminta</h3>
