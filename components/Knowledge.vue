@@ -56,12 +56,11 @@
 
 <script>
 import Stars from '~/components/Stars.vue';
-import Bar from '~/components/Bar.vue';
+//import Bar from '~/components/Bar.vue';
 
 export default {
   components: {
-    Stars,
-    Bar
+    Stars
   },
   props: {
     filter: {

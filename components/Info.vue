@@ -4,11 +4,12 @@
     <h1>Kuka Elisa?</h1>
     <p>Tällä hetkellä toimin web-kehittäjä ja tiimin vetäjänä Koodiviidakko Oy:ssä. Web-kehityksen parissa olen työskennellyt jo yli kymmenen vuotta. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua ja kommukointia eri osapuolten välillä. Tästä kombinaatiosta pidän eniten työssäni.</p>
     <p>Tekniikan vastapainoksi käytän vapaa-aikaani vanhuksien avustamiseen ja itseni kehittämiseen erilaisilla kursseilla. Harrastan myös luonnossa liikkumista sekä kaikenlaista käsillä puuhastelua.</p>
-    <p><i>"Voi oppia mitä vain, kunhan omistaa intohimon, motivaation ja hyvän opettajan"</i></p>
+    <p>"Voi oppia mitä vain, kunhan omistaa intohimon, motivaation ja hyvän opettajan"</p>
   </section>
 </template>
 
 <script>
+export default {}
 </script>
 
 <style lang="scss">
