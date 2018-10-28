@@ -1,7 +1,6 @@
 <template>
   <main>
     <Info />
-    <Filters @filter-changed="filter=$event"/>
     <div class="bg-gray"><Work :filter="filter"/></div>
     <Education :filter="filter"/>
     <div class="bg-gray"><Courses :filter="filter"/></div>
@@ -32,9 +31,10 @@ export default {
     Hobbies,
     Info
   },
-  data: function () {
-    return {
-      filter: 'all'
+  props: {
+    filter: {
+      type: String,
+      default: 'all'
     }
   }
 }

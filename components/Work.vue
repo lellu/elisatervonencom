@@ -1,6 +1,6 @@
 <template>
   <section id="work">
-    <h2>Työkokemus</h2>
+    <h2>Työkokemus {{ filter }}</h2>
 
     <table class="work-table">
       <thead>

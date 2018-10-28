@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav :class="{ 'is-scroll': isScroll }" @scroll="scrollClass()">
     <ul class="nav">
       <li><a @click="scrollTo('#work')">Työ</a></li>
       <li><a @click="scrollTo('#education')">Koulutus</a></li>
@@ -7,20 +7,34 @@
       <li><a @click="scrollTo('#others')">Muu toiminta</a></li>
     </ul>
 
-    <ul class="languages">
-      <li><nuxt-link to="/">FI</nuxt-link></li>
-      <li><nuxt-link to="/en">EN</nuxt-link></li>
-    </ul>
+    <Filters @filter-changed="$emit('filter-changed', $event)"/>
   </nav>
 </template>
 
 <script>
-import VueScrollTo from 'vue-scrollto';
+import VueScrollTo from 'vue-scrollto'
+import Filters from '~/components/Filters.vue'
 
 export default {
   components: {
+    Filters
+  },
+  data: function () {
+    return {
+      filter: 'all',
+      isScroll: false
+    }
+  },
+  beforeMount () {
+    window.addEventListener('scroll', this.scrollClass);
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.scrollClass);
   },
   methods: {
+    scrollClass: function () {
+      this.isScroll = window.scrollY > 100;
+    },
     scrollTo: function (target) {
       VueScrollTo.scrollTo(target);
     }
@@ -33,7 +47,7 @@ export default {
 
 nav {
   background-color: $green;
-  padding: 0 2rem;
+  padding: 0 2rem 0 0.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -50,10 +64,12 @@ nav {
     display: none;
   }
 
-  &.fixed {
-    left: 0;
+  &.is-scroll {
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
   }
 }
 
@@ -78,7 +94,7 @@ nav {
   a {
     color: $white;
     display: inline-block;
-    padding: 1.5rem 1rem;
+    padding: 1.3rem 0.9rem;
     text-transform: uppercase;
     cursor: pointer;
 
@@ -98,7 +114,7 @@ nav {
   }
 }
 
-.languages {
+/*.languages {
   display: block;
   text-align: right;
   margin: 0;
@@ -134,5 +150,5 @@ nav {
       background-color: $greendark;
     }
   }
-}
+}*/
 </style>
