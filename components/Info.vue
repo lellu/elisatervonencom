@@ -2,9 +2,9 @@
   <section id="info" class="info">
     <p><img class="profile-image" src="/mie.jpg" alt=""></p>
     <h1>Kuka Elisa?</h1>
-    <p>Työskentelen kymmenettä vuotta web-kehityksen parissa. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua ja kommukointia eri osapuolten välillä. Tästä kombinaatiosta pidän eniten työssäni.</p>
-    <p>Tekniikan vastapainoksi käytän vapaa-aikaani vanhuksien avustamiseen ja itseni kehittämiseen erilaisilla sosiaalialan kursseilla. Harrastan myös luonnossa liikkumista sekä kaikenlaista käsillä puuhastelua.</p>
-    <p>"Voi oppia mitä vain, kunhan omistaa intohimon, motivaation ja hyvän opettajan"</p>
+    <p>Tällä hetkellä toimin web-kehittäjä ja tiimin vetäjänä Koodiviidakko Oy:ssä. Web-kehityksen parissa olen työskennellyt jo yli kymmenen vuotta. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua ja kommukointia eri osapuolten välillä. Tästä kombinaatiosta pidän eniten työssäni.</p>
+    <p>Tekniikan vastapainoksi käytän vapaa-aikaani vanhuksien avustamiseen ja itseni kehittämiseen erilaisilla kursseilla. Harrastan myös luonnossa liikkumista sekä kaikenlaista käsillä puuhastelua.</p>
+    <p><i>"Voi oppia mitä vain, kunhan omistaa intohimon, motivaation ja hyvän opettajan"</i></p>
   </section>
 </template>
 
@@ -14,6 +14,7 @@
 <style lang="scss">
 @import 'assets/scss/colors.scss';
 @import 'assets/scss/general.scss';
+
 .info {
   text-align: center;
 
