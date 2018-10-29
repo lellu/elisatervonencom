@@ -20,11 +20,6 @@
       <div class="t-cell"><Stars :number="language.levelnumber" /></div>
     </div>
 
-    <h3>Ohjelmistot</h3>
-    <div v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="software.id">
-      {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
-    </div>
-
     <h3 v-show="filter=='web'||filter=='all'" class="web">Ohjelmointi</h3>
     <ul>
       <li v-for="code in coding" v-if="code.type==filter||filter=='all'||code.type==''" :key="code.id">
@@ -32,17 +27,19 @@
       </li>
     </ul>
 
+    <h3>Ohjelmistot</h3>
+    <div v-for="daily in dailysoftwares" v-if="daily.type==filter||filter=='all'||daily.type==''" :key="daily.id">
+      {{ daily.name }} <span v-show="daily.level">({{ daily.level }})</span>
+    </div>
+
+    <div v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="software.id">
+      {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
+    </div>
+
     <h3 v-show="filter=='web'||filter=='all'">Sosiaalisen median palvelut</h3>
     <ul>
       <li v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="service.id">
         <i :class="service.icon" /> {{ service.name }} <span v-show="service.level">({{ service.level }})</span>
-      </li>
-    </ul>
-
-    <h3 v-show="filter=='web'||filter=='all'" class="web">Web-testaus</h3>
-    <ul>
-      <li v-for="test in testing" v-if="test.type==filter||filter=='all'||test.type==''" :key="test.id">
-        {{ test.name }} <span v-show="test.level">({{ test.level }})</span>
       </li>
     </ul>
 
@@ -77,28 +74,23 @@ export default {
         {id: 3, name: 'Ruotsi', level: 'heikko', levelnumber: 2, type: '' },
         {id: 4, name: 'Suomalainen Viittomakieli', level: 'perusteet', levelnumber: 1, type: ''}
       ],
-      softwares: [
-        {id: 1, name: 'LianaCMS', level: '', levelnumber: 100, type: 'web' },
+      dailysoftwares: [
+        {id: 1, name: 'LianaCMS', level: '', levelnumber: 100, type: '' },
         {id: 2, name: 'LianaMailer', level: '', levelnumber: 80, type: 'web' },
         {id: 3, name: 'LianaCommerce', level: '', levelnumber: 70, type: 'web' },
-        {id: 4, name: 'Indesign', level: 'perusteet', levelnumber: 40, type: 'web' },
-        {id: 5, name: 'Atom', level: '', levelnumber: 80, type: 'web' },
-        {id: 6, name: 'Visual Code', level: '', levelnumber: 80, type: 'web' },
-        {id: 7, name: 'Gitlab / Github', level: '', levelnumber: 70, type: 'web' },
-        {id: 8, name: 'Git', level: '', levelnumber: 70, type: 'web' },
-        {id: 9, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' },
-        {id: 10, name: 'Open Office', level: '', levelnumber: 90, type: 'other' },
-        {id: 11, name: 'Numbers', level: '', levelnumber: 80, type: '' },
-        {id: 12, name: 'Excell', level: '', levelnumber: 80, type: '' },
-        {id: 13, name: 'Word', level: '', levelnumber: 90, type: '' },
-        {id: 14, name: 'PowerPoint', level: '', levelnumber: 70, type: '' },
-        {id: 15, name: 'Pages', level: '', levelnumber: 80, type: '' },
-        {id: 16, name: 'Photoshop', level: '', levelnumber: 80, type: '' }
+        {id: 4, name: 'Visual Code', level: '', levelnumber: 80, type: 'web' },
+        {id: 5, name: 'Gitlab', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-gitlab' },
+        {id: 6, name: 'Git', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-git' },
+        {id: 7, name: 'Open Office', level: '', levelnumber: 90, type: '' },
+        {id: 8, name: 'iWork', level: '', levelnumber: 80, type: '' },
+        {id: 9, name: 'Photoshop', level: '', levelnumber: 80, type: '' }
       ],
-      testing: [
-        {id: 1, name: 'Litmus', level: '', levelnumber: 100, type: 'web' },
-        {id: 2, name: 'BrowserStack', level: '', levelnumber: 90, type: 'web' },
-        {id: 3, name: 'ChromeDevTools', level: '', levelnumber: 90, type: 'web' }
+      softwares: [
+        {id: 1, name: 'Github', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-github' },
+        {id: 2, name: 'Atom', level: '', levelnumber: 80, type: 'web' },
+        {id: 3, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
+        {id: 4, name: 'Indesign', level: 'perusteet', levelnumber: 40, type: 'web' },
+        {id: 5, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' }
       ],
       services: [
         {id: 1, name: 'Facebook API', level: '', levelnumber: 80, icon: 'fab fa-facebook-f', type: 'web' },
