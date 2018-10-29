@@ -25,42 +25,35 @@ export default {
 
 <style lang="scss">
 @import 'assets/scss/colors.scss';
-/*
-.filters {
-  display: flex;
-
-  button {
-    padding: 1rem;
-    width: 33.33%;
-    color: $black;
-    text-transform: uppercase;
-    border: none;
-    background-color: $gray;
-    font-size: 1.5rem;
-    outline: none;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $gray;
-    }
-
-    &.active {
-      color: $white;
-      background-color: $orange;
-    }
-  }
-}
-*/
-
 .filters {
   display: inline-block;
   padding: 1rem 0;
   text-align: right;
 
+  @media only screen and (max-width: 950px) {
+    width: 100%;
+    text-align: left;
+    padding-left: 1.7rem;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: 50%;
+  }
+
   label {
     padding: 0 0.3rem;
     display: inline-block;
     color: $white;
+    margin-bottom: 0.5rem;
+
+    @media only screen and (max-width: 950px) {
+      padding-left: 0;
+    }
+
+    @media only screen and (max-width: 550px) {
+      width: 100%;
+    }
   }
 
   button {
@@ -69,10 +62,14 @@ export default {
     text-transform: uppercase;
     border: none;
     color: $graydark;
-    background-color: $graylight;
-    font-size: 1rem;
+    background-color: $white;
+    font-size: 0.9rem;
     outline: none;
     cursor: pointer;
+
+    @media only screen and (max-width: 550px) {
+      width: 100%;
+    }
 
     &:hover,
     &.active {

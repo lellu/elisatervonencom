@@ -137,6 +137,10 @@ section {
   position: absolute;
   left: 0px;
   top: -60px;
+
+  @media only screen and (max-width: 950px) {
+    top: -105px;
+  }
 }
 
 @media print {

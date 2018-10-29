@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     scrollClass: function () {
-      this.isScroll = window.scrollY > 100;
+      this.isScroll = window.scrollY > 100 && window.innerWidth > 550;
     },
     scrollTo: function (target) {
       VueScrollTo.scrollTo(target);
@@ -51,13 +51,10 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
-  @media only screen and (max-width: 768px) {
-    padding: 0 1rem;
-  }
-
-  @media only screen and (max-width: 550px) {
-    padding: 0.5rem;
+  @media only screen and (max-width: 950px) {
+    padding: 0;
   }
 
   .toggle-menu {
@@ -79,14 +76,21 @@ nav {
   margin: 0;
   display: block;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 950px) {
     width: 100%;
+    background-color: $greendark;
+    padding: 0 1rem;
+  }
+
+  @media only screen and (max-width: 550px) {
+      padding: 0.5rem 1rem 0.5rem 0.5rem;
+      width: 50%;
   }
 
   li {
     display: inline-block;
 
-    @media only screen and (max-width: 550px) {
+    @media only screen and (max-width: 500px) {
       width: 100%;
     }
   }
@@ -98,8 +102,8 @@ nav {
     text-transform: uppercase;
     cursor: pointer;
 
-    @media only screen and (max-width: 922px) {
-      padding: 1.3rem 0.5rem;
+    @media only screen and (max-width: 950px) {
+      padding: 1rem 0.7rem;
     }
 
     .first & {
@@ -109,6 +113,10 @@ nav {
     .current &,
     &:hover {
       background-color: $greendark;
+
+      @media only screen and (max-width: 950px) {
+        background-color: $green;
+      }
     }
 
     @media only screen and (max-width: 550px) {
@@ -117,42 +125,4 @@ nav {
     }
   }
 }
-
-/*.languages {
-  display: block;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-
-  @media only screen and (max-width: 550px) {
-    white-space: nowrap;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    color: $white;
-    display: inline-block;
-    padding: 1.5rem 1rem;
-    text-transform: uppercase;
-
-    @media only screen and (max-width: 550px) {
-      padding: 0.5rem;
-    }
-
-    .first & {
-      padding: 1rem;
-    }
-
-    &.nuxt-link-exact-active {
-      display: none;
-    }
-
-    &:hover {
-      background-color: $greendark;
-    }
-  }
-}*/
 </style>
