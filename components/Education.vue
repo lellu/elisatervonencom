@@ -125,6 +125,10 @@ export default {
       }
     }
 
+    .name {
+      background-color: $white;
+    }
+
     &.odd {
       .name {
         text-align: right;
@@ -134,6 +138,7 @@ export default {
           order: 1;
           text-align: left;
           border-right: none;
+          background-color: $graylight;
         }
 
         @media only screen and (max-width: 500px) {
@@ -170,6 +175,7 @@ export default {
         @media only screen and (max-width: 768px) {
           order: 1;
           border-right: none;
+          background-color: $graylight;
         }
 
         @media only screen and (max-width: 500px) {
