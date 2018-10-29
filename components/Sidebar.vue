@@ -1,11 +1,11 @@
 <template>
   <div class="utilities">
-    <a href="https://www.linkedin.com/in/elisa-tervonen-85114592/"><span>LinkedIn</span><i class="fa fa-linkedin-square" /></a>
-    <a href="https://www.instagram.com/elllulellu/?hl=fi"><span>Instagram</span><i class="fa fa-instagram" /></a>
-    <a href="https://github.com/lellu"><span>Github</span><i class="fa fa-github" /></a>
-    <a href="javascript:print();" title="Tulosta"><span>Tulosta</span> <i class="fa fa-print" /></a>
-    <a href="#"><span>Tallenna pdf</span> <i class="fa fa-file-pdf-o"/></a>
-    <a href="mailto:kokkonen.elisa@gmail.com"><span>Ota yhteyttä</span> <i class="fa fa-envelope" /></a>
+    <a href="https://www.linkedin.com/in/elisa-tervonen-85114592/"><span>LinkedIn</span><i class="fab fa-linkedin" /></a>
+    <a href="https://www.instagram.com/elllulellu/?hl=fi"><span>Instagram</span><i class="fab fa-instagram" /></a>
+    <a href="https://github.com/lellu"><span>Github</span><i class="fab fa-github" /></a>
+    <a href="javascript:print();" title="Tulosta"><span>Tulosta</span> <i class="fas fa-print" /></a>
+    <a href="#"><span>Tallenna pdf</span> <i class="fas fa-file-pdf"/></a>
+    <a href="mailto:kokkonen.elisa@gmail.com"><span>Ota yhteyttä</span> <i class="fas fa-envelope" /></a>
   </div>
 </template>
 

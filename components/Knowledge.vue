@@ -25,10 +25,17 @@
       {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
     </div>
 
+    <h3 v-show="filter=='web'||filter=='all'" class="web">Ohjelmointi</h3>
+    <ul>
+      <li v-for="code in coding" v-if="code.type==filter||filter=='all'||code.type==''" :key="code.id">
+        <i :class="code.icon" /> {{ code.name }} <span v-show="code.level">({{ code.level }})</span>
+      </li>
+    </ul>
+
     <h3 v-show="filter=='web'||filter=='all'">Sosiaalisen median palvelut</h3>
     <ul>
       <li v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="service.id">
-        {{ service.name }} <span v-show="service.level">({{ service.level }})</span>
+        <i :class="service.icon" /> {{ service.name }} <span v-show="service.level">({{ service.level }})</span>
       </li>
     </ul>
 
@@ -36,13 +43,6 @@
     <ul>
       <li v-for="test in testing" v-if="test.type==filter||filter=='all'||test.type==''" :key="test.id">
         {{ test.name }} <span v-show="test.level">({{ test.level }})</span>
-      </li>
-    </ul>
-
-    <h3 v-show="filter=='web'||filter=='all'" class="web">Ohjelmointi</h3>
-    <ul>
-      <li v-for="code in coding" v-if="code.type==filter||filter=='all'||code.type==''" :key="code.id">
-        {{ code.name }} <span v-show="code.level">({{ code.level }})</span>
       </li>
     </ul>
 
@@ -101,20 +101,20 @@ export default {
         {id: 3, name: 'ChromeDevTools', level: '', levelnumber: 90, type: 'web' }
       ],
       services: [
-        {id: 1, name: 'Facebook API', level: '', levelnumber: 80, type: 'web' },
-        {id: 2, name: 'Twitter API', level: '', levelnumber: 75, type: 'web' },
-        {id: 3, name: 'LinkedIn API', level: '', levelnumber: 75, type: 'web' }
+        {id: 1, name: 'Facebook API', level: '', levelnumber: 80, icon: 'fab fa-facebook-f', type: 'web' },
+        {id: 2, name: 'Twitter API', level: '', levelnumber: 75, icon: 'fab fa-twitter', type: 'web' },
+        {id: 3, name: 'LinkedIn API', level: '', levelnumber: 75, icon: 'fab fa-linkedin-in', type: 'web' }
       ],
       coding: [
-        {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web' },
-        {id: 2, name: 'HTML5', level: '', levelnumber: 100, type: 'web' },
-        {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web' },
+        {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-css3' },
+        {id: 2, name: 'HTML5', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-html5' },
+        {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-facebook-f' },
         {id: 4, name: 'ES6', level: '', levelnumber: 90, type: 'web' },
-        {id: 5, name: 'SASS', level: '', levelnumber: 100, type: 'web' },
-        {id: 6, name: 'LESS', level: '', levelnumber: 100, type: 'web' },
-        {id: 7, name: 'Angular', level: 'perusteet', levelnumber: 20, type: 'web' },
-        {id: 8, name: 'Vue.js', level: 'perusteet', levelnumber: 40, type: 'web' },
-        {id: 9, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web' }
+        {id: 5, name: 'SASS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-sass' },
+        {id: 6, name: 'LESS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-less' },
+        {id: 7, name: 'Angular', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
+        {id: 8, name: 'Vue.js', level: 'perusteet', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
+        {id: 9, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fab fa-php' }
       ],
       others: [
         {id: 1, name: 'SEO', level: '', type: 'web' },

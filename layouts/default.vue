@@ -12,14 +12,12 @@
 import Navigation from '~/components/Navigation.vue'
 import Header from '~/components/Header.vue'
 import Sidebar from '~/components/Sidebar.vue'
-import FixedHeader from 'vue-fixed-header'
 
 export default {
   components: {
     Navigation,
     Header,
-    Sidebar,
-    FixedHeader
+    Sidebar
   },
   data: function () {
     return {

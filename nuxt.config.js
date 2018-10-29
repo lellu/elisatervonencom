@@ -36,7 +36,10 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
+    '@fortawesome/fontawesome-free/scss/fontawesome.scss',
+    '@fortawesome/fontawesome-free/scss/regular.scss',
+    '@fortawesome/fontawesome-free/scss/solid.scss',
+    '@fortawesome/fontawesome-free/scss/brands.scss'
   ],
 
   /*
