@@ -101,6 +101,7 @@ export default {
 
     h3 {
       margin: 0;
+      font-size: 1.15rem;
     }
 
     p {
@@ -145,6 +146,7 @@ export default {
           margin-top: 1rem;
           border-right: solid 1px $gray;
           border-bottom: none;
+          padding: 1rem 1rem 0.5rem 1rem;
         }
       }
 
@@ -159,6 +161,7 @@ export default {
           border-left: solid 1px $gray;
           border-top: none;
           margin-top: 0;
+          padding: 0.5rem 1rem 1rem 1rem;
         }
       }
     }
@@ -182,6 +185,7 @@ export default {
           margin-top: 1rem;
           border-right: solid 1px $gray;
           border-bottom: none;
+          padding: 1rem 1rem 0.5rem 1rem;
         }
       }
 
@@ -199,6 +203,7 @@ export default {
           border-left: solid 1px $gray;
           border-top: none;
           margin-top: 0;
+          padding: 0.5rem 1rem 1rem 1rem;
         }
       }
     }

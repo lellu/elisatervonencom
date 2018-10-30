@@ -30,6 +30,22 @@ p {
   }
 }
 
+.tac {
+  text-align: center;
+}
+
+.tac-table {
+  margin: 0 auto;
+}
+
+.tal {
+  text-align: left;
+}
+
+.tar {
+  text-align: right;
+}
+
 h1 {
   color: $orange;
   margin: 0;
@@ -53,13 +69,22 @@ h2 {
 h3 {
   color: $black;
   font-weight: normal;
-  margin: 1rem 0;
+  margin: 2rem 0 2rem 0;
   text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 h4 {
   color: $black;
   margin: 1rem 0;
+}
+
+@media only screen and (max-width: 400px) {
+  h1, h2, h3, h4 {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
 }
 
 table {
@@ -84,13 +109,23 @@ table {
     @media only screen and (max-width: 768px) {
       display: block;
       width: 100%;
-      padding: 0.5rem 1rem;
+      padding: 0.2rem 0;
+
+      &:first-child {
+        width: 100%;
+      }
     }
   }
 
-  tr {
+  tbody tr {
     &:nth-child(odd) {
       background-color: $graylight;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+      width: 100%;
+      padding: 0.2rem 1rem;
     }
   }
 }

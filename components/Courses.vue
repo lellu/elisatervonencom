@@ -15,8 +15,8 @@
       <tbody>
         <tr v-for="course in courses" v-if="course.type==filter||filter=='all'||course.type==''" :key="course.id">
           <td>{{ course.name }}</td>
-          <td class="nowrap">{{ course.time }}</td>
-          <td class="nowrap"><span v-show="course.duration">{{ course.duration }}</span></td>
+          <td class="time nowrap">{{ course.time }}</td>
+          <td class="duration nowrap"><span v-show="course.duration">{{ course.duration }}</span></td>
           <td>{{ course.trainer }}</td>
         </tr>
       </tbody>
@@ -66,4 +66,10 @@ export default {
 </script>
 
 <style lang="scss">
+table td.nowrap {
+  @media only screen and (max-width: 768px) {
+    display: inline-block;
+    width: auto;
+  }
+}
 </style>

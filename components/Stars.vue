@@ -25,9 +25,5 @@ export default {
     font-size: 1.5rem;
     padding: 0 0.2rem;
   }
-
-  @media only screen and (max-width: 550px) {
-    display: none;
-  }
 }
 </style>

@@ -62,8 +62,7 @@ export default {
         {id: 5, name: 'ODL', time: '2014-2015', title: 'Ystäväpalvelu', duties: 'Vanhusten luona vierailu ja kävelytys', type: 'other'}
       ],
       confidences: [
-        {id: 1, name: 'Varaluottamusvaltuutettu', time: '2016-2017', place: 'Koodiviidakko Oy', type: ''},
-        {id: 2, name: 'Varaluottamusvaltuutettu', time: '2014-2016', place: 'Koodiviidakko Oy', type: ''},
+        {id: 1, name: 'Varaluottamusvaltuutettu', time: '2014-2017', place: 'Koodiviidakko Oy', type: ''}
       ]
     }
   }

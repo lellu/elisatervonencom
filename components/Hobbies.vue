@@ -33,17 +33,17 @@ export default {
 .cols {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
 
   .col {
     width: 20%;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem 2rem 1rem;
 
     @media only screen and (max-width: 1200px) {
       width: 25%;
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 920px) {
       width: 33.33333%;
     }
 
@@ -52,7 +52,7 @@ export default {
       padding: 1rem 1rem;
     }
 
-    @media only screen and (max-width: 350px) {
+    @media only screen and (max-width: 400px) {
       width: 100%;
     }
 
