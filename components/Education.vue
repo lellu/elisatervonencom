@@ -47,7 +47,7 @@ export default {
   &:before {
     content: "";
     position: absolute;
-    width: 1px;
+    width: 2px;
     height: 100%;
     left: 50%;
     background-color: $gray;
@@ -69,7 +69,7 @@ export default {
       content: "";
       position: absolute;
       width: 100%;
-      height: 1px;
+      height: 2px;
       top: 50%;
       background-color: $gray;
       z-index: 0;
@@ -113,7 +113,7 @@ export default {
       width: 42%;
       padding: 1rem;
       margin-top: 3rem;
-      border: solid 1px $gray;
+      border: solid 2px $gray;
       background-color: $graylight;
       z-index: 1;
 
@@ -139,12 +139,12 @@ export default {
           order: 1;
           text-align: left;
           border-right: none;
-          background-color: $graylight;
+          background-color: $white;
         }
 
         @media only screen and (max-width: 500px) {
           margin-top: 1rem;
-          border-right: solid 1px $gray;
+          border-right: solid 2px $gray;
           border-bottom: none;
           padding: 1rem 1rem 0.5rem 1rem;
         }
@@ -155,10 +155,11 @@ export default {
 
         @media only screen and (max-width: 768px) {
           border-left: none;
+          background-color: $white;
         }
 
         @media only screen and (max-width: 500px) {
-          border-left: solid 1px $gray;
+          border-left: solid 2px $gray;
           border-top: none;
           margin-top: 0;
           padding: 0.5rem 1rem 1rem 1rem;
@@ -178,12 +179,12 @@ export default {
         @media only screen and (max-width: 768px) {
           order: 1;
           border-right: none;
-          background-color: $graylight;
+          background-color: $white;
         }
 
         @media only screen and (max-width: 500px) {
           margin-top: 1rem;
-          border-right: solid 1px $gray;
+          border-right: solid 2px $gray;
           border-bottom: none;
           padding: 1rem 1rem 0.5rem 1rem;
         }
@@ -197,10 +198,11 @@ export default {
           order: 2;
           border-left: none;
           text-align: left;
+          background-color: $white;
         }
 
         @media only screen and (max-width: 500px) {
-          border-left: solid 1px $gray;
+          border-left: solid 2px $gray;
           border-top: none;
           margin-top: 0;
           padding: 0.5rem 1rem 1rem 1rem;
