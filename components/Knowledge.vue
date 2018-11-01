@@ -17,17 +17,17 @@
 
     <h3 class="tac">Ohjelmistot</h3>
     <ul class="tag-list tac">
-      <li v-for="daily in dailysoftwares" v-if="daily.type==filter||filter=='all'||daily.type==''" :key="daily.id">
+      <li v-for="daily in dailysoftwares" v-if="daily.type==filter||filter=='all'||daily.type==''" :key="'daily-' + daily.id">
         {{ daily.name }} <span v-show="daily.level">({{ daily.level }})</span>
       </li>
-      <li v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="software.id">
+      <li v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="'software-' + software.id">
         {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
       </li>
     </ul>
 
     <h3 v-show="filter=='web'||filter=='all'" class="tac">Ohjelmointi</h3>
     <div class="cols round-icons">
-      <div v-for="code in coding" v-if="code.type==filter||filter=='all'||code.type==''" :key="code.id" class="col square">
+      <div v-for="code in coding" v-if="code.type==filter||filter=='all'||code.type==''" :key="'code-' + code.id" class="col square">
         <span class="round-icon">
           <div>
             <i :class="code.icon" />
@@ -39,7 +39,7 @@
 
     <h3 v-show="filter=='web'||filter=='all'" class="tac">Sosiaalisen median palvelut</h3>
     <div class="cols round-icons">
-      <div v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="service.id" class="col square">
+      <div v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="'service-' + service.id" class="col square">
         <span class="round-icon">
           <div>
             <i :class="service.icon" />
@@ -51,13 +51,13 @@
 
     <h3 class="tac">Muu osaaminen</h3>
     <ul class="icon-list tac">
-      <li v-for="otherweb in othersweb" v-if="otherweb.type==filter||filter=='all'||otherweb.type==''" :key="otherweb.id">
+      <li v-for="otherweb in othersweb" v-if="otherweb.type==filter||filter=='all'||otherweb.type==''" :key="'other-' + otherweb.id">
         <i class="fa fa-check"/> {{ otherweb.name }} <span v-show="otherweb.level">({{ otherweb.level }})</span>
       </li>
     </ul>
 
     <div class="cols round-icons">
-      <div v-for="other in others" v-if="other.type==filter||filter=='all'||other.type==''" :key="other.id" class="col square">
+      <div v-for="other in others" v-if="other.type==filter||filter=='all'||other.type==''" :key="'other-' + other.id" class="col square">
         <span class="round-icon">
           <div>
             <i :class="other.icon" />
@@ -69,7 +69,7 @@
 
     <h3 class="tac">Kielitaito</h3>
     <div class="t-table tac-table">
-      <div v-for="language in languages" v-if="language.type==filter||filter=='all'||language.type==''" :key="language.id" class="t-row">
+      <div v-for="language in languages" v-if="language.type==filter||filter=='all'||language.type==''" :key="'language-' + language.id" class="t-row">
         <div class="t-cell">{{ language.name }} <br class="br">({{ language.level }})</div>
         <div class="t-cell"><Stars :number="language.levelnumber" /></div>
       </div>
@@ -104,11 +104,11 @@ export default {
         {id: 2, name: 'LianaMailer', level: '', levelnumber: 80, type: 'web' },
         {id: 3, name: 'LianaCommerce', level: '', levelnumber: 70, type: 'web' },
         {id: 4, name: 'Visual Code', level: '', levelnumber: 80, type: 'web' },
-        {id: 7, name: 'Open Office', level: '', levelnumber: 90, type: '' },
-        {id: 8, name: 'iWork', level: '', levelnumber: 80, type: '' },
-        {id: 9, name: 'Photoshop', level: '', levelnumber: 80, type: '' },
-        {id: 5, name: 'Gitlab', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-gitlab' },
-        {id: 6, name: 'Git', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-git' }
+        {id: 5, name: 'Open Office', level: '', levelnumber: 90, type: '' },
+        {id: 6, name: 'iWork', level: '', levelnumber: 80, type: '' },
+        {id: 7, name: 'Photoshop', level: '', levelnumber: 80, type: '' },
+        {id: 8, name: 'Gitlab', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-gitlab' },
+        {id: 9, name: 'Git', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-git' }
       ],
       softwares: [
         {id: 1, name: 'Github', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-github' },
@@ -250,7 +250,7 @@ export default {
   align-items: center;
   width: 100%;
   @include border-radius(100%);
-  background-color: $graylight;
+  background-color: $white;
   //border: solid 1px $gray;
   position: relative;
   cursor: default;
@@ -258,8 +258,7 @@ export default {
   box-shadow: 0 0 0 2px $gray;
 
   &:hover {
-    box-shadow: 0 0 0 2px $graybg;
-    background-color: $white;
+    background-color: $graylight;
   }
 
   @media only screen and (max-width: 400px) {

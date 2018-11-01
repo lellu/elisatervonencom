@@ -69,6 +69,8 @@
       padding: 0 0.7rem;
       text-align: left;
       background-color: $orange;
+      font-size: 0.9rem;
+      transition: font-size .5s;
 
       @media only screen and (max-width: 768px) {
         display: inline-block;
@@ -92,6 +94,7 @@
     &:hover {
       span {
         visibility: visible;
+        font-size: 1rem;
 
         @media only screen and (max-width: 768px) {
           background-color: $orangedark;

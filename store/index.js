@@ -1,14 +1,14 @@
-/*const createStore = () => {
+import Vuex from 'vuex'
+
+import mutations from './mutations'
+
+const createStore = () => {
   return new Vuex.Store({
-    state: () => ({
-      filter: 'all'
-    }),
-    mutations: {
-      changeFilter (state, filter) {
-        state.filter = filter;
-      }
-    }
+    state: {
+      selectedfilter: 'all'
+    },
+    mutations
   })
 }
 
-export default createStore*/
+export default createStore

@@ -1,9 +1,9 @@
 <template>
   <div class="filters">
     <label>Suodata: </label>
-    <button :class="{ active: filter == 'all' }" @click="onFilterChanged('all')">Kaikki</button>
-    <button :class="{ active: filter == 'web' }" @click="onFilterChanged('web')">Web-kehitys</button>
-    <button :class="{ active: filter == 'other' }" @click="onFilterChanged('other')">Sosiaalinen ala</button>
+    <button :class="{ active: filter == 'all' }" @click="setFilter('all')">Kaikki</button>
+    <button :class="{ active: filter == 'web' }" @click="setFilter('web')">Web-kehitys</button>
+    <button :class="{ active: filter == 'other' }" @click="setFilter('other')">Sosiaalinen ala</button>
   </div>
 </template>
 
@@ -15,9 +15,8 @@ export default {
     }
   },
   methods: {
-    onFilterChanged: function (type) {
-      this.filter = type;
-      this.$emit('filter-changed', type);
+    setFilter: function (type) {
+      this.$store.commit('setFilter',type);
     }
   }
 }
@@ -31,6 +30,7 @@ export default {
   text-align: right;
 
   @media only screen and (max-width: 950px) {
+    padding: 0.7rem 0;
     width: 100%;
     text-align: left;
     padding-left: 1.7rem;
@@ -57,7 +57,7 @@ export default {
   }
 
   button {
-    padding: 0.2rem 0.5rem;
+    padding: 0.4rem 0.6rem;
     width: auto;
     text-transform: uppercase;
     border: none;
@@ -66,6 +66,7 @@ export default {
     font-size: 0.9rem;
     outline: none;
     cursor: pointer;
+    transition: all .3s;
 
     @media only screen and (max-width: 550px) {
       width: 100%;

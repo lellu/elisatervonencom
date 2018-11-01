@@ -7,7 +7,7 @@
       <li><a @click="scrollTo('#others')">Muu toiminta</a></li>
     </ul>
 
-    <Filters @filter-changed="$emit('filter-changed', $event)"/>
+    <Filters/>
   </nav>
 </template>
 
@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     scrollClass: function () {
-      this.isScroll = window.scrollY > 100 && window.innerWidth > 550;
+      this.isScroll = window.scrollY > 100;
     },
     scrollTo: function (target) {
       VueScrollTo.scrollTo(target);
@@ -83,15 +83,14 @@ nav {
   }
 
   @media only screen and (max-width: 550px) {
-      padding: 0.5rem 1rem 0.5rem 0.5rem;
-      width: 50%;
+      padding: 0rem 1rem 0rem 1rem;
   }
 
   li {
     display: inline-block;
 
     @media only screen and (max-width: 500px) {
-      width: 100%;
+      width: 49%;
     }
   }
 
@@ -123,6 +122,12 @@ nav {
       width: 100%;
       padding: 0.5rem;
     }
+  }
+}
+
+.filters {
+  @media only screen and (max-width: 550px) {
+    display: none;
   }
 }
 </style>

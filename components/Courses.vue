@@ -51,14 +51,14 @@ export default {
         {id: 14, name: 'Tukiviittomien alkeiskurssi', duration: '20h', time: '6.9-29.11.2011', trainer: 'Oulu-opisto', type: 'other'},
         {id: 15, name: 'Viittomakielen jatkokurssi 2', duration: '30h', time: '26.1-6.4.2010', trainer: 'Oulu-opisto', type: 'other'},
         {id: 16, name: 'Viittomakielen jatkokurssi', duration: '30h', time: '8.9-17.11.2009', trainer: 'Oulu-opisto', type: 'other'},
-        {id: 16, name: 'Viittomakielen jatkokurssi', duration: '30h', time: '26.1-20.4.2009', trainer: 'Oulu-opisto', type: 'other'},
-        {id: 17, name: 'Viittomakielen alkeiskurssi', duration: '30h', time: '10.9-19.11.2008', trainer: 'Oulu-opisto', type: 'other'},
-        {id: 18, name: 'Hygieniapassi', duration: '', time: '23.2.2008', trainer: 'Oulun 4H-yhdistys', type: 'other'},
-        {id: 20, name: 'Asiakaspalvelukoulutus', duration: '5h', time: '22.5.1999', trainer: 'Nilsiän 4H-yhdistys', type: 'other'},
-        {id: 21, name: 'Isoiskoulutus', duration: '', time: '1998-1999', trainer: 'Nilsiän SRK', type: 'other'},
-        {id: 22, name: 'Siivoustyökurssi', duration: '23h', time: '18.2-21.2.1998', trainer: 'Nilsiän 4H-yhdistys', type: 'other'},
-        {id: 23, name: 'Vanhuspalvelukurssi', duration: '22h', time: '28.9-23.11.1998', trainer: 'Nilsiän 4H-yhdistys', type: 'other'},
-        {id: 24, name: 'Nuorten kuvataidekoulu', duration: '', time: '1993-1996', trainer: 'Nilsiän kansalaisopisto', type: 'other'}
+        {id: 17, name: 'Viittomakielen jatkokurssi', duration: '30h', time: '26.1-20.4.2009', trainer: 'Oulu-opisto', type: 'other'},
+        {id: 18, name: 'Viittomakielen alkeiskurssi', duration: '30h', time: '10.9-19.11.2008', trainer: 'Oulu-opisto', type: 'other'},
+        {id: 19, name: 'Hygieniapassi', duration: '', time: '23.2.2008', trainer: 'Oulun 4H-yhdistys', type: 'other'},
+        {id: 21, name: 'Asiakaspalvelukoulutus', duration: '5h', time: '22.5.1999', trainer: 'Nilsiän 4H-yhdistys', type: 'other'},
+        {id: 22, name: 'Isoiskoulutus', duration: '', time: '1998-1999', trainer: 'Nilsiän SRK', type: 'other'},
+        {id: 23, name: 'Siivoustyökurssi', duration: '23h', time: '18.2-21.2.1998', trainer: 'Nilsiän 4H-yhdistys', type: 'other'},
+        {id: 24, name: 'Vanhuspalvelukurssi', duration: '22h', time: '28.9-23.11.1998', trainer: 'Nilsiän 4H-yhdistys', type: 'other'},
+        {id: 25, name: 'Nuorten kuvataidekoulu', duration: '', time: '1993-1996', trainer: 'Nilsiän kansalaisopisto', type: 'other'}
       ]
     }
   }

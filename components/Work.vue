@@ -1,7 +1,7 @@
 <template>
   <section>
     <span id="work" class="anchor" />
-    <h2>Työkokemus {{ filter }}</h2>
+    <h2>Työkokemus</h2>
 
     <table class="work-table">
       <thead>
@@ -13,7 +13,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="work in works" v-if="work.type==filter||filter=='all'||work.type==''" :key="work.id">
+        <tr v-for="work in works" v-if="work.type==filter||filter=='all'||work.type==''" :key="'work-' + work.id">
           <td style="width: 30px;"><img :src="work.image" style="width: 30px;" alt=""></td>
           <td class="nowrap normalwrap-920">{{ work.name }}</td>
           <td class="nowrap">{{ work.time }}</td>

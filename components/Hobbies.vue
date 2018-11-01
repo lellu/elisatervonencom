@@ -23,7 +23,7 @@ export default {
         {id: 4, name: 'Entisöinti', description: 'Kalusteet, moottoripyörä ja auto', image: '/hobbies/hobby6.jpg', link: '', type: ''},
         {id: 5, name: 'Martimoaapa.com', description: 'Sivuston ylläpito ja blogin kirjoitus', image: '/hobbies/hobby1.jpg', link: 'https://www.martimoaapa.com', type: ''},
         {id: 6, name: 'Itsensä kehittäminen', description: 'Erilaiset sosiaalisen alan kurssit ja web-tekniikat', image: '/hobbies/hobby2.jpg', link: '', type: ''},
-        {id: 7, name: 'Kirjoittaminen', description: 'Wikipedia sivut, Martimoaapa.com blogi ', image: '/hobbies/hobby1.jpg', link: '', type: ''},
+        {id: 7, name: 'Kirjoittaminen', description: 'Wikipedia sivut, Martimoaapa.com blogi, pöytälaatikko', image: '/hobbies/hobby1.jpg', link: '', type: ''},
       ]
     }
   }
