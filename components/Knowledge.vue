@@ -155,6 +155,7 @@ export default {
   list-style: none;
   padding-left: 0;
   line-height: 1.4;
+  margin-bottom: 2rem;
 
   li {
     padding: 0.2rem 0;
@@ -199,11 +200,6 @@ export default {
     &:hover:after {
       width: 100%;
     }
-
-    //&:hover {
-      //border-color: $greendark;
-      //background-color: $greendark;
-    //}
   }
 
   .fa {

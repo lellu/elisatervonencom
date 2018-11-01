@@ -4,8 +4,10 @@
     <h2>Harrastukset</h2>
     <div class="cols">
       <div v-for="hobby in hobbies" :key="hobby.id" class="col">
-        <p><img :src="hobby.image" alt=""></p>
-        <h4>{{ hobby.name }}</h4>
+        <p v-if="hobby.link"><a :href="hobby.link" target="_blank"><img :src="hobby.image" alt=""></a></p>
+        <p v-else><img :src="hobby.image" alt=""></p>
+        <h4 v-if="hobby.link"><a :href="hobby.link" target="_blank">{{ hobby.name }}</a></h4>
+        <h4 v-else>{{ hobby.name }}</h4>
         <p>{{ hobby.description }}</p>
       </div>
     </div>
