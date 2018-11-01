@@ -19,10 +19,10 @@ module.exports = {
       { hid: 'og:title', name: 'og:title', content: pkg.name },
       { hid: 'og:site', name: 'og:site', content: pkg.link },
       { hid: 'og:url', name: 'og:url', content: pkg.link },
-      { hid: 'og:image', name: 'og:image', content: '/own.jpg' },
+      { hid: 'og:image', name: 'og:image', content: '/mie.jpg' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
-      { hid: 'twitter:site', name: 'twitter:site', content: '@elisatervonen' },
-      { hid: 'twitter:creator', name: 'twitter:creator', content: '@elisatervonen' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@elisa_tervonen' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@elisa_tervonen' },
       { hid: 'twitter:url', name: 'twitter:url', content: pkg.link }
     ],
     link: [
