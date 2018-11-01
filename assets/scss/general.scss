@@ -150,7 +150,14 @@ table {
   @media only screen and (max-width: 480px) {
     white-space: normal;
   }
+
+  &.normalwrap-920 {
+    @media only screen and (max-width: 920px) {
+      white-space: normal;
+    }
+  }
 }
+
 
 section {
   margin: 0 auto;

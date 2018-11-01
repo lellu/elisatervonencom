@@ -80,7 +80,8 @@
     }
 
     i {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
+      transition: all .5s;
 
       @media only screen and (max-width: 768px) {
         float: left;
@@ -95,6 +96,10 @@
         @media only screen and (max-width: 768px) {
           background-color: $orangedark;
         }
+      }
+
+      i {
+        font-size: 1.5rem;
       }
 
       background-color: $orangedark;

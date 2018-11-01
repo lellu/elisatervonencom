@@ -27,7 +27,7 @@ export default {
 @import 'assets/scss/colors.scss';
 .filters {
   display: inline-block;
-  padding: 1rem 0;
+  padding: 0.9rem 0;
   text-align: right;
 
   @media only screen and (max-width: 950px) {
@@ -45,7 +45,6 @@ export default {
     padding: 0 0.3rem;
     display: inline-block;
     color: $white;
-    margin-bottom: 0.5rem;
 
     @media only screen and (max-width: 950px) {
       padding-left: 0;
@@ -53,6 +52,7 @@ export default {
 
     @media only screen and (max-width: 550px) {
       width: 100%;
+      margin-bottom: 0.5rem;
     }
   }
 
