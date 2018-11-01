@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="page-break">
     <span id="knowledge" class="anchor" />
     <h2>Osaaminen</h2>
     <ul class="icon-list">

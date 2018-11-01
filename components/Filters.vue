@@ -17,6 +17,7 @@ export default {
   methods: {
     setFilter: function (type) {
       this.$store.commit('setFilter',type);
+      this.filter = type;
     }
   }
 }

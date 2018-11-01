@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="page-break">
     <span id="work" class="anchor" />
     <h2>Työkokemus</h2>
 

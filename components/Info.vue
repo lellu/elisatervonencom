@@ -1,5 +1,5 @@
 <template>
-  <section class="info">
+  <section class="info page-break">
     <span id="info" class="anchor" />
     <p><img class="profile-image" src="/mie.jpg" alt=""></p>
     <h1>Kuka Elisa?</h1>

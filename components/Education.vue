@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="page-break">
     <span id="education" class="anchor" />
     <h2>Koulutus</h2>
 

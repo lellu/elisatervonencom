@@ -1,10 +1,9 @@
 <template>
   <div>
     <Header/>
-    <Navigation @filter-changed="filter = $event" />
-    <nuxt :filter="filter" />
+    <Navigation />
+    <nuxt />
     <Sidebar/>
-    {{ filter }}
   </div>
 </template>
 
@@ -20,9 +19,7 @@ export default {
     Sidebar
   },
   data: function () {
-    return {
-      filter: 'all'
-    }
+    return {}
   }
 }
 </script>

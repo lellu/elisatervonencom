@@ -191,7 +191,34 @@ section {
 
 @media print {
   nav,
-  .utilities {
+  .utilities,
+  .work-table td:first-child,
+  .info h1 {
     display: none;
+  }
+
+  header {
+    text-align: left;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  .info {
+    text-align: left;
+
+    p {
+      max-width: 100%;
+    }
+  }
+
+  .bg-gray,
+  table tr:nth-child(odd) {
+    background-color: $white;
   }
 }

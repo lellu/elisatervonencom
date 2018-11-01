@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="page-break">
     <span id="courses" class="anchor" />
     <h2>Kurssit</h2>
 
@@ -44,7 +44,7 @@ export default {
         {id: 7, name: 'Vapaaehtoistoiminnan koulutus', duration: '', time: '2.9-11.11.2014', trainer: 'Kempeleen Seurakunta', type: 'other'},
         {id: 8, name: 'Responsiivinen web-suunnittelu', duration: '16h', time: '20.-21.5.2015', trainer: 'Oulun Ammattikorkeakoulu', type: 'web'},
         {id: 9, name: 'Mielenterveyden ensiapu 1', duration: '14h', time: '12.5.2014', trainer: 'Suomen mielenterveysseura', type: 'other'},
-        {id: 10, name: 'Varhaisen puuttumisen kurssi', duration: '18op', time: '6-7.4.2013', trainer: 'Punainen Risti', type: 'other'},
+        {id: 10, name: 'Varhainen puuttuminen', duration: '18op', time: '6-7.4.2013', trainer: 'Punainen Risti', type: 'other'},
         {id: 11, name: 'Mielenterveyskuntoutujan ystävänä', duration: '6h', time: '13.10.2012', trainer: 'Punainen Risti', type: 'other'},
         {id: 12, name: 'Ystäväpalvelun peruskurssi', duration: '', time: '20.5.2012', trainer: 'Punainen Risti', type: 'other'},
         {id: 13, name: 'Tukiviittomien jatkokurssi', duration: '24h', time: '24.1-18.4.2012', trainer: 'Oulu-opisto', type: 'other'},
