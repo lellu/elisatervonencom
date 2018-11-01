@@ -4,9 +4,9 @@
     <h2>Harrastukset</h2>
     <div class="cols">
       <div v-for="hobby in hobbies" :key="hobby.id" class="col">
-        <p v-if="hobby.link"><a :href="hobby.link" target="_blank" rel="noreferrer" title="{{ hobby.name }}"><img :src="hobby.image" alt=""></a></p>
+        <p v-if="hobby.link"><a :href="hobby.link" :title="hobby.name" target="_blank" rel="noreferrer"><img :src="hobby.image" alt=""></a></p>
         <p v-else><img :src="hobby.image" alt=""></p>
-        <h4 v-if="hobby.link"><a :href="hobby.link" target="_blank" rel="noreferrer" title="{{ hobby.name }}">{{ hobby.name }}</a></h4>
+        <h4 v-if="hobby.link"><a :href="hobby.link" :title="hobby.name" target="_blank" rel="noreferrer">{{ hobby.name }}</a></h4>
         <h4 v-else>{{ hobby.name }}</h4>
         <p>{{ hobby.description }}</p>
       </div>

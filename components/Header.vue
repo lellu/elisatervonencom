@@ -1,11 +1,11 @@
 <template>
   <div class="bg-gray">
     <header>
-      <a href="#info"><h1>Elisa Tervonen</h1></a>
+      <h1>Elisa Tervonen</h1>
 
-      <ul class="languages">
+      <ul v-if="false" class="languages">
         <li><nuxt-link to="/">FI</nuxt-link></li>
-        <li v-if="false"><nuxt-link to="/en">EN</nuxt-link></li>
+        <li><nuxt-link to="/en">EN</nuxt-link></li>
       </ul>
     </header>
   </div>
