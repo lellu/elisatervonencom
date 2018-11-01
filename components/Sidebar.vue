@@ -5,7 +5,7 @@
     <a href="https://github.com/lellu"><span>Github</span><i class="fab fa-github" /></a>
     <a href="javascript:print();" title="Tulosta"><span>Tulosta</span> <i class="fas fa-print" /></a>
     <a v-if="false" href="#"><span>Tallenna pdf</span> <i class="fas fa-file-pdf"/></a>
-    <a href="mailto:kokkonen.elisa@gmail.com"><span>Ota yhteyttä</span> <i class="fas fa-envelope" /></a>
+    <a href="mailto:eeelisa.t( at )gmail.com"><span>Ota yhteyttä</span> <i class="fas fa-envelope" /></a>
   </div>
 </template>
 
