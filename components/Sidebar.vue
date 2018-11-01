@@ -1,11 +1,11 @@
 <template>
   <div class="utilities">
-    <a href="https://www.linkedin.com/in/elisa-tervonen-85114592/"><span>LinkedIn</span><i class="fab fa-linkedin" /></a>
-    <a href="https://www.instagram.com/elllulellu/?hl=fi"><span>Instagram</span><i class="fab fa-instagram" /></a>
-    <a href="https://github.com/lellu"><span>Github</span><i class="fab fa-github" /></a>
-    <a href="javascript:print();" title="Tulosta"><span>Tulosta</span> <i class="fas fa-print" /></a>
-    <a v-if="false" href="#"><span>Tallenna pdf</span> <i class="fas fa-file-pdf"/></a>
-    <a href="mailto:eeelisa.t( at )gmail.com"><span>Ota yhteyttä</span> <i class="fas fa-envelope" /></a>
+    <a href="https://www.linkedin.com/in/elisa-tervonen-85114592/" title="LinkedIn Profile"><span>LinkedIn</span><i class="fab fa-linkedin" /></a>
+    <a href="https://www.instagram.com/elllulellu/?hl=fi" title="Instagram"><span>Instagram</span><i class="fab fa-instagram" /></a>
+    <a href="https://github.com/lellu" title="Github profile"><span>Github</span><i class="fab fa-github" /></a>
+    <a href="javascript:print();" title="Tulosta sivu"><span>Tulosta</span> <i class="fas fa-print" /></a>
+    <a v-if="false" href="#" title="Tallenna sivu pdf-tiedostona"><span>Tallenna pdf</span> <i class="fas fa-file-pdf"/></a>
+    <a href="mailto:eeelisa.t( at )gmail.com" title="Ota yhteyttä sähköpostilla"><span>Ota yhteyttä</span> <i class="fas fa-envelope" /></a>
   </div>
 </template>
 
