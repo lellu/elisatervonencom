@@ -35,7 +35,7 @@ export default {
   data: function () {
     return {
       courses: [
-        {id: 1, name: 'Luovan kirjoittamisen aineopinnot', duration: '25op', time: '25.9.2018-18.05.2019', trainer: 'Oulun Kesäyliopisto', type: 'other'},
+        {id: 1, name: 'Luovan kirjoittamisen aineopinnot', duration: '25op', time: '25.9.2018 (-18.05.2019)', trainer: 'Oulun Kesäyliopisto', type: 'other'},
         {id: 2, name: 'Mielenterveyden ensiapu 2', duration: '14h', time: '20.-21.11.2017', trainer: 'Suomen mielenterveysseura/OAKK', type: 'other'},
         {id: 3, name: 'MuistiKaVeRi koulutus', duration: '12h', time: '7.-8.9.2016', trainer: 'Oulun seudun muistiyhdistys', type: 'other'},
         {id: 4, name: 'Henkisen tuen jatkokurssi', duration: '12h', time: '26.-27.11.2016', trainer: 'Suomen Punainen Risti', type: 'other'},

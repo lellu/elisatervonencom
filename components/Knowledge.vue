@@ -112,10 +112,10 @@ export default {
       ],
       softwares: [
         {id: 1, name: 'Github', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-github' },
-        //{id: 2, name: 'Atom', level: '', levelnumber: 80, type: 'web' },
-        {id: 3, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
-        {id: 4, name: 'Indesign', level: 'perusteet', levelnumber: 40, type: 'web' },
-        {id: 5, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' }
+        {id: 2, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
+        {id: 3, name: 'Indesign', level: 'perusteet', levelnumber: 40, type: 'web' },
+        {id: 4, name: 'WordPress', level: '', levelnumber: 0, type: 'web' },
+        {id: 5, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' },
       ],
       services: [
         {id: 1, name: 'Facebook API', level: '', levelnumber: 80, icon: 'fab fa-facebook-f', type: 'web' },
@@ -128,8 +128,8 @@ export default {
         {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js' },
         {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-sass' },
         {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-less' },
-        {id: 6, name: 'Vue.js', level: 'perusteet', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
-        {id: 7, name: 'Angular', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
+        {id: 6, name: 'Vue.js', level: '', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
+        {id: 7, name: 'Angular', level: '', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
         {id: 8, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
         {id: 9, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
       ],
