@@ -3,7 +3,7 @@
     <span id="info" class="anchor" />
     <p><img class="profile-image" src="/mie.jpg" alt=""></p>
     <!--<h1>Kuka Elisa?</h1>-->
-    <p>Tällä hetkellä toimin web-kehittäjä ja tiimin vetäjänä Koodiviidakko Oy:ssä. Web-kehityksen parissa olen työskennellyt jo yli kymmenen vuotta. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua ja kommukointia eri osapuolten välillä. Tästä kombinaatiosta pidän eniten työssäni.</p>
+    <p>Tällä hetkellä toimin web-kehittäjä ja tiimin vetäjänä Koodiviidakko Oy:ssä. Web-kehityksen parissa olen työskennellyt jo yli kymmenen vuotta. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua ja kommunikointia eri osapuolten välillä. Tästä kombinaatiosta pidän eniten työssäni.</p>
     <p>Tekniikan vastapainoksi käytän vapaa-aikaani vanhuksien avustamiseen ja luonnossa liikkumiseen. Harrastan myös kaikenlaista käsillä puuhastelua entisöinnistä ruuanlaittoon.</p>
     <p>"Voi oppia mitä vain, kunhan omistaa intohimon, motivaation ja hyvän opettajan"</p>
   </section>

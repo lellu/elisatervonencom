@@ -10,7 +10,7 @@ module.exports = {
     htmlAttrs: {
       lang: 'fi',
     },
-    title: pkg.name,
+    title: 'Elisa Tervonen',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

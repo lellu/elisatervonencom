@@ -26,6 +26,15 @@ export default {
         {id: 5, name: 'Martimoaapa.com', description: 'Sivuston ylläpito ja blogin kirjoitus', image: '/hobbies/hobby1.jpg', link: 'https://www.martimoaapa.com', type: ''},
         {id: 6, name: 'Itsensä kehittäminen', description: 'Erilaiset sosiaalisen alan kurssit ja web-tekniikat', image: '/hobbies/hobby2.jpg', link: '', type: ''},
         {id: 7, name: 'Kirjoittaminen', description: 'Wikipedia sivut, Martimoaapa.com blogi, pöytälaatikko', image: '/hobbies/hobby1.jpg', link: '', type: ''},
+      ],
+      hobbies_en: [
+        {id: 1, name: 'Voluntary work', description: 'Helping and walking elderly and helping in kitchen in various events', image: '/hobbies/hobby3.jpg', link: '', type: ''},
+        {id: 2, name: 'Exercise', description: 'Mountain biking and skiign', image: '/hobbies/hobby4.jpg', link: '', type: ''},
+        {id: 3, name: 'Enjoy of nature', description: 'Hiking and nature photography', image: '/hobbies/hobby5.jpg', link: '', type: ''},
+        {id: 4, name: 'Restoration', description: 'Furnitures, motorbike and car', image: '/hobbies/hobby6.jpg', link: '', type: ''},
+        {id: 5, name: 'Martimoaapa.com', description: 'Maintaining website', image: '/hobbies/hobby1.jpg', link: 'https://www.martimoaapa.com/en', type: ''},
+        {id: 6, name: 'Self-studies', description: 'Varioous social cources and web-techniques', image: '/hobbies/hobby2.jpg', link: '', type: ''},
+        {id: 7, name: 'Writing', description: 'Wikipedia pages, Martimoaapa.com blog, poems', image: '/hobbies/hobby1.jpg', link: '', type: ''},
       ]
     }
   }
