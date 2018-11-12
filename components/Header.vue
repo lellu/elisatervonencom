@@ -3,7 +3,7 @@
     <header>
       <h1>Elisa Tervonen</h1>
 
-      <ul v-if="false" class="languages">
+      <ul class="languages">
         <li><nuxt-link to="/">FI</nuxt-link></li>
         <li><nuxt-link to="/en">EN</nuxt-link></li>
       </ul>
