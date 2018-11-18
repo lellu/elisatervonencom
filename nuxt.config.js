@@ -35,6 +35,10 @@ module.exports = {
   */
   loading: { color: '#fff' },
 
+  router: {
+    middleware: 'i18n'
+  },
+
   /*
   ** Global CSS
   */
@@ -49,8 +53,13 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    'vue-scrollto'
+    'vue-scrollto',
+    'vue-i18n'
   ],
+
+  generate: {
+    routes: ['/', '/en']
+  },
 
   /*
   ** Nuxt.js modules

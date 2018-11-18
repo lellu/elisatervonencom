@@ -5,7 +5,9 @@ import mutations from './mutations'
 const createStore = () => {
   return new Vuex.Store({
     state: {
-      selectedfilter: 'all'
+      selectedfilter: 'all',
+      locales: ['en', 'fi'],
+      locale: 'fi'
     },
     mutations
   })

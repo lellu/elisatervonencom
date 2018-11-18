@@ -19,6 +19,7 @@ import Knowledge from '~/components/Knowledge.vue'
 import Others from '~/components/Others.vue'
 import Hobbies from '~/components/Hobbies.vue'
 import { mapState } from 'vuex'
+//import VueI18n from 'vue-i18n'
 
 export default {
   components: {

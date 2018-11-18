@@ -1,0 +1,14 @@
+{
+  "links": {
+    "work": "Work",
+    "education": "Education",
+    "english": "English",
+    "finnish": "Suomeksi"
+  },
+  "work": {
+    "company": "Company",
+    "time": "Time",
+    "title": "Title",
+    "worktasks": "Work description"
+  }
+}
