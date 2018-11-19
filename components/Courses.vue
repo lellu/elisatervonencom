@@ -1,15 +1,15 @@
 <template>
   <section class="page-break">
     <span id="courses" class="anchor" />
-    <h2>Kurssit</h2>
+    <h2>{{ $t('courses.coursesh') }}</h2>
 
     <table id="v-for-object" class="demo">
       <thead>
         <tr>
-          <th>Kurssi</th>
-          <th>Aika</th>
-          <th>Kesto</th>
-          <th>Kouluttaja</th>
+          <th>{{ $t('courses.course') }}</th>
+          <th>{{ $t('courses.time') }}</th>
+          <th>{{ $t('courses.duration') }}</th>
+          <th>{{ $t('courses.trainer') }}</th>
         </tr>
       </thead>
       <tbody>

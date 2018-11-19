@@ -1,7 +1,7 @@
 <template>
   <section class="page-break">
     <span id="education" class="anchor" />
-    <h2>Koulutus</h2>
+    <h2>{{ $t('links.education') }}</h2>
 
     <div class="history-list">
       <div v-for="study in studies" v-if="study.type==filter||filter=='all'||study.type==''" :key="study.id" :class="{even: study.id % 2, odd: !(study.id % 2)}">

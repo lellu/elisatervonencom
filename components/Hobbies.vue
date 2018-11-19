@@ -1,7 +1,7 @@
 <template>
   <section>
     <span id="hobbies" class="anchor" />
-    <h2>Harrastukset</h2>
+    <h2>{{ $t('otheractivity.hobbies') }}</h2>
     <div class="cols">
       <div v-for="hobby in hobbies" :key="hobby.id" class="col">
         <p v-if="hobby.link"><a :href="hobby.link" :title="hobby.name" target="_blank" rel="noreferrer"><img :src="hobby.image" alt=""></a></p>

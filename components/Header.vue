@@ -3,15 +3,22 @@
     <header>
       <h1>Elisa Tervonen</h1>
 
-      <ul class="languages">
-        <li><nuxt-link to="/">FI</nuxt-link></li>
-        <li><nuxt-link to="/en">EN</nuxt-link></li>
-      </ul>
+      <div class="languages">
+        <nuxt-link v-if="$i18n.locale === 'fi'" :to="`/en` + $route.fullPath" active-class="none" exact>
+          <span>{{ $t('links.english') }}</span>
+        </nuxt-link>
+        <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" active-class="none" exact>
+          <span>{{ $t('links.finnish') }}</span>
+        </nuxt-link>
+      </div>
     </header>
   </div>
 </template>
 
 <script>
+export default {
+
+}
 </script>
 
 <style lang="scss">

@@ -1,7 +1,7 @@
 <template>
   <section class="page-break">
     <span id="knowledge" class="anchor" />
-    <h2>Osaaminen</h2>
+    <h2>{{ $t('links.knowledge') }}</h2>
     <ul class="icon-list">
       <li v-show="filter=='web'||filter=='all'"><i class="fa fa-check"/> Responsiivisten web-sivustojen, verkkokauppojen sekä graafisten uutiskirjeiden suunnittelu, rakentaminen ja testaus</li>
       <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> Vanhusten avustaminen (liikunta- ja asiointiavustustus)</li>
@@ -15,7 +15,7 @@
     </ul>
 
 
-    <h3 class="tac">Ohjelmistot</h3>
+    <h3 class="tac">{{ $t('knowledge.softwares') }}</h3>
     <ul class="tag-list tac">
       <li v-for="daily in dailysoftwares" v-if="daily.type==filter||filter=='all'||daily.type==''" :key="'daily-' + daily.id">
         {{ daily.name }} <span v-show="daily.level">({{ daily.level }})</span>
@@ -25,7 +25,7 @@
       </li>
     </ul>
 
-    <h3 v-show="filter=='web'||filter=='all'" class="tac">Ohjelmointi</h3>
+    <h3 v-show="filter=='web'||filter=='all'" class="tac">{{ $t('knowledge.programming') }}</h3>
     <div class="cols round-icons">
       <div v-for="code in coding" v-if="code.type==filter||filter=='all'||code.type==''" :key="'code-' + code.id" class="col square">
         <span class="round-icon">
@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <h3 v-show="filter=='web'||filter=='all'" class="tac">Sosiaalisen median palvelut</h3>
+    <h3 v-show="filter=='web'||filter=='all'" class="tac">{{ $t('knowledge.social-media') }}</h3>
     <div class="cols round-icons">
       <div v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="'service-' + service.id" class="col square">
         <span class="round-icon">
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <h3 class="tac">Muu osaaminen</h3>
+    <h3 class="tac">{{ $t('knowledge.other') }}</h3>
     <ul class="icon-list tac">
       <li v-for="otherweb in othersweb" v-if="otherweb.type==filter||filter=='all'||otherweb.type==''" :key="'other-' + otherweb.id">
         <i class="fa fa-check"/> {{ otherweb.name }} <span v-show="otherweb.level">({{ otherweb.level }})</span>
@@ -67,7 +67,7 @@
       </div>
     </div>
 
-    <h3 class="tac">Kielitaito</h3>
+    <h3 class="tac">{{ $t('knowledge.languages') }}</h3>
     <div class="t-table tac-table">
       <div v-for="language in languages" v-if="language.type==filter||filter=='all'||language.type==''" :key="'language-' + language.id" class="t-row">
         <div class="t-cell">{{ language.name }} <br class="br">({{ language.level }})</div>

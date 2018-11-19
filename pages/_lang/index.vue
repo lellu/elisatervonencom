@@ -46,11 +46,6 @@ export default {
     setFilter(filter) {
       this.$store.commit('selectedfilter')
     }
-  },
-  head () {
-    return {
-      htmlAttrs: { lang: 'en' }
-    }
   }
 }
 </script>

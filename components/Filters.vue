@@ -1,9 +1,9 @@
 <template>
   <div class="filters">
-    <label>Suodata: </label>
-    <button :class="{ active: filter == 'all' }" @click="setFilter('all')">Kaikki</button>
-    <button :class="{ active: filter == 'web' }" @click="setFilter('web')">Web-kehitys</button>
-    <button :class="{ active: filter == 'other' }" @click="setFilter('other')">Sosiaalinen ala</button>
+    <label>{{ $t('filters.filter') }}: </label>
+    <button :class="{ active: filter == 'all' }" @click="setFilter('all')">{{ $t('filters.all') }}</button>
+    <button :class="{ active: filter == 'web' }" @click="setFilter('web')">{{ $t('filters.web') }}</button>
+    <button :class="{ active: filter == 'other' }" @click="setFilter('other')">{{ $t('filters.social') }}</button>
   </div>
 </template>
 

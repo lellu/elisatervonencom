@@ -2,13 +2,52 @@
   "links": {
     "work": "Työ",
     "education": "Koulutus",
-    "english": "English",
-    "finnish": "Suomeksi"
+    "knowledge": "Osaaminen",
+    "other": "Muu toiminta",
+    "english": "EN",
+    "finnish": "FI"
+  },
+  "sidebar": {
+    "print": "Tulosta",
+    "printpage": "Tulosta sivu",
+    "contact": "Ota yhteyttä",
+    "contactemail": "Ota yhteyttä sähköpostilla"
+  },
+  "filters": {
+    "all": "Kaikki",
+    "web": "Web-kehitys",
+    "social": "Sosiaalinen ala",
+    "filter": "Suodata"
   },
   "work": {
+    "workexperience": "Työkokemus",
     "company": "Työpaikka",
     "time": "Aika",
     "title": "Titteli",
     "worktasks": "Työtehtävät"
+  },
+  "courses": {
+    "coursesh": "Kurssit",
+    "course": "Kurssi",
+    "time": "Aika",
+    "duration": "Kesto",
+    "trainer": "Kouluttaja"
+  },
+  "knowledge": {
+    "knowledge": "Osaaminen",
+    "softwares": "Ohjelmistot",
+    "programming": "Ohjelmointi",
+    "social-media": "Sosiaalisen median palvelut",
+    "other": "Muu osaaminen",
+    "languages": "Kielitaito"
+  },
+  "otheractivity": {
+    "repsentative": "Luottamustoiminta",
+    "name": "Nimike",
+    "place": "Paikka",
+    "voluntary": "Vapaaehtoistyö",
+    "activity": "Toiminta",
+    "description": "Työnkuva",
+    "hobbies": "Harrastukset"
   }
 }

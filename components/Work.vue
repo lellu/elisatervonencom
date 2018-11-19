@@ -1,15 +1,15 @@
 <template>
   <section class="page-break">
     <span id="work" class="anchor" />
-    <h2>Työkokemus</h2>
+    <h2>{{ $t('work.workexperience') }}</h2>
 
     <table class="work-table">
       <thead>
         <tr>
-          <th colspan="2">Työpaikka</th>
-          <th>Aika</th>
-          <th>Titteli</th>
-          <th>Työtehtävät</th>
+          <th colspan="2">{{ $t('work.company') }}</th>
+          <th>{{ $t('work.time') }}</th>
+          <th>{{ $t('work.title') }}</th>
+          <th>{{ $t('work.worktasks') }}</th>
         </tr>
       </thead>
       <tbody>

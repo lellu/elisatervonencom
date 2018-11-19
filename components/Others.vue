@@ -1,15 +1,15 @@
 <template>
   <section>
     <span id="others" class="anchor" />
-    <h2>Muu toiminta</h2>
+    <h2>{{ $t('links.other') }}</h2>
 
-    <h3>Luottamustoiminta</h3>
+    <h3>{{ $t('otheractivity.repsentative') }}</h3>
     <table>
       <thead>
         <tr>
-          <th>Nimike</th>
-          <th>Aika</th>
-          <th>Paikka</th>
+          <th>{{ $t('otheractivity.name') }}</th>
+          <th>{{ $t('work.time') }}</th>
+          <th>{{ $t('otheractivity.place') }}</th>
         </tr>
       </thead>
       <tbody>
@@ -21,14 +21,14 @@
       </tbody>
     </table>
 
-    <h3>Vapaaehtoistyö</h3>
+    <h3>{{ $t('otheractivity.voluntary') }}</h3>
     <table>
       <thead>
         <tr>
-          <th>Järjestö</th>
-          <th>Aika</th>
-          <th>Toiminta</th>
-          <th>Työnkuva</th>
+          <th>{{ $t('otheractivity.place') }}</th>
+          <th>{{ $t('work.time') }}</th>
+          <th>{{ $t('otheractivity.activity') }}</th>
+          <th>{{ $t('otheractivity.description') }}</th>
         </tr>
       </thead>
       <tbody>

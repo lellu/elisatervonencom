@@ -54,7 +54,7 @@ module.exports = {
   */
   plugins: [
     'vue-scrollto',
-    'vue-i18n'
+    '~/plugins/i18n.js'
   ],
 
   generate: {

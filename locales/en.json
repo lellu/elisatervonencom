@@ -2,13 +2,52 @@
   "links": {
     "work": "Work",
     "education": "Education",
-    "english": "English",
-    "finnish": "Suomeksi"
+    "knowledge": "Knowledge",
+    "other": "Other activity",
+    "english": "EN",
+    "finnish": "FI"
+  },
+  "sidebar": {
+    "print": "Print",
+    "printpage": "Print page",
+    "contact": "Contact",
+    "contactemail": "Contact via email"
+  },
+  "filters": {
+    "all": "All",
+    "web": "Web-development",
+    "social": "Social",
+    "filter": "Filter"
   },
   "work": {
-    "company": "Company",
+    "workexperience": "Work experience",
+    "company": "Workplace",
     "time": "Time",
     "title": "Title",
-    "worktasks": "Work description"
+    "worktasks": "Description"
+  },
+  "courses": {
+    "coursesh": "Courses",
+    "course": "Courses",
+    "time": "Time",
+    "duration": "Duration",
+    "trainer": "Trainer"
+  },
+  "knowledge": {
+    "knowledge": "Knowledge",
+    "softwares": "Softwares",
+    "programming": "Programming",
+    "social-media": "Social media services",
+    "other": "Other skils",
+    "languages": "Languages"
+  },
+  "otheractivity": {
+    "repsentative": "Confidence work",
+    "name": "Label",
+    "voluntary": "Voluntary work",
+    "place": "Place",
+    "activity": "Activity",
+    "description": "Description",
+    "hobbies": "Hobbies"
   }
 }

@@ -1,12 +1,11 @@
 <template>
   <nav :class="{ 'is-scroll': isScroll }" @scroll="scrollClass()">
     <ul class="nav">
-      <li><a @click="scrollTo('#work')">Työ</a></li>
-      <li><a @click="scrollTo('#education')">Koulutus</a></li>
-      <li><a @click="scrollTo('#knowledge')">Osaaminen</a></li>
-      <li><a @click="scrollTo('#others')">Muu toiminta</a></li>
+      <li><a @click="scrollTo('#work')">{{ $t('links.work') }}</a></li>
+      <li><a @click="scrollTo('#education')">{{ $t('links.education') }}</a></li>
+      <li><a @click="scrollTo('#knowledge')">{{ $t('links.knowledge') }}</a></li>
+      <li><a @click="scrollTo('#others')">{{ $t('links.other') }}</a></li>
     </ul>
-
     <Filters/>
   </nav>
 </template>
