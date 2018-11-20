@@ -46,13 +46,13 @@ export default {
 
 nav {
   background-color: $green;
-  padding: 0 2rem 0 0.5rem;
+  padding: 0 2rem 0 1.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 768px) {
     padding: 0;
   }
 
@@ -75,20 +75,20 @@ nav {
   margin: 0;
   display: block;
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
     background-color: $greendark;
     padding: 0 1rem;
   }
 
-  @media only screen and (max-width: 550px) {
-      padding: 0rem 1rem 0rem 1rem;
+  @media only screen and (max-width: 400px) {
+      padding: 0.5rem 0.8rem;
   }
 
   li {
     display: inline-block;
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 400px) {
       width: 49%;
     }
   }
@@ -96,12 +96,14 @@ nav {
   a {
     color: $white;
     display: inline-block;
-    padding: 1.3rem 0.7rem;
-    text-transform: uppercase;
+    padding: 1.2rem 0.7rem;
+    //text-transform: uppercase;
+    font-size: 1.1rem;
     cursor: pointer;
 
-    @media only screen and (max-width: 950px) {
+    @media only screen and (max-width: 768px) {
       padding: 1rem 0.7rem;
+      font-size: 1rem;
     }
 
     .first & {
@@ -112,14 +114,14 @@ nav {
     &:hover {
       background-color: $greendark;
 
-      @media only screen and (max-width: 950px) {
+      @media only screen and (max-width: 768px) {
         background-color: $green;
       }
     }
 
-    @media only screen and (max-width: 550px) {
+    @media only screen and (max-width: 400px) {
       width: 100%;
-      padding: 0.5rem;
+      padding: 0.2rem 0.5rem;
     }
   }
 }

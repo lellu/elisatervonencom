@@ -15,9 +15,14 @@
   },
   "filters": {
     "all": "Kaikki",
-    "web": "Web-kehitys",
-    "social": "Sosiaalinen ala",
+    "web": "Web",
+    "social": "Sosiaalinen",
     "filter": "Suodata"
+  },
+  "info": {
+    "info1": "Tällä hetkellä toimin web-kehittäjä ja tiimin vetäjänä Koodiviidakko Oy:ssä. Web-kehityksen parissa olen työskennellyt jo yli kymmenen vuotta. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua ja kommunikointia eri osapuolten välillä. Tästä kombinaatiosta pidän eniten työssäni.",
+    "info2": "Tekniikan vastapainoksi käytän vapaa-aikaani vanhuksien avustamiseen ja luonnossa liikkumiseen. Harrastan myös kaikenlaista käsillä puuhastelua entisöinnistä ruuanlaittoon.",
+    "info3": "Voi oppia mitä vain, kunhan omistaa intohimon, motivaation ja hyvän opettajan"
   },
   "work": {
     "workexperience": "Työkokemus",

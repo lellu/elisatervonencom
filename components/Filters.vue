@@ -30,7 +30,7 @@ export default {
   padding: 0.9rem 0;
   text-align: right;
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 768px) {
     padding: 0.7rem 0;
     width: 100%;
     text-align: left;
@@ -60,11 +60,11 @@ export default {
   button {
     padding: 0.4rem 0.6rem;
     width: auto;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     border: none;
     color: $graydark;
     background-color: $white;
-    font-size: 0.9rem;
+    font-size: 1rem;
     outline: none;
     cursor: pointer;
     transition: all .3s;

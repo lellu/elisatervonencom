@@ -36,7 +36,7 @@
     height: 45px;
     color: $white;
     text-align: center;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     background-color: $orange;
     line-height: 45px;
     position: relative;

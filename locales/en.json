@@ -13,9 +13,14 @@
     "contact": "Contact",
     "contactemail": "Contact via email"
   },
+  "info": {
+    "info1": "Currently I'm working a web developer and team leader at Liana Technologies. I have been working for over ten years with web development. My job is a technical and organized but then creative proplem solving and communication between the different parties. Of this combination I like most in my work.",
+    "info2": "As a counterweight to technology, I use my free time to help elderly people and to hanging around in nature. I also engage in any kind of crafts from restoration to cooking.",
+    "info3": "You can learn anything, as long as you possess passion, motivation, and good teacher."
+  },
   "filters": {
     "all": "All",
-    "web": "Web-development",
+    "web": "Web",
     "social": "Social",
     "filter": "Filter"
   },
