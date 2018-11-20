@@ -3,7 +3,7 @@
     "work": "Work",
     "education": "Education",
     "knowledge": "Knowledge",
-    "other": "Other activity",
+    "other": "Other activities",
     "english": "EN",
     "finnish": "FI"
   },
@@ -47,7 +47,7 @@
     "languages": "Languages"
   },
   "otheractivity": {
-    "repsentative": "Confidence work",
+    "repsentative": "Confidence activity",
     "name": "Label",
     "voluntary": "Voluntary work",
     "place": "Place",
