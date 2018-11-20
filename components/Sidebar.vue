@@ -2,6 +2,7 @@
   <div class="utilities">
     <a href="https://www.linkedin.com/in/elisa-tervonen-85114592/" title="LinkedIn Profile"><span>LinkedIn</span><i class="fab fa-linkedin" /></a>
     <a href="https://www.instagram.com/elllulellu/?hl=fi" title="Instagram"><span>Instagram</span><i class="fab fa-instagram" /></a>
+    <a href="https://twitter.com/elisa_tervonen" title="Twitter"><span>Twitter</span><i class="fab fa-twitter" /></a>
     <a href="https://github.com/lellu" title="Github profile"><span>Github</span><i class="fab fa-github" /></a>
     <a :title="$t('sidebar.printpage')" href="javascript:print();"><span>{{ $t('sidebar.print') }}</span> <i class="fas fa-print" /></a>
     <a v-if="false" href="#" title="Tallenna sivu pdf-tiedostona"><span>Tallenna pdf</span> <i class="fas fa-file-pdf"/></a>
