@@ -17,17 +17,17 @@
 
     <h3 class="tac">{{ $t('knowledge.softwares') }}</h3>
     <ul class="tag-list tac">
-      <li v-for="daily in dailysoftwares" v-if="daily.type==filter||filter=='all'||daily.type==''" :key="'daily-' + daily.id">
+      <li v-for="daily in dailysoftwares[$i18n.locale]" v-if="daily.type==filter||filter=='all'||daily.type==''" :key="'daily-' + daily.id">
         {{ daily.name }} <span v-show="daily.level">({{ daily.level }})</span>
       </li>
-      <li v-for="software in softwares" v-if="software.type==filter||filter=='all'||software.type==''" :key="'software-' + software.id">
+      <li v-for="software in softwares[$i18n.locale]" v-if="software.type==filter||filter=='all'||software.type==''" :key="'software-' + software.id">
         {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
       </li>
     </ul>
 
     <h3 v-show="filter=='web'||filter=='all'" class="tac">{{ $t('knowledge.programming') }}</h3>
     <div class="cols round-icons">
-      <div v-for="code in coding" v-if="code.type==filter||filter=='all'||code.type==''" :key="'code-' + code.id" class="col square">
+      <div v-for="code in coding[$i18n.locale]" v-if="code.type==filter||filter=='all'||code.type==''" :key="'code-' + code.id" class="col square">
         <span class="round-icon">
           <div>
             <i :class="code.icon" />
@@ -39,7 +39,7 @@
 
     <h3 v-show="filter=='web'||filter=='all'" class="tac">{{ $t('knowledge.social-media') }}</h3>
     <div class="cols round-icons">
-      <div v-for="service in services" v-if="service.type==filter||filter=='all'||service.type==''" :key="'service-' + service.id" class="col square">
+      <div v-for="service in services[$i18n.locale]" v-if="service.type==filter||filter=='all'||service.type==''" :key="'service-' + service.id" class="col square">
         <span class="round-icon">
           <div>
             <i :class="service.icon" />
@@ -51,13 +51,13 @@
 
     <h3 class="tac">{{ $t('knowledge.other') }}</h3>
     <ul class="icon-list tac">
-      <li v-for="otherweb in othersweb" v-if="otherweb.type==filter||filter=='all'||otherweb.type==''" :key="'other-' + otherweb.id">
+      <li v-for="otherweb in othersweb[$i18n.locale]" v-if="otherweb.type==filter||filter=='all'||otherweb.type==''" :key="'other-' + otherweb.id">
         <i class="fa fa-check"/> {{ otherweb.name }} <span v-show="otherweb.level">({{ otherweb.level }})</span>
       </li>
     </ul>
 
     <div class="cols round-icons">
-      <div v-for="other in others" v-if="other.type==filter||filter=='all'||other.type==''" :key="'other-' + other.id" class="col square">
+      <div v-for="other in others[$i18n.locale]" v-if="other.type==filter||filter=='all'||other.type==''" :key="'other-' + other.id" class="col square">
         <span class="round-icon">
           <div>
             <i :class="other.icon" />
@@ -69,7 +69,7 @@
 
     <h3 class="tac">{{ $t('knowledge.languages') }}</h3>
     <div class="t-table tac-table">
-      <div v-for="language in languages" v-if="language.type==filter||filter=='all'||language.type==''" :key="'language-' + language.id" class="t-row">
+      <div v-for="language in languages[$i18n.locale]" v-if="language.type==filter||filter=='all'||language.type==''" :key="'language-' + language.id" class="t-row">
         <div class="t-cell">{{ language.name }} <br class="br">({{ language.level }})</div>
         <div class="t-cell"><Stars :number="language.levelnumber" /></div>
       </div>
@@ -93,104 +93,118 @@ export default {
   },
   data: function () {
     return {
-      languages: [
-        {id: 1, name: 'Suomi', level: 'äidinkieli', levelnumber: 5, type: '' },
-        {id: 2, name: 'Englanti', level: 'sujuva', levelnumber: 4, type: '' },
-        {id: 3, name: 'Ruotsi', level: 'heikko', levelnumber: 2, type: '' },
-        {id: 4, name: 'Suomalainen Viittomakieli', level: 'perusteet', levelnumber: 1, type: ''}
-      ],
-      dailysoftwares: [
-        {id: 1, name: 'LianaCMS', level: '', levelnumber: 100, type: 'web' },
-        {id: 2, name: 'LianaMailer', level: '', levelnumber: 80, type: 'web' },
-        {id: 3, name: 'LianaCommerce', level: '', levelnumber: 70, type: 'web' },
-        {id: 4, name: 'Visual Code', level: '', levelnumber: 80, type: 'web' },
-        {id: 5, name: 'Open Office', level: '', levelnumber: 90, type: '' },
-        {id: 6, name: 'iWork', level: '', levelnumber: 80, type: '' },
-        {id: 7, name: 'Photoshop', level: '', levelnumber: 80, type: '' },
-        {id: 8, name: 'Gitlab', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-gitlab' },
-        {id: 9, name: 'Git', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-git' }
-      ],
-      softwares: [
-        {id: 1, name: 'Github', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-github' },
-        {id: 2, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
-        {id: 3, name: 'Indesign', level: 'perusteet', levelnumber: 40, type: 'web' },
-        {id: 4, name: 'WordPress', level: '', levelnumber: 0, type: 'web' },
-        {id: 5, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' },
-      ],
-      services: [
-        {id: 1, name: 'Facebook API', level: '', levelnumber: 80, icon: 'fab fa-facebook-f', type: 'web' },
-        {id: 2, name: 'Twitter API', level: '', levelnumber: 75, icon: 'fab fa-twitter', type: 'web' },
-        {id: 3, name: 'LinkedIn API', level: '', levelnumber: 75, icon: 'fab fa-linkedin-in', type: 'web' }
-      ],
-      coding: [
-        {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-css3' },
-        {id: 2, name: 'HTML5', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-html5' },
-        {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js' },
-        {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-sass' },
-        {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-less' },
-        {id: 6, name: 'Vue.js', level: '', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
-        {id: 7, name: 'Angular', level: '', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
-        {id: 8, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
-        {id: 9, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
-      ],
-      othersweb: [
-        {id: 1, name: 'SEO', level: '', type: 'web' },
-        {id: 2, name: 'Saavutettavuus (wcag)', level: '', type: 'web' },
-        {id: 3, name: 'Statistiikkojen ja prosessien visualisointi', level: '', type: 'web' },
-      ],
-      others: [
-        {id: 1, name: 'Validaatio-<br>menetelmä', level: '', type: 'other' },
-        {id: 2, name: 'Hygieniapassi', level: '', type: 'other' },
-      ],
-      languages_en: [
-        {id: 1, name: 'Finnis', level: 'native language', levelnumber: 5, type: '' },
-        {id: 2, name: 'English', level: 'fluent', levelnumber: 4, type: '' },
-        {id: 3, name: 'Swedish', level: 'low', levelnumber: 2, type: '' },
-        {id: 4, name: 'Finnish Sign Language', level: 'basics', levelnumber: 1, type: ''}
-      ],
-      dailysoftwares_en: [
-        {id: 1, name: 'LianaCMS', level: '', levelnumber: 100, type: 'web' },
-        {id: 2, name: 'LianaMailer', level: '', levelnumber: 80, type: 'web' },
-        {id: 3, name: 'LianaCommerce', level: '', levelnumber: 70, type: 'web' },
-        {id: 4, name: 'Visual Code', level: '', levelnumber: 80, type: 'web' },
-        {id: 5, name: 'Open Office', level: '', levelnumber: 90, type: '' },
-        {id: 6, name: 'iWork', level: '', levelnumber: 80, type: '' },
-        {id: 7, name: 'Photoshop', level: '', levelnumber: 80, type: '' },
-        {id: 8, name: 'Gitlab', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-gitlab' },
-        {id: 9, name: 'Git', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-git' }
-      ],
-      softwares_en: [
-        {id: 1, name: 'Github', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-github' },
-        {id: 2, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
-        {id: 3, name: 'Indesign', level: 'basics', levelnumber: 40, type: 'web' },
-        {id: 4, name: 'WordPress', level: '', levelnumber: 0, type: 'web' },
-        {id: 5, name: 'WooCommerce', level: 'basics', levelnumber: 40, type: 'web' },
-      ],
-      services_en: [
-        {id: 1, name: 'Facebook API', level: '', levelnumber: 80, icon: 'fab fa-facebook-f', type: 'web' },
-        {id: 2, name: 'Twitter API', level: '', levelnumber: 75, icon: 'fab fa-twitter', type: 'web' },
-        {id: 3, name: 'LinkedIn API', level: '', levelnumber: 75, icon: 'fab fa-linkedin-in', type: 'web' }
-      ],
-      coding_en: [
-        {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-css3' },
-        {id: 2, name: 'HTML5', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-html5' },
-        {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js' },
-        {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-sass' },
-        {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-less' },
-        {id: 6, name: 'Vue.js', level: '', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
-        {id: 7, name: 'Angular', level: '', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
-        {id: 8, name: 'PHP/MySQL', level: 'basics', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
-        {id: 9, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
-      ],
-      othersweb_en: [
-        {id: 1, name: 'SEO', level: '', type: 'web' },
-        {id: 2, name: 'Accessibility (wcag)', level: '', type: 'web' },
-        {id: 3, name: 'Visualize statistics and processes', level: '', type: 'web' },
-      ],
-      others_en: [
-        {id: 1, name: 'Validation-<br>method', level: '', type: 'other' },
-        {id: 2, name: 'Hygienepassport', level: '', type: 'other' },
-      ]
+      languages: {
+        fi: [
+          {id: 1, name: 'Suomi', level: 'äidinkieli', levelnumber: 5, type: '' },
+          {id: 2, name: 'Englanti', level: 'sujuva', levelnumber: 4, type: '' },
+          {id: 3, name: 'Ruotsi', level: 'heikko', levelnumber: 2, type: '' },
+          {id: 4, name: 'Suomalainen Viittomakieli', level: 'perusteet', levelnumber: 1, type: ''}
+        ],
+        en: [
+          {id: 1, name: 'Finnis', level: 'native language', levelnumber: 5, type: '' },
+          {id: 2, name: 'English', level: 'fluent', levelnumber: 4, type: '' },
+          {id: 3, name: 'Swedish', level: 'low', levelnumber: 2, type: '' },
+          {id: 4, name: 'Finnish Sign Language', level: 'basics', levelnumber: 1, type: ''}
+        ]
+      },
+      dailysoftwares: {
+        fi: [
+          {id: 1, name: 'LianaCMS', level: '', levelnumber: 100, type: 'web' },
+          {id: 2, name: 'LianaMailer', level: '', levelnumber: 80, type: 'web' },
+          {id: 3, name: 'LianaCommerce', level: '', levelnumber: 70, type: 'web' },
+          {id: 4, name: 'Visual Code', level: '', levelnumber: 80, type: 'web' },
+          {id: 5, name: 'Open Office', level: '', levelnumber: 90, type: '' },
+          {id: 6, name: 'iWork', level: '', levelnumber: 80, type: '' },
+          {id: 7, name: 'Photoshop', level: '', levelnumber: 80, type: '' },
+          {id: 8, name: 'Gitlab', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-gitlab' },
+          {id: 9, name: 'Git', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-git' }
+        ],
+        en: [
+          {id: 1, name: 'LianaCMS', level: '', levelnumber: 100, type: 'web' },
+          {id: 2, name: 'LianaMailer', level: '', levelnumber: 80, type: 'web' },
+          {id: 3, name: 'LianaCommerce', level: '', levelnumber: 70, type: 'web' },
+          {id: 4, name: 'Visual Code', level: '', levelnumber: 80, type: 'web' },
+          {id: 5, name: 'Open Office', level: '', levelnumber: 90, type: '' },
+          {id: 6, name: 'iWork', level: '', levelnumber: 80, type: '' },
+          {id: 7, name: 'Photoshop', level: '', levelnumber: 80, type: '' },
+          {id: 8, name: 'Gitlab', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-gitlab' },
+          {id: 9, name: 'Git', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-git' }
+        ]
+      },
+      softwares: {
+        fi: [
+          {id: 1, name: 'Github', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-github' },
+          {id: 2, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
+          {id: 3, name: 'Indesign', level: 'perusteet', levelnumber: 40, type: 'web' },
+          {id: 4, name: 'WordPress', level: '', levelnumber: 0, type: 'web' },
+          {id: 5, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' }
+        ],
+        en: [
+          {id: 1, name: 'Github', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-github' },
+          {id: 2, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
+          {id: 3, name: 'Indesign', level: 'basics', levelnumber: 40, type: 'web' },
+          {id: 4, name: 'WordPress', level: '', levelnumber: 0, type: 'web' },
+          {id: 5, name: 'WooCommerce', level: 'basics', levelnumber: 40, type: 'web' }
+        ]
+      },
+      services: {
+        fi: [
+          {id: 1, name: 'Facebook API', level: '', levelnumber: 80, icon: 'fab fa-facebook-f', type: 'web' },
+          {id: 2, name: 'Twitter API', level: '', levelnumber: 75, icon: 'fab fa-twitter', type: 'web' },
+          {id: 3, name: 'LinkedIn API', level: '', levelnumber: 75, icon: 'fab fa-linkedin-in', type: 'web' }
+        ],
+        en: [
+          {id: 1, name: 'Facebook API', level: '', levelnumber: 80, icon: 'fab fa-facebook-f', type: 'web' },
+          {id: 2, name: 'Twitter API', level: '', levelnumber: 75, icon: 'fab fa-twitter', type: 'web' },
+          {id: 3, name: 'LinkedIn API', level: '', levelnumber: 75, icon: 'fab fa-linkedin-in', type: 'web' }
+        ]
+      },
+      coding: {
+        fi: [
+          {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-css3' },
+          {id: 2, name: 'HTML5', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-html5' },
+          {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js' },
+          {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-sass' },
+          {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-less' },
+          {id: 6, name: 'Vue.js', level: '', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
+          {id: 7, name: 'Angular', level: '', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
+          {id: 8, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
+          {id: 9, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
+        ],
+        en: [
+          {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-css3' },
+          {id: 2, name: 'HTML5', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-html5' },
+          {id: 3, name: 'JavaScript', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js' },
+          {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-sass' },
+          {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-less' },
+          {id: 6, name: 'Vue.js', level: '', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
+          {id: 7, name: 'Angular', level: '', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
+          {id: 8, name: 'PHP/MySQL', level: 'basics', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
+          {id: 9, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
+        ]
+      },
+      othersweb: {
+        fi: [
+          {id: 1, name: 'SEO', level: '', type: 'web' },
+          {id: 2, name: 'Saavutettavuus (wcag)', level: '', type: 'web' },
+          {id: 3, name: 'Statistiikkojen ja prosessien visualisointi', level: '', type: 'web' },
+        ],
+        en: [
+          {id: 1, name: 'SEO', level: '', type: 'web' },
+          {id: 2, name: 'Accessibility (wcag)', level: '', type: 'web' },
+          {id: 3, name: 'Visualize statistics and processes', level: '', type: 'web' },
+        ]
+      },
+      others: {
+        fi: [
+          {id: 1, name: 'Validaatio-<br>menetelmä', level: '', type: 'other' },
+          {id: 2, name: 'Hygieniapassi', level: '', type: 'other' },
+        ],
+        en: [
+          {id: 1, name: 'Validation-<br>method', level: '', type: 'other' },
+          {id: 2, name: 'Hygienepassport', level: '', type: 'other' },
+        ]
+      }
     }
   }
 }

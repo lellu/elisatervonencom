@@ -4,7 +4,7 @@
     <h2>{{ $t('links.education') }}</h2>
 
     <div class="history-list">
-      <div v-for="study in studies" v-if="study.type==filter||filter=='all'||study.type==''" :key="study.id" :class="{even: study.id % 2, odd: !(study.id % 2)}">
+      <div v-for="study in studies[$i18n.locale]" v-if="study.type==filter||filter=='all'||study.type==''" :key="study.id" :class="{even: study.id % 2, odd: !(study.id % 2)}">
         <div class="name">
           <h3>{{ study.name }}</h3>
           <p>{{ study.title }}</p>
@@ -26,20 +26,22 @@ export default {
   },
   data: function () {
     return {
-      studies: [
-        {id: 1, name: 'Oulun seudun ammattiopisto, OSAO', time: '2016 - 2017', title: 'Lähiesimiestyön ammattitutkinto', duties: 'Kehittämissuunnitelma: Koodiviidakko Oy, Perehdytyksen kehittäminen ja koulutuskalenterin suunnittelu', type: '' },
-        {id: 2, name: 'Oulun seudun ammattikorkeakoulu', time: '2010 - 2011', title: 'Ohjelmistotestaajan erikoistumisopinnot', duties: 'Projektityö: Koodiviidakko Oy, Sivuviidakko-julkaisujärjestelmän käyttöliittymätestaus ja testauksen automatisointi', type: 'web' },
-        {id: 3, name: 'Oulun seudun ammattikorkeakoulu', time: '2006 - 2009', title: 'Tietojenkäsittelyn koulutusohjelma, Tradenomi', duties: 'Työharjoittelut: Oulun 4H-yhdistys ja Koodiviidakko Oy<br>Opinnäytetyö: Mieluummin-kollektiivin websivuston rakentaminen', type: 'web' },
-        {id: 4, name: 'Piippolan käsi- ja taideteollisuusoppilaitos', time: '2003 - 2006', title: 'Audiovisuaalisen viestinnän perustutkinto, Media-assistentti', duties: 'Suuntautuminen: verkko-ohjelmointi (php) ja multimedia<br>Työharjoittelut: Piippolan käsi- ja taideteollisuusoppilaitos ja MSS Group Oy<br>Opinnäytetyö: 4H-yhdistyksen alueellisen lehden kokoaminen ja taitto', type: 'web' },
-        {id: 5, name: 'Lapinlahden lukio', time: '1999 - 2002', title: 'Ylioppilas', duties: 'Kuvataidelinja', type: '' }
-      ],
-      studies_en: [
-        {id: 1, name: 'Oulu Vocational College, OSAO', time: '2016 - 2017', title: 'Management and entrepreneurship training', duties: 'Thesis: Koodiviidakko Oy, induction development and designing training calendar', type: '' },
-        {id: 2, name: 'Oulu University of Applied Sciences', time: '2010 - 2011', title: 'Computer software Testing, further training', duties: 'Project work: Koodiviidakko Oy, Sivuviidakko-content management system user interface testing and testing automation', type: 'web' },
-        {id: 3, name: 'Oulu University of Applied Sciences', time: '2006 - 2009', title: 'Information Technology, Bachelor of Business Administration', duties: 'Interships: Oulun 4H-yhdistys and Koodiviidakko Oy<br>Thesis: Building Mieluummin-collective website', type: 'web' },
-        {id: 4, name: 'Piippola Municipal Education and Training Consortium', time: '2003 - 2006', title: 'Audiovisual Communication, Media-assistant', duties: 'Orientation: web-programming (php) ja multimedia<br>Interships: Piippola Municipal Education and Training Consortium ja MSS Group Oy<br>Thesis: Building and folding The Regional Magazine of The 4H-organization', type: 'web' },
-        {id: 5, name: 'Senior High School in Visual Arts', time: '1999 - 2002', title: 'Finnish Matriculation Examination', duties: 'National artistic programme specialized in visual arts', type: '' }
-      ]
+      studies: {
+        fi: [
+          {id: 1, name: 'Oulun seudun ammattiopisto, OSAO', time: '2016 - 2017', title: 'Lähiesimiestyön ammattitutkinto', duties: 'Kehittämissuunnitelma: Koodiviidakko Oy, Perehdytyksen kehittäminen ja koulutuskalenterin suunnittelu', type: '' },
+          {id: 2, name: 'Oulun seudun ammattikorkeakoulu', time: '2010 - 2011', title: 'Ohjelmistotestaajan erikoistumisopinnot', duties: 'Projektityö: Koodiviidakko Oy, Sivuviidakko-julkaisujärjestelmän käyttöliittymätestaus ja testauksen automatisointi', type: 'web' },
+          {id: 3, name: 'Oulun seudun ammattikorkeakoulu', time: '2006 - 2009', title: 'Tietojenkäsittelyn koulutusohjelma, Tradenomi', duties: 'Työharjoittelut: Oulun 4H-yhdistys ja Koodiviidakko Oy<br>Opinnäytetyö: Mieluummin-kollektiivin websivuston rakentaminen', type: 'web' },
+          {id: 4, name: 'Piippolan käsi- ja taideteollisuusoppilaitos', time: '2003 - 2006', title: 'Audiovisuaalisen viestinnän perustutkinto, Media-assistentti', duties: 'Suuntautuminen: verkko-ohjelmointi (php) ja multimedia<br>Työharjoittelut: Piippolan käsi- ja taideteollisuusoppilaitos ja MSS Group Oy<br>Opinnäytetyö: 4H-yhdistyksen alueellisen lehden kokoaminen ja taitto', type: 'web' },
+          {id: 5, name: 'Lapinlahden lukio', time: '1999 - 2002', title: 'Ylioppilas', duties: 'Kuvataidelinja', type: '' }
+        ],
+        en: [
+          {id: 1, name: 'Oulu Vocational College, OSAO', time: '2016 - 2017', title: 'Management and entrepreneurship training', duties: 'Thesis: Koodiviidakko Oy, induction development and designing training calendar', type: '' },
+          {id: 2, name: 'Oulu University of Applied Sciences', time: '2010 - 2011', title: 'Computer software Testing, further training', duties: 'Project work: Koodiviidakko Oy, Sivuviidakko-content management system user interface testing and testing automation', type: 'web' },
+          {id: 3, name: 'Oulu University of Applied Sciences', time: '2006 - 2009', title: 'Information Technology, Bachelor of Business Administration', duties: 'Interships: Oulun 4H-yhdistys and Koodiviidakko Oy<br>Thesis: Building Mieluummin-collective website', type: 'web' },
+          {id: 4, name: 'Piippola Municipal Education and Training Consortium', time: '2003 - 2006', title: 'Audiovisual Communication, Media-assistant', duties: 'Orientation: web-programming (php) ja multimedia<br>Interships: Piippola Municipal Education and Training Consortium ja MSS Group Oy<br>Thesis: Building and folding The Regional Magazine of The 4H-organization', type: 'web' },
+          {id: 5, name: 'Senior High School in Visual Arts', time: '1999 - 2002', title: 'Finnish Matriculation Examination', duties: 'National artistic programme specialized in visual arts', type: '' }
+        ]
+      }
     }
   }
 }
