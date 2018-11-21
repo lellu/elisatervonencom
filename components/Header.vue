@@ -1,14 +1,14 @@
 <template>
   <div class="bg-gray">
     <header>
-      <h1>Elisa Tervonen</h1>
+      <h1><a href="#info">Elisa Tervonen</a></h1>
 
       <div class="languages">
-        <nuxt-link v-if="$i18n.locale === 'fi'" :to="`/en` + $route.fullPath" active-class="none" exact>
-          <span>{{ $t('links.english') }}</span>
+        <nuxt-link v-if="$i18n.locale === 'fi'" :to="`/en` + $route.fullPath" :aria-label="$t('links.english')" active-class="none" exact>
+          <span>{{ $t('links.en') }}</span>
         </nuxt-link>
-        <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" active-class="none" exact>
-          <span>{{ $t('links.finnish') }}</span>
+        <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" :aria-label="$t('links.finnish')" active-class="none" exact>
+          <span>{{ $t('links.f') }}</span>
         </nuxt-link>
       </div>
     </header>
@@ -30,6 +30,10 @@ header {
   padding: 1rem 0;
   position: relative;
   text-align: center;
+
+  a {
+    color: $orange;
+  }
 
   @media only screen and (max-width: 1200px) {
     width: 100%;

@@ -4,7 +4,7 @@
     <p><img class="profile-image" src="/mie.jpg" alt=""></p>
     <p>{{ $t('info.info1') }}</p>
     <p>{{ $t('info.info2') }}</p>
-    <p><i>"{{ $t('info.info3') }}"</i></p>
+    <p class="quote">"{{ $t('info.info3') }}"</p>
   </section>
 </template>
 

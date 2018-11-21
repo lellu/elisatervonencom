@@ -4,8 +4,10 @@
     "education": "Koulutus",
     "knowledge": "Osaaminen",
     "other": "Muu toiminta",
-    "english": "EN",
-    "finnish": "FI"
+    "english": "In English",
+    "finnish": "Suomeksi",
+    "en": "EN",
+    "fi": "FI"
   },
   "sidebar": {
     "print": "Tulosta",

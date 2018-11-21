@@ -1,11 +1,17 @@
 {
+  "meta": {
+    "title": "Elisa Tervonen",
+    "description": "Web-developer and helper in Oulu area"
+  },
   "links": {
     "work": "Work",
     "education": "Education",
     "knowledge": "Knowledge",
     "other": "Other activities",
-    "english": "EN",
-    "finnish": "FI"
+    "english": "In English",
+    "finnish": "Suomeksi",
+    "en": "EN",
+    "fi": "FI"
   },
   "sidebar": {
     "print": "Print",

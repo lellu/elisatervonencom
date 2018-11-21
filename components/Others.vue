@@ -75,7 +75,7 @@ export default {
           {id: 1, name: 'Varaluottamusvaltuutettu', time: '2014-2017', place: 'Koodiviidakko Oy', type: ''}
         ],
         en: [
-          {id: 1, name: 'Employee Representative', time: '2014-2017', place: 'Koodiviidakko Oy', type: ''}
+          {id: 1, name: 'Employee Representative', time: '2014-2017', place: 'Liana Technologies', type: ''}
         ]
       }
     }

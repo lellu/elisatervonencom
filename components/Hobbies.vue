@@ -6,8 +6,8 @@
       <div v-for="hobby in hobbies[$i18n.locale]" :key="hobby.id" class="col">
         <p v-if="hobby.link"><a :href="hobby.link" :title="hobby.name" target="_blank" rel="noreferrer"><img :src="hobby.image" alt=""></a></p>
         <p v-else><img :src="hobby.image" alt=""></p>
-        <h4 v-if="hobby.link"><a :href="hobby.link" :title="hobby.name" target="_blank" rel="noreferrer">{{ hobby.name }}</a></h4>
-        <h4 v-else>{{ hobby.name }}</h4>
+        <h3 v-if="hobby.link" class="h4"><a :href="hobby.link" :title="hobby.name" target="_blank" rel="noreferrer">{{ hobby.name }}</a></h3>
+        <h3 v-else class="h4">{{ hobby.name }}</h3>
         <p>{{ hobby.description }}</p>
       </div>
     </div>
