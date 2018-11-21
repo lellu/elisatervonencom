@@ -44,7 +44,16 @@
     "programming": "Ohjelmointi",
     "social-media": "Sosiaalisen median palvelut",
     "other": "Muu osaaminen",
-    "languages": "Kielitaito"
+    "languages": "Kielitaito",
+    "info1": "Responsiivisten web-sivustojen, verkkokauppojen sekä graafisten uutiskirjeiden suunnittelu, rakentaminen ja testaus",
+    "info2": "Vanhusten avustaminen (liikunta- ja asiointiavustustus)",
+    "info3": "Muistisairaan kanssa toimiminen",
+    "info4": "Kotipalvelu (Siivous, ikkunoidenpesu, ruuanlaitto, haravointi, ruohon- ja pensaidenleikkaus)",
+    "info5": "Valokuvaus ja kuvankäsittely",
+    "info6": "Projektin hallinta ja organisointi",
+    "info7": "Tiimin vetäminen",
+    "info8": "Koulutuksien järjestäminen (materiaalit, koulutustapahtuma, yhteenveto)",
+    "info9": "Ohjeiden ja raporttien laatiminen, dokumentointi"
   },
   "otheractivity": {
     "repsentative": "Luottamustoiminta",

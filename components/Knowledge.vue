@@ -3,17 +3,16 @@
     <span id="knowledge" class="anchor" />
     <h2>{{ $t('links.knowledge') }}</h2>
     <ul class="icon-list">
-      <li v-show="filter=='web'||filter=='all'"><i class="fa fa-check"/> Responsiivisten web-sivustojen, verkkokauppojen sekä graafisten uutiskirjeiden suunnittelu, rakentaminen ja testaus</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> Vanhusten avustaminen (liikunta- ja asiointiavustustus)</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> Muistisairaan kanssa toimiminen</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> Kotipalvelu (Siivous, ikkunoidenpesu, ruuanlaitto, haravointi, ruohon- ja pensaidenleikkaus)</li>
-      <li><i class="fa fa-check"/> Valokuvaus ja kuvankäsittely</li>
-      <li><i class="fa fa-check"/> Projektin hallinta</li>
-      <li><i class="fa fa-check"/> Tiimin vetäminen</li>
-      <li><i class="fa fa-check"/> Koulutuksien järjestäminen (materiaalit, koulutustapahtuma, yhteenveto)</li>
-      <li><i class="fa fa-check"/> Ohjeiden ja raporttien laatiminen, dokumentointi</li>
+      <li v-show="filter=='web'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info1') }}</li>
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info2') }}</li>
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info3') }}</li>
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info4') }}</li>
+      <li><i class="fa fa-check"/> {{ $t('knowledge.info5') }}</li>
+      <li><i class="fa fa-check"/> {{ $t('knowledge.info6') }}</li>
+      <li><i class="fa fa-check"/> {{ $t('knowledge.info7') }}</li>
+      <li><i class="fa fa-check"/> {{ $t('knowledge.info8') }}</li>
+      <li><i class="fa fa-check"/> {{ $t('knowledge.info9') }}</li>
     </ul>
-
 
     <h3 class="tac">{{ $t('knowledge.softwares') }}</h3>
     <ul class="tag-list tac">

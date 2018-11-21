@@ -44,7 +44,16 @@
     "programming": "Programming",
     "social-media": "Social media services",
     "other": "Other skils",
-    "languages": "Languages"
+    "languages": "Languages",
+    "info1": "Designin, building and testing responsive website, webshops and graphical newsletters",
+    "info2": "Helping elderly",
+    "info3": "Communicate with a memory disorder person",
+    "info4": "Home service (Cleaning, windows cleanin, cooking, raking, grass and shrub cating)",
+    "info5": "Photography and image processing",
+    "info6": "Project managemenet and organization",
+    "info7": "Team leading",
+    "info8": "Training organization (materials, event, summary)",
+    "info9": "Writing instructions and raports, documentation"
   },
   "otheractivity": {
     "repsentative": "Confidence activity",
