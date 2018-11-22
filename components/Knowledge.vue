@@ -166,9 +166,9 @@ export default {
           {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-sass' },
           {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-less' },
           {id: 6, name: 'Vue.js', level: '', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
-          {id: 7, name: 'Angular', level: '', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
-          {id: 8, name: 'PHP/MySQL', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
-          {id: 9, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
+          {id: 7, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
+          {id: 8, name: 'PHP', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
+          {id: 9, name: 'MySQL', level: 'perusteet', levelnumber: 20, type: 'web', icon: 'fa fa-database' },
         ],
         en: [
           {id: 1, name: 'CSS3', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-css3' },
@@ -177,9 +177,9 @@ export default {
           {id: 4, name: 'SASS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-sass' },
           {id: 5, name: 'LESS', level: '', levelnumber: 100, type: 'web', icon: 'fab fa-less' },
           {id: 6, name: 'Vue.js', level: '', levelnumber: 40, type: 'web', icon: 'fab fa-vuejs' },
-          {id: 7, name: 'Angular', level: '', levelnumber: 20, type: 'web', icon: 'fab fa-angular' },
-          {id: 8, name: 'PHP/MySQL', level: 'basics', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
-          {id: 9, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
+          {id: 7, name: 'ES6', level: '', levelnumber: 90, type: 'web', icon: 'fab fa-js-square' },
+          {id: 8, name: 'PHP', level: 'basics', levelnumber: 20, type: 'web', icon: 'fab fa-php' },
+          {id: 9, name: 'MySQL', level: 'basics', levelnumber: 20, type: 'web', icon: 'fa fa-database' },
         ]
       },
       othersweb: {
