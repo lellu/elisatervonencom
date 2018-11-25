@@ -14,7 +14,7 @@
       </thead>
       <tbody>
         <tr v-for="work in works[$i18n.locale]" v-if="work.type==filter||filter=='all'||work.type==''" :key="'work-' + work.id">
-          <td style="width: 30px;"><img :src="work.image" style="width: 30px;" alt=""></td>
+          <td class="first"><img :src="work.image" width="30" alt=""></td>
           <td class="nowrap normalwrap-920">{{ work.name }}</td>
           <td class="nowrap">{{ work.time }}</td>
           <td>{{ work.title }}</td>
@@ -74,7 +74,9 @@ export default {
 </script>
 
 <style lang="scss">
-.work-table td:first-child {
+.work-table td.first {
+  width: 30px;
+
   @media only screen and (max-width: 768px) {
     display: none;
   }

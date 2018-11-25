@@ -16,7 +16,7 @@
         <tr v-for="course in courses[$i18n.locale]" v-if="course.type==filter||filter=='all'||course.type==''" :key="course.id">
           <td>{{ course.name }}</td>
           <td class="time nowrap">{{ course.time }}</td>
-          <td class="duration nowrap"><span v-show="course.duration">{{ course.duration }}</span></td>
+          <td class="duration nowrap"><span v-if="course.duration">{{ course.duration }}</span></td>
           <td>{{ course.trainer }}</td>
         </tr>
       </tbody>

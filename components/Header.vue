@@ -8,7 +8,7 @@
           <span>{{ $t('links.en') }}</span>
         </nuxt-link>
         <nuxt-link v-else :to="$route.fullPath.replace(/^\/[^\/]+/, '')" :aria-label="$t('links.finnish')" active-class="none" exact>
-          <span>{{ $t('links.f') }}</span>
+          <span>{{ $t('links.fi') }}</span>
         </nuxt-link>
       </div>
     </header>

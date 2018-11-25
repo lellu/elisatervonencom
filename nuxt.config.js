@@ -15,16 +15,18 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description },
-      { hid: 'og:description', name: 'description', content: pkg.description },
       { hid: 'og:title', name: 'og:title', content: pkg.name },
-      { hid: 'og:site', name: 'og:site', content: pkg.link },
-      { hid: 'og:url', name: 'og:url', content: pkg.link },
+      { hid: 'twitter:title', name: 'og:title', content: pkg.name },
       { hid: 'og:image', name: 'og:image', content: '/mie.jpg' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'description', name: 'description', content: pkg.description },
+      { hid: 'og:description', name: 'og:description', content: pkg.description },
+      { hid: 'twitter:description', name: 'twitter:description', content: pkg.description },
       { hid: 'twitter:site', name: 'twitter:site', content: '@elisa_tervonen' },
+      { hid: 'og:site', name: 'og:site', content: 'https://elisatervonen.com' },
+      { hid: 'og:url', name: 'og:url', content: 'https://elisatervonen.com' },
       { hid: 'twitter:creator', name: 'twitter:creator', content: '@elisa_tervonen' },
-      { hid: 'twitter:url', name: 'twitter:url', content: pkg.link }
+      { hid: 'twitter:url', name: 'twitter:url', content: 'https://elisatervonen.com' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

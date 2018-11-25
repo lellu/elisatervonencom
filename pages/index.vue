@@ -39,6 +39,22 @@ export default {
   fetch({ store }) {
     store.commit('setFilter')
   },
+  head: {
+    htmlAttrs: {
+      lang: 'fi',
+    },
+    title: 'Elisa Tervonen - Minun CV',
+    description: 'Web-kehittäjä Oulun alueella',
+    meta: [
+      {
+        'og:title': 'Elisa Tervonen - Minun CV',
+        'twitter:title': 'Elisa Tervonen - Minun CV',
+        'og:description': 'Web-kehittäjä Oulun alueella',
+        'twitter:description': 'Web-kehittäjä Oulun alueella',
+        'og:url': 'https://elisatervonen.com'
+      }
+    ]
+  },
   computed: mapState([
     'selectedfilter'
   ]),

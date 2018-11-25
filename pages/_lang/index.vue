@@ -36,6 +36,22 @@ export default {
       default: 'all'
     }
   },
+  head: {
+    htmlAttrs: {
+      lang: 'en',
+    },
+    title: 'Elisa Tervonen - My CV',
+    description: 'Web-developer in Oulu area',
+    meta: [
+      {
+        'og:title': 'Elisa Tervonen - My CV',
+        'twitter:title': 'Elisa Tervonen - My CV',
+        'og:description': 'Web-developer in Oulu area',
+        'twitter:description': 'Web-developer in Oulu area',
+        'og:url': 'https://elisatervonen.com/en'
+      }
+    ]
+  },
   fetch({ store }) {
     store.commit('setFilter')
   },

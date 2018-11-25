@@ -30,7 +30,7 @@
         <span class="round-icon">
           <div>
             <i :class="code.icon" />
-            <h4>{{ code.name }} <span v-show="code.level" class="level"><br>({{ code.level }})</span></h4>
+            <h4>{{ code.name }} <span v-if="code.level" class="level"><br>({{ code.level }})</span></h4>
           </div>
         </span>
       </div>
@@ -42,7 +42,7 @@
         <span class="round-icon">
           <div>
             <i :class="service.icon" />
-            <h4>{{ service.name }} <span v-show="service.level" class="level"><br>({{ service.level }})</span></h4>
+            <h4>{{ service.name }} <span v-if="service.level" class="level"><br>({{ service.level }})</span></h4>
           </div>
         </span>
       </div>
@@ -51,7 +51,7 @@
     <h3 class="tac">{{ $t('knowledge.other') }}</h3>
     <ul class="icon-list tac">
       <li v-for="otherweb in othersweb[$i18n.locale]" v-if="otherweb.type==filter||filter=='all'||otherweb.type==''" :key="'other-' + otherweb.id">
-        <i class="fa fa-check"/> {{ otherweb.name }} <span v-show="otherweb.level">({{ otherweb.level }})</span>
+        <i class="fa fa-check"/> {{ otherweb.name }} <span v-if="otherweb.level">({{ otherweb.level }})</span>
       </li>
     </ul>
 
@@ -60,7 +60,7 @@
         <span class="round-icon">
           <div>
             <i :class="other.icon" />
-            <h4><span v-html="other.name" /> <span v-show="other.level" class="level"><br>({{ other.level }})</span></h4>
+            <h4><span v-html="other.name" /> <span v-if="other.level" class="level"><br>({{ other.level }})</span></h4>
           </div>
         </span>
       </div>
