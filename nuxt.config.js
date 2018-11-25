@@ -27,7 +27,8 @@ module.exports = {
       { hid: 'og:site', name: 'og:site', content: 'https://elisatervonen.com' },
       { hid: 'og:url', name: 'og:url', content: 'https://elisatervonen.com' },
       { hid: 'twitter:creator', name: 'twitter:creator', content: '@elisa_tervonen' },
-      { hid: 'twitter:url', name: 'twitter:url', content: 'https://elisatervonen.com' }
+      { hid: 'twitter:url', name: 'twitter:url', content: 'https://elisatervonen.com' },
+      { hid: 'google-site-verification', name: 'google-site-verification', content: 'Pb_tr_6jk9IRXbPt2HVG5K8c7VkGk3wvXi4wdeUhtdo' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

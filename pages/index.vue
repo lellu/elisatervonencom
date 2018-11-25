@@ -44,15 +44,18 @@ export default {
       lang: 'fi',
     },
     title: 'Elisa Tervonen - Minun CV',
-    description: 'Web-kehittäjä Oulun alueella',
     meta: [
       {
         'og:title': 'Elisa Tervonen - Minun CV',
         'twitter:title': 'Elisa Tervonen - Minun CV',
+        'description': 'Web-kehittäjä Oulun alueella',
         'og:description': 'Web-kehittäjä Oulun alueella',
         'twitter:description': 'Web-kehittäjä Oulun alueella',
         'og:url': 'https://elisatervonen.com'
       }
+    ],
+    link: [
+      { rel: 'canonical', href: 'https://elisatervonen.fi' }
     ]
   },
   computed: mapState([

@@ -36,6 +36,7 @@ export default {
     },
     scrollTo: function (target, $event) {
       $event.preventDefault();
+     // $event.addClass('current');
       VueScrollTo.scrollTo(target);
     }
   }
