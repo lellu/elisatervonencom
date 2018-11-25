@@ -70,7 +70,7 @@ export default {
       return texts[group][key];
     },
     getUrl() {
-      const path = 'https://elisatervonen.com'+this.$nuxt.$route.fullPath;
+      let path = 'https://elisatervonen.com'+this.$nuxt.$route.fullPath;
       return path;
     }
   }

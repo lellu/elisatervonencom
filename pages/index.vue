@@ -51,10 +51,10 @@ export default {
         { hid: 'description', name: 'description', content: this.getText('meta', 'description') },
         { hid: 'og:description', name: 'og:description', content: this.getText('meta', 'description') },
         { hid: 'twitter:description', name: 'twitter:description', content: this.getText('meta', 'description') },
-        { hid: 'og:url', name: 'og:url', content: this.getUrl() }
+        { hid: 'og:url', name: 'og:url', content: 'https://elisatervonen.com' }
       ],
       link: [
-        { rel: 'canonical', href: this.getUrl() }
+        { rel: 'canonical', href: 'https://elisatervonen.com' }
       ]
     }
   },
@@ -68,10 +68,6 @@ export default {
     getText(group, key) {
       const texts = require('~/locales/'+this.$store.state.locale+'.json');
       return texts[group][key];
-    },
-    getUrl() {
-      const path = 'https://elisatervonen.com'+this.$nuxt.$route.fullPath;
-      return path;
     }
   }
 }
