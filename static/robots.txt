@@ -1,2 +1,3 @@
+Sitemap: https://elisatervonen.com/sitemap.xml
 User-agent: *
 Allow: /
