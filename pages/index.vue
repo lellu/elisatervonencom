@@ -61,9 +61,6 @@ export default {
   computed: mapState([
     'selectedfilter'
   ]),
-  created: function() {
-    console.log(this.$store.state.locale);
-  },
   methods: {
     setFilter(filter) {
       this.$store.commit('selectedfilter')

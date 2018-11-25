@@ -18,7 +18,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'og:title', name: 'og:title', content: pkg.name },
       { hid: 'twitter:title', name: 'og:title', content: pkg.name },
-      { hid: 'og:image', name: 'og:image', content: '/mie.jpg' },
+      { hid: 'og:image', name: 'og:image', content: '/static/mie.jpg' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { hid: 'description', name: 'description', content: pkg.description },
       { hid: 'og:description', name: 'og:description', content: pkg.description },
