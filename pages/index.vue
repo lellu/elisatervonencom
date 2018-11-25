@@ -39,31 +39,42 @@ export default {
   fetch({ store }) {
     store.commit('setFilter')
   },
-  head: {
-    htmlAttrs: {
-      lang: 'fi',
-    },
-    title: 'Elisa Tervonen - Minun CV',
-    meta: [
-      {
-        'og:title': 'Elisa Tervonen - Minun CV',
-        'twitter:title': 'Elisa Tervonen - Minun CV',
-        'description': 'Web-kehittäjä Oulun alueella',
-        'og:description': 'Web-kehittäjä Oulun alueella',
-        'twitter:description': 'Web-kehittäjä Oulun alueella',
-        'og:url': 'https://elisatervonen.com'
-      }
-    ],
-    link: [
-      { rel: 'canonical', href: 'https://elisatervonen.com' }
-    ]
+  head() {
+    return {
+      htmlAttrs: {
+        lang: this.$store.state.locale
+      },
+      title: this.getText('meta', 'title'),
+      meta: [
+        { hid: 'og:title', name: 'og:title', content: this.getText('meta', 'title') },
+        { hid: 'twitter:title', name: 'og:title', content: this.getText('meta', 'title') },
+        { hid: 'description', name: 'description', content: this.getText('meta', 'description') },
+        { hid: 'og:description', name: 'og:description', content: this.getText('meta', 'description') },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.getText('meta', 'description') },
+        { hid: 'og:url', name: 'og:url', content: this.getUrl() }
+      ],
+      link: [
+        { rel: 'canonical', href: this.getUrl() }
+      ]
+    }
   },
   computed: mapState([
     'selectedfilter'
   ]),
+  created: function() {
+    console.log(this.$store.state.locale);
+  },
   methods: {
     setFilter(filter) {
       this.$store.commit('selectedfilter')
+    },
+    getText(group, key) {
+      const texts = require('~/locales/'+this.$store.state.locale+'.json');
+      return texts[group][key];
+    },
+    getUrl() {
+      const path = 'https://elisatervonen.com'+this.$nuxt.$route.fullPath;
+      return path;
     }
   }
 }
