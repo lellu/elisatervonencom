@@ -1,10 +1,10 @@
 <template>
   <nav :class="{ 'is-scroll': isScroll }" @scroll="scrollClass()">
     <ul class="nav">
-      <li><a href="#work" @click="scrollTo('#work', $event)">{{ $t('links.work') }}</a></li>
-      <li><a href="#education" @click="scrollTo('#education', $event)">{{ $t('links.education') }}</a></li>
-      <li><a href="#knowledge" @click="scrollTo('#knowledge', $event)">{{ $t('links.knowledge') }}</a></li>
-      <li><a href="#others" @click="scrollTo('#others', $event)">{{ $t('links.other') }}</a></li>
+      <li><a :aria-label="$t('links.movetosection')+$t('links.work')" :title="$t('links.movetosection')+$t('links.work')" href="#work" @click="scrollTo('#work', $event)">{{ $t('links.work') }}</a></li>
+      <li><a :aria-label="$t('links.movetosection')+$t('links.education')" :title="$t('links.movetosection')+$t('links.education')" href="#education" @click="scrollTo('#education', $event)">{{ $t('links.education') }}</a></li>
+      <li><a :aria-label="$t('links.movetosection')+$t('links.knowledge')" :title="$t('links.movetosection')+$t('links.knowledge')" href="#knowledge" @click="scrollTo('#knowledge', $event)">{{ $t('links.knowledge') }}</a></li>
+      <li><a :aria-label="$t('links.movetosection')+$t('links.other')" :title="$t('links.movetosection')+$t('links.other')" href="#others" @click="scrollTo('#others', $event)">{{ $t('links.other') }}</a></li>
     </ul>
     <Filters/>
   </nav>

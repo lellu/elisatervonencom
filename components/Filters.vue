@@ -1,9 +1,9 @@
 <template>
   <div class="filters">
-    <label>{{ $t('filters.filter') }}: </label>
-    <button :class="{ active: filter == 'all' }" @click="setFilter('all')">{{ $t('filters.all') }}</button>
-    <button :class="{ active: filter == 'web' }" @click="setFilter('web')">{{ $t('filters.web') }}</button>
-    <button :class="{ active: filter == 'other' }" @click="setFilter('other')">{{ $t('filters.social') }}</button>
+    <span class="label">{{ $t('filters.filter') }}: </span>
+    <button :aria-label="$t('filters.filterall')" :title="$t('filters.filterall')" :class="{ active: filter == 'all' }" @click="setFilter('all')">{{ $t('filters.all') }}</button>
+    <button :aria-label="$t('filters.filterweb')" :title="$t('filters.filterweb')" :class="{ active: filter == 'web' }" @click="setFilter('web')">{{ $t('filters.web') }}</button>
+    <button :aria-label="$t('filters.filtersocial')" :title="$t('filters.filtersocial')" :class="{ active: filter == 'other' }" @click="setFilter('other')">{{ $t('filters.social') }}</button>
   </div>
 </template>
 
@@ -38,10 +38,11 @@ export default {
   }
 
   @media only screen and (max-width: 550px) {
+    display: none;
     padding: 0.5rem 1rem;
   }
 
-  label {
+  .label {
     padding: 0 0.3rem 0;
     display: inline-block;
     color: $white;

@@ -12,7 +12,8 @@
     "english": "In English",
     "finnish": "Suomeksi",
     "en": "EN",
-    "fi": "FI"
+    "fi": "FI",
+    "movetosection": "Siirry osioon "
   },
   "sidebar": {
     "print": "Tulosta",
@@ -24,7 +25,10 @@
     "all": "Kaikki",
     "web": "Web",
     "social": "Sosiaalinen",
-    "filter": "Suodata"
+    "filter": "Suodata",
+    "filterall": "Suodatus: Näytä kaikki sisältö",
+    "filterweb": "Suodatus: Näytä vain web aiheinen sisältö",
+    "filtersocial": "Suodatus: Näytä vain sosiaalisen alan sisältö"
   },
   "info": {
     "info1": "Tällä hetkellä toimin web-kehittäjä ja tiimin vetäjänä Koodiviidakko Oy:ssä. Web-kehityksen parissa olen työskennellyt jo yli kymmenen vuotta. Työni on teknistä ja järjestelmällistä, mutta samalla luovaa ongelman ratkaisua ja kommunikointia eri osapuolten välillä. Tästä kombinaatiosta pidän eniten työssäni.",

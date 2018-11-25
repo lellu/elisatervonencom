@@ -4,9 +4,9 @@
     <h2>{{ $t('otheractivity.hobbies') }}</h2>
     <div class="cols">
       <div v-for="hobby in hobbies[$i18n.locale]" :key="hobby.id" class="col">
-        <p v-if="hobby.link"><a :href="hobby.link" :title="hobby.name" target="_blank" rel="noreferrer"><img :src="hobby.image" alt=""></a></p>
+        <p v-if="hobby.link"><a :href="hobby.link" :title="hobby.name" rel="noreferrer"><img :src="hobby.image" :alt="hobby.name"></a></p>
         <p v-else><img :src="hobby.image" alt=""></p>
-        <h3 v-if="hobby.link" class="h4"><a :href="hobby.link" :title="hobby.name" target="_blank" rel="noreferrer">{{ hobby.name }}</a></h3>
+        <h3 v-if="hobby.link" class="h4"><a :href="hobby.link" :title="hobby.name" rel="noreferrer">{{ hobby.name }}</a></h3>
         <h3 v-else class="h4">{{ hobby.name }}</h3>
         <p>{{ hobby.description }}</p>
       </div>

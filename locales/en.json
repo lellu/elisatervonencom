@@ -12,7 +12,8 @@
     "english": "In English",
     "finnish": "Suomeksi",
     "en": "EN",
-    "fi": "FI"
+    "fi": "FI",
+    "movetosection": "Move to section "
   },
   "sidebar": {
     "print": "Print",
@@ -29,7 +30,10 @@
     "all": "All",
     "web": "Web",
     "social": "Social",
-    "filter": "Filter"
+    "filter": "Filter",
+    "filterall": "Show all content",
+    "filterweb": "Show only web related content",
+    "filtersocial": "Show only social area related content"
   },
   "work": {
     "workexperience": "Work experience",
