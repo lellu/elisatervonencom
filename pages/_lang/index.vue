@@ -52,7 +52,7 @@ export default {
       }
     ],
     link: [
-      { rel: 'canonical', href: 'https://elisatervonen.fi/en' }
+      { rel: 'canonical', href: 'https://elisatervonen.com/en' }
     ]
   },
   fetch({ store }) {

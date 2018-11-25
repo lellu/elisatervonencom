@@ -55,7 +55,7 @@ export default {
       }
     ],
     link: [
-      { rel: 'canonical', href: 'https://elisatervonen.fi' }
+      { rel: 'canonical', href: 'https://elisatervonen.com' }
     ]
   },
   computed: mapState([
