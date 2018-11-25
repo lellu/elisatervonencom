@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray">
     <header>
-      <h1><a href="#info">Elisa Tervonen</a></h1>
+      <h1><a :arial-label="$t('meta.gotomain')" href="#info">Elisa Tervonen</a></h1>
 
       <div class="languages">
         <nuxt-link v-if="$i18n.locale === 'fi'" :to="`/en` + $route.fullPath" :aria-label="$t('links.english')" active-class="none" exact>

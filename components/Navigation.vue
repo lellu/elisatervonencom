@@ -1,10 +1,10 @@
 <template>
   <nav :class="{ 'is-scroll': isScroll }" @scroll="scrollClass()">
     <ul class="nav">
-      <li><a @click="scrollTo('#work')">{{ $t('links.work') }}</a></li>
-      <li><a @click="scrollTo('#education')">{{ $t('links.education') }}</a></li>
-      <li><a @click="scrollTo('#knowledge')">{{ $t('links.knowledge') }}</a></li>
-      <li><a @click="scrollTo('#others')">{{ $t('links.other') }}</a></li>
+      <li><a href="#work" @click="scrollTo('#work', $event)">{{ $t('links.work') }}</a></li>
+      <li><a href="#education" @click="scrollTo('#education', $event)">{{ $t('links.education') }}</a></li>
+      <li><a href="#knowledge" @click="scrollTo('#knowledge', $event)">{{ $t('links.knowledge') }}</a></li>
+      <li><a href="#others" @click="scrollTo('#others', $event)">{{ $t('links.other') }}</a></li>
     </ul>
     <Filters/>
   </nav>
@@ -34,7 +34,8 @@ export default {
     scrollClass: function () {
       this.isScroll = window.scrollY > 100;
     },
-    scrollTo: function (target) {
+    scrollTo: function (target, $event) {
+      $event.preventDefault();
       VueScrollTo.scrollTo(target);
     }
   }
@@ -121,7 +122,7 @@ nav {
 
     @media only screen and (max-width: 400px) {
       width: 100%;
-      padding: 0.2rem 0.5rem;
+      padding: 0.5rem 0.5rem;
     }
   }
 }

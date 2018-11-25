@@ -74,6 +74,7 @@
       transition: font-size .5s;
 
       @media only screen and (max-width: 768px) {
+        transition: none;
         display: inline-block;
         visibility: visible;
         position: relative;
@@ -87,6 +88,7 @@
       transition: all .5s;
 
       @media only screen and (max-width: 768px) {
+        transition: none;
         float: left;
         line-height: 45px;
       }
@@ -99,17 +101,20 @@
 
         @media only screen and (max-width: 768px) {
           background-color: $orangedark;
+          font-size: 0.9rem;
         }
       }
 
       i {
         font-size: 1.5rem;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 1.4rem;
+        }
       }
 
       background-color: $orangedark;
     }
-
-
   }
 }
 </style>

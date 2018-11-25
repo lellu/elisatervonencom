@@ -38,27 +38,22 @@ export default {
   }
 
   @media only screen and (max-width: 550px) {
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    width: 50%;
+    padding: 0.5rem 1rem;
   }
 
   label {
-    padding: 0 0.3rem;
+    padding: 0 0.3rem 0;
     display: inline-block;
     color: $white;
 
-    @media only screen and (max-width: 950px) {
-      padding-left: 0;
-    }
-
     @media only screen and (max-width: 550px) {
-      width: 100%;
-      margin-bottom: 0.5rem;
+      padding: 0;
     }
   }
 
   button {
-    padding: 0.4rem 0.6rem;
+    display: inline-block;
+    padding: 0.4rem 0.5rem;
     width: auto;
     //text-transform: uppercase;
     border: none;
@@ -68,10 +63,6 @@ export default {
     outline: none;
     cursor: pointer;
     transition: all .3s;
-
-    @media only screen and (max-width: 550px) {
-      width: 100%;
-    }
 
     &:hover,
     &.active {

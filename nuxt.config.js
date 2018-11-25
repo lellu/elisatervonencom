@@ -2,6 +2,7 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
+  minimize: true,
 
   /*
   ** Headers of the page
