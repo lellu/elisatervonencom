@@ -14,7 +14,7 @@
       </thead>
       <tbody>
         <tr v-for="work in works[$i18n.locale]" v-if="work.type==filter||filter=='all'||work.type==''" :key="'work-' + work.id">
-          <td class="first"><img :src="work.image" width="30" alt=""></td>
+          <td class="first"><span v-if="work.image"><img :src="work.image" width="30" alt=""></span></td>
           <td class="nowrap normalwrap-920">{{ work.name }}</td>
           <td class="nowrap">{{ work.time }}</td>
           <td>{{ work.title }}</td>

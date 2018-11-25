@@ -7,6 +7,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
+
   head: {
     htmlAttrs: {
       lang: 'fi',

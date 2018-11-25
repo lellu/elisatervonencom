@@ -17,10 +17,10 @@
     <h3 class="tac">{{ $t('knowledge.softwares') }}</h3>
     <ul class="tag-list tac">
       <li v-for="daily in dailysoftwares[$i18n.locale]" v-if="daily.type==filter||filter=='all'||daily.type==''" :key="'daily-' + daily.id">
-        {{ daily.name }} <span v-show="daily.level">({{ daily.level }})</span>
+        {{ daily.name }} <span v-if="daily.level">({{ daily.level }})</span>
       </li>
       <li v-for="software in softwares[$i18n.locale]" v-if="software.type==filter||filter=='all'||software.type==''" :key="'software-' + software.id">
-        {{ software.name }} <span v-show="software.level">({{ software.level }})</span>
+        {{ software.name }} <span v-if="software.level">({{ software.level }})</span>
       </li>
     </ul>
 

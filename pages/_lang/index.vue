@@ -50,6 +50,9 @@ export default {
         'twitter:description': 'Web-developer in Oulu area',
         'og:url': 'https://elisatervonen.com/en'
       }
+    ],
+    link: [
+      { rel: 'canonical', href: 'https://elisatervonen.fi/en' }
     ]
   },
   fetch({ store }) {
