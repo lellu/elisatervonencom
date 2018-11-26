@@ -52,9 +52,6 @@ export default {
         { hid: 'og:description', name: 'og:description', content: this.getText('meta', 'description') },
         { hid: 'twitter:description', name: 'twitter:description', content: this.getText('meta', 'description') },
         { hid: 'og:url', name: 'og:url', content: 'https://elisatervonen.com' }
-      ],
-      link: [
-        { rel: 'canonical', href: 'https://elisatervonen.com' }
       ]
     }
   },
