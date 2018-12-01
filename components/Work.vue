@@ -38,8 +38,8 @@ export default {
     return {
       works: {
         fi: [
-          {id: 1, name: 'Koodiviidakko Oy', time: '1.10.2017 alkaen', title: 'Senior Front-End developer, Team leader', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen lyhyet bugikorjaukset ja muutokset sekä spesifikaatiot. Sisäisen intranetin kehittäminen. Tiimin esimies', image: '/work/kv.png', type: 'web' },
-          {id: 2, name: 'Koodiviidakko Oy', time: '1.3.2017-30.9.2017', title: 'Senior Front-End developer', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen lyhyet bugikorjaukset ja muutokset sekä spesifikaatiot. Tiimin vetäminen', image: '/work/kv.png', type: 'web' },
+          {id: 1, name: 'Koodiviidakko Oy', time: '1.10.2017 alkaen', title: 'Senior Front-End developer, Team leader', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen kehitykset sekä spesifikaatiot. Sisäisen intranetin kehittäminen. Tiimin esimies', image: '/work/kv.png', type: 'web' },
+          {id: 2, name: 'Koodiviidakko Oy', time: '1.3.2017-30.9.2017', title: 'Senior Front-End developer', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen kehitykset sekä spesifikaatiot. Tiimin vetäminen', image: '/work/kv.png', type: 'web' },
           {id: 3, name: 'Koodiviidakko Oy', time: '1.2.2016-30.2.2017', title: 'Senior Front-End developer', duties: 'Web-sivujen ja verkkokauppojen rakentaminen. Tiimin vetäminen', image: '/work/kv.png', type: 'web' },
           {id: 4, name: 'Koodiviidakko Oy', time: '1.9.2008-30.1.2016', title: 'Web-designer', duties: 'Sähköisten uutiskirjeiden ja web-sivujen suunnittelu ja rakentaminen sekä verkkokauppojen rakentaminen', image: '/work/kv.png', type: 'web' },
           {id: 5, name: 'Koodiviidakko Oy', time: '1.6.2008-31.8.2008', title: 'Harjoittelija', duties: 'Sähköisten uutiskirjeiden ja web-sivujen rakentaminen', image: '/work/kv.png', type: 'web' },
@@ -53,8 +53,8 @@ export default {
           {id: 13, name: 'Vuokatinrannan Leirikeskus', time: '27.-1.7.2000', title: 'Ryhmänohjaaja', duties: 'Varhaisnuortenleirin ryhmän ohjaus', image: '/work/vuokatinranta.png', type: 'other' },
         ],
         en: [
-          {id: 1, name: 'Liana Technologies', time: 'from 1.10.2017', title: 'Senior Front-End developer, Team leader', duties: 'Short changes and developments to websites as well as specifications and work estimations. Internal Intranet Development. Team superior', image: '/work/kv.png', type: 'web' },
-          {id: 2, name: 'Liana Technologies', time: '1.3.2017-30.9.2017', title: 'Senior Front-End developer', duties: 'Short changes and developments to newsletters, websites and webshops as well as specifications and work estimations. Team leading.', image: '/work/kv.png', type: 'web' },
+          {id: 1, name: 'Liana Technologies', time: 'from 1.10.2017', title: 'Senior Front-End developer, Team leader', duties: 'Building websites as well as specifications and work estimations. Internal Intranet Development. Team superior', image: '/work/kv.png', type: 'web' },
+          {id: 2, name: 'Liana Technologies', time: '1.3.2017-30.9.2017', title: 'Senior Front-End developer', duties: 'Building newsletters, websites and webshops as well as specifications and work estimations. Team leading.', image: '/work/kv.png', type: 'web' },
           {id: 3, name: 'Liana Technologies', time: '1.2.2016-30.2.2017', title: 'Senior Front-End developer', duties: 'Building websites and webshops. Team leading.', image: '/work/kv.png', type: 'web' },
           {id: 4, name: 'Liana Technologies', time: '1.9.2008-30.1.2016', title: 'Web-designer', duties: 'Building and designing newsletters, websites and webshops.', image: '/work/kv.png', type: 'web' },
           {id: 5, name: 'Liana Technologies', time: '1.6.2008-31.8.2008', title: 'Trainee', duties: 'Building newsletters and websites', image: '/work/kv.png', type: 'web' },
