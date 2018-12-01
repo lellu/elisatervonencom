@@ -66,7 +66,7 @@ export default {
           {id: 1, name: 'The Alzheimer Society of Oulu', time: 'from 2016', title: 'MuistiKaVeRi', duties: 'Helping and walking the memory sick', type: 'other'},
           {id: 2, name: 'Finnish Red Cross', time: 'from 2014', title: 'Friend visitor service', duties: 'Helping and walking elderly', type: 'other'},
           {id: 3, name: 'Kempele parish', time: '2015-2017', title: 'Web reporter', duties: 'Event photography and making and writing interviews', type: 'web'},
-          {id: 4, name: 'Kempele parish', time: 'from 2014', title: 'Kitchen assitant', duties: 'Helping in the kitchen in various events', type: 'other'},
+          {id: 4, name: 'Kempele parish', time: 'from 2014', title: 'Kitchen assistant', duties: 'Helping in the kitchen in various events', type: 'other'},
           {id: 5, name: 'Oulu Deaconess Institute', time: '2014-2015', title: 'Friend visitor service', duties: 'Helping and walking elderly', type: 'other'}
         ]
       },
