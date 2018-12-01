@@ -201,7 +201,7 @@ export default {
         ],
         en: [
           {id: 1, name: 'Validation-<br>method', level: '', type: 'other' },
-          {id: 2, name: 'Hygienepassport', level: '', type: 'other' },
+          {id: 2, name: 'Hygiene passport', level: '', type: 'other' },
         ]
       }
     }
