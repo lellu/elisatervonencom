@@ -48,7 +48,7 @@ export default {
           {id: 8, name: 'Oulun keskuspesula', time: '1.6-7.7.2006', title: 'Pesulatyöntekijä', duties: 'Tekstiilien huolto', image: '/work/pesula.png', type: '' },
           {id: 9, name: 'Keskipisteen 4H-yhdistys', time: '1.-16.6.2005', title: 'Kesätyöntekijä', duties: 'Kotitalouksien siivous Piippola-Pulkkila alueella', image: '/work/4h.png', type: '' },
           {id: 10, name: 'K-kauppa Piippola', time: '7.7-28.10.2004', title: 'Kesätyöntekijä', duties: 'Lihatiskin ja kylmätilojen siivous', image: '/work/k-kauppa.jpg', type: '' },
-          {id: 11, name: 'Anna Kuittinen', time: '1.3-30.4.2002', title: 'Lastenhoito', duties: '2 vuotiaan lapsen hoito', image: '', type: 'other' },
+          {id: 11, name: 'Yksityinen henkilö', time: '1.3-30.4.2002', title: 'Lastenhoito', duties: '2 vuotiaan lapsen hoito', image: '', type: 'other' },
           {id: 12, name: 'S-market Nilsiä', time: '19.6-30.6.2000', title: 'Kesätyöntekijä', duties: 'Kuorman purku, hyllyjen järjestely', image: '/work/s-market.png', type: '' },
           {id: 13, name: 'Vuokatinrannan Leirikeskus', time: '27.-1.7.2000', title: 'Ryhmänohjaaja', duties: 'Varhaisnuortenleirin ryhmän ohjaus', image: '/work/vuokatinranta.png', type: 'other' },
         ],
@@ -63,7 +63,7 @@ export default {
           {id: 8, name: 'Oulun keskuspesula', time: '1.6-7.7.2006', title: 'Loundry employee', duties: 'Textile service', image: '/work/pesula.png', type: '' },
           {id: 9, name: 'Keskipisteen 4H-yhdistys', time: '1.-16.6.2005', title: 'Summer employee', duties: 'Domestic cleaning in Piippola-Pulkkila area', image: '/work/4h.png', type: '' },
           {id: 10, name: 'K-kauppa Piippola', time: '7.7-28.10.2004', title: 'Summer employee', duties: 'Cleaning meat counter and gold room', image: '/work/k-kauppa.jpg', type: '' },
-          {id: 11, name: 'Anna Kuittinen', time: '1.3-30.4.2002', title: 'Nurse', duties: 'Taking care of a 2-year-old', image: '', type: 'other' },
+          {id: 11, name: 'Yksityinen henkilö', time: '1.3-30.4.2002', title: 'Nurse', duties: 'Taking care of a 2-year-old', image: '', type: 'other' },
           {id: 12, name: 'S-market Nilsiä', time: '19.6-30.6.2000', title: 'Summer employee', duties: 'Filling & organizing the shelfs', image: '/work/s-market.png', type: '' },
           {id: 13, name: 'Vuokatinrannan Leirikeskus', time: '27.-1.7.2000', title: 'Group leader', duties: 'Working as a group leader at a confirmation camp', image: '/work/vuokatinranta.png', type: 'other' },
         ]
