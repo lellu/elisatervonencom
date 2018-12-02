@@ -74,5 +74,8 @@
     "activity": "Toiminta",
     "description": "Työnkuva",
     "hobbies": "Harrastukset"
+  },
+  "projects": {
+    "projects": "Projektit"
   }
 }

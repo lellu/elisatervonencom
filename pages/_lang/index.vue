@@ -1,16 +1,23 @@
 <template>
-  <main>
-    <Info />
-    <div class="bg-gray"><Work :filter="selectedfilter"/></div>
-    <Education :filter="selectedfilter"/>
-    <div class="bg-gray"><Courses :filter="selectedfilter"/></div>
-    <Knowledge :filter="selectedfilter"/>
-    <div class="bg-gray"><Others :filter="selectedfilter"/></div>
-    <Hobbies :filter="selectedfilter"/>
-  </main>
+  <div>
+    <Header/>
+    <Navigation />
+    <main>
+      <div class="bg-gray"><Work :filter="selectedfilter"/></div>
+      <Education :filter="selectedfilter"/>
+      <div class="bg-gray"><Courses :filter="selectedfilter"/></div>
+      <Knowledge :filter="selectedfilter"/>
+      <div class="bg-gray"><Others :filter="selectedfilter"/></div>
+      <Hobbies :filter="selectedfilter"/>
+    </main>
+    <Sidebar/>
+  </div>
 </template>
 
 <script>
+import Navigation from '~/components/Navigation.vue'
+import Header from '~/components/Header.vue'
+import Sidebar from '~/components/Sidebar.vue'
 import Info from '~/components/Info.vue'
 import Work from '~/components/Work.vue'
 import Education from '~/components/Education.vue'
@@ -22,6 +29,9 @@ import { mapState } from 'vuex'
 
 export default {
   components: {
+    Navigation,
+    Header,
+    Sidebar,
     Work,
     Education,
     Courses,
