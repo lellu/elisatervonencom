@@ -1,0 +1,167 @@
+{
+  "fi": [
+    {
+      "name": "Nojatuoli",
+      "year": "2018",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    },
+    {
+      "name": "Ford Granada",
+      "year": "2016-",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    },
+    {
+      "name": "Yamaha DT Moottoripyödä",
+      "year": "2014-2016",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    },
+    {
+      "name": "Lyhdyt",
+      "year": "2015",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    },
+    {
+      "name": "Kattomappu",
+      "year": "2015",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    },
+    {
+      "name": "Yölamppu",
+      "year": "2015",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    },
+    {
+      "name": "Kiikku",
+      "year": "2015",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    },
+    {
+      "name": "Klaffipöytä",
+      "year": "2014",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    },
+    {
+      "name": "Komuutti",
+      "year": "2013-2014",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+      {
+        "title": "Step 1 otsikko",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      },
+      {
+        "title": "Step 2 otsikko",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/nightlight/box.jpg"
+      }
+      ]
+    }
+  ],
+  "en": []
+}

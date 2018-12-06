@@ -4,12 +4,6 @@
 
     <div class="row">
       <div v-for="(project, key) in projects[$i18n.locale]" :key="key" class="box">
-
-        <img :src="project.mainimage" alt="">
-        <div class="details">
-          <h2>{{ project.name }}</h2>
-        </div>
-
         <div class="steps">
           <div class="step">
             <h2>{{ project.name }}</h2>
