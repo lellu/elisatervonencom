@@ -3,6 +3,7 @@
     <Header/>
     <Navigation />
     <main>
+      <Info />
       <div class="bg-gray"><Work :filter="selectedfilter"/></div>
       <Education :filter="selectedfilter"/>
       <div class="bg-gray"><Courses :filter="selectedfilter"/></div>

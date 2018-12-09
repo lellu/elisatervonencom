@@ -1,6 +1,24 @@
 {
   "fi": [
     {
+      "name": "Solifer Export Automat",
+      "year": "2018",
+      "description": "Projektin kuvaus",
+      "mainimage": "/projects/nightlight/box.jpg",
+      "steps": [
+        {
+          "title": "Step 1 otsikko",
+          "description": "Step 1 kuvaus",
+          "image": "/projects/nightlight/box.jpg"
+        },
+        {
+          "title": "Step 2 otsikko",
+          "description": "Step 2 kuvaus",
+          "image": "/projects/nightlight/box.jpg"
+        }
+      ]
+    },
+    {
       "name": "Nojatuoli",
       "year": "2018",
       "description": "Projektin kuvaus",
