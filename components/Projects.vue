@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import projects from '@/data/project'
+
 export default {
   props: {
     filter: {
@@ -37,20 +39,7 @@ export default {
   },
   data: function () {
     return {
-      projects: {
-        fi: [
-          {id: 9, name: 'Nojatuoli', year: '2018', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] },
-          {id: 8, name: 'Ford Granada', year: '2018', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] },
-          {id: 7, name: 'DT moottoripyörä', year: '2014-2016', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] },
-          {id: 6, name: 'Lyhdyt', year: '2015', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] },
-          {id: 5, name: 'Kattolamppu', year: '2015', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] },
-          {id: 4, name: 'Yövalo', year: '2015', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] },
-          {id: 3, name: 'Kiikku', year: '2015', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] },
-          {id: 2, name: 'Klaffipöytä', year: '2014', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] },
-          {id: 1, name: 'Komuutti', year: '2014', description: 'Projektin kuvaus', mainimage: '/projects/nightlight/box.jpg', steps: [ {title: 'Step 1 otsikko', description: 'Step 1 kuvaus', image: '/work.kv.png' }, {title: 'Step 2 otsikko', description: 'Step 2 kuvaus', image: '/work.kv.png'}] }
-        ],
-        en: []
-      }
+      projects: projects
     }
   }
 }

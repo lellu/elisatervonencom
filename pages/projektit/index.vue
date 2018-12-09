@@ -1,16 +1,16 @@
 <template>
   <main>
-    <Project/>
+    <Projects/>
   </main>
 </template>
 
 <script>
-import Project from '~/components/Project.vue'
+import Projects from '~/components/Projects.vue'
 import { mapState } from 'vuex'
 
 export default {
   components: {
-    Project
+    Projects
   },
   props: {
   },
