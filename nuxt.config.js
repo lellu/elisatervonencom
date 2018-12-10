@@ -62,7 +62,10 @@ module.exports = {
   ],
 
   generate: {
-    routes: ['/', '/en']
+    routes: [
+      '/',
+      '/en'
+    ]
   },
 
   /*

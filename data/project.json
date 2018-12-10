@@ -2,6 +2,7 @@
   "fi": [
     {
       "name": "Solifer Export Automat",
+      "link": "solifer",
       "year": "2018",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -20,6 +21,7 @@
     },
     {
       "name": "Nojatuoli",
+      "link": "nojatuoli",
       "year": "2018",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -38,6 +40,7 @@
     },
     {
       "name": "Ford Granada",
+      "link": "ford-granada",
       "year": "2016-",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -55,7 +58,8 @@
       ]
     },
     {
-      "name": "Yamaha DT Moottoripyödä",
+      "name": "Yamaha DT Moottoripyörä",
+      "link": "yamaha-dt",
       "year": "2014-2016",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -74,6 +78,7 @@
     },
     {
       "name": "Lyhdyt",
+      "link": "lyhdyt",
       "year": "2015",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -91,7 +96,8 @@
       ]
     },
     {
-      "name": "Kattomappu",
+      "name": "Kattolamppu",
+      "link": "kattolamppu",
       "year": "2015",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -110,6 +116,7 @@
     },
     {
       "name": "Yölamppu",
+      "link": "yolamppu",
       "year": "2015",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -128,6 +135,7 @@
     },
     {
       "name": "Kiikku",
+      "link": "kiikku",
       "year": "2015",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -146,6 +154,7 @@
     },
     {
       "name": "Klaffipöytä",
+      "link": "klaffipoyta",
       "year": "2014",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
@@ -164,6 +173,7 @@
     },
     {
       "name": "Komuutti",
+      "link": "komuutti",
       "year": "2013-2014",
       "description": "Projektin kuvaus",
       "mainimage": "/projects/nightlight/box.jpg",
