@@ -38,14 +38,15 @@ export default {
 
 .box {
   width: 300px;
-  height: 300px;
+  padding: 1rem 1rem 4rem 1rem;
+  background-color: #fcfaf2;
+  border-radius: 2px;
   position: relative;
   cursor: pointer;
   margin: 1rem;
 
   &:after,
   &:before {
-    display: none;
     content: '';
     position: absolute;
     width: 25px;
@@ -76,24 +77,12 @@ export default {
   }
 
   .details {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
     padding: 1rem;
     text-align: center;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-image: url('/projects/metal1.jpeg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     text-transform: uppercase;
 
     &:after,
     &:before {
-      display: none;
       content: '';
       position: absolute;
       width: 25px;
@@ -117,29 +106,13 @@ export default {
     }
 
     h2 {
-      display: table-cell;
-      vertical-align: middle;
-      background-color: rgba(255,255,255,0.4);
       color: #000;
+      margin: 0;
     }
   }
 
   &:hover {
-    box-shadow: 0 0 20px rgba(0,0,0,0.9);
-
-    &:after,
-    &:before {
-      display: block;
-    }
-
-    .details {
-      display: table;
-
-      &:after,
-      &:before {
-        display: block;
-      }
-    }
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.7);
   }
 
   .steps {

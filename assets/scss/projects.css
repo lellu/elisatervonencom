@@ -14,7 +14,7 @@ h3 {
 body {
   height: 100%;
   width: 100%;
-  background-image: url('/projects/bg.jpg');
+  background-image: url("/projects/bg.jpg");
   background-position: center center;
   background-repeat: repeat-y;
 }
@@ -39,5 +39,5 @@ img {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }

@@ -3,10 +3,12 @@
     <div class="container">
       <div class="thumbs">
         <div class="thumb">
+          <span>1</span>
           <img :src="project.mainimage" alt="">
         </div>
         <div v-for="(step, key) in project.steps" :key="key" class="thumb">
-          <span>{{ key }} <img :src="step.image" alt=""></span>
+          <span>{{ key + 2 }}</span>
+          <img :src="step.image" alt="">
         </div>
       </div>
 
@@ -51,18 +53,30 @@ export default {
 .thumbs {
   position: fixed;
   left: 0;
-  top: 0;
-  padding: 0 1rem;
-  background-color: #000;
-  width: 20%;
+  top: 30%;
+  padding: 0.3rem 0.6rem;
+  background-color: #fff;
   width: 50px;
+  color: #000;
 
   .thumb {
     display: inline-block;
     width: 100%;
     position: relative;
     cursor: pointer;
-    margin: 1rem 0;
+    margin: 0.3rem 0;
+
+    span {
+      position: absolute;
+      background-color: rgba(0,0,0,0.3);
+      width: 100%;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+    }
   }
 }
 
