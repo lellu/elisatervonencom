@@ -3,26 +3,38 @@
     <div class="container">
       <div class="thumbs">
         <div class="thumb">
-          <span>1</span>
-          <img :src="project.mainimage" alt="">
+          <a href="#section1">
+            <span/>
+            <img :src="project.mainimage" alt="">
+          </a>
         </div>
         <div v-for="(step, key) in project.steps" :key="key" class="thumb">
-          <span>{{ key + 2 }}</span>
-          <img :src="step.image" alt="">
+          <a :href="'#step'+key">
+            <span>{{ key + 1 }}</span>
+            <img :src="step.image" alt="">
+          </a>
         </div>
       </div>
 
       <div class="steps">
-        <div class="step">
-          <h1>{{ project.name }}</h1>
-          <p>{{ project.description }}</p>
-          <img :src="project.mainimage" alt="">
+        <div class="step0">
+          <div id="section1" class="detail">
+            <h1>{{ project.name }}</h1>
+            <p>{{ project.description }}</p>
+          </div>
+          <div class="img">
+            <span><img :src="project.mainimage" alt=""></span>
+          </div>
         </div>
-
+        <div class="next"><i class="fa fa-arrow-down"/></div>
         <div v-for="(step, key) in project.steps" :key="key" class="step">
-          <h2>{{ key }} {{ step.title }}</h2>
-          <img :src="step.image" alt="">
-          <p>{{ step.description }}</p>
+          <div class="desc">
+            <span :id="'step'+key" />
+            <h3><span class="number">{{ key + 1 }}</span> {{ step.title }}</h3>
+            <img :src="step.image" alt="">
+            <p>{{ step.description }}</p>
+          </div>
+          <div class="next"><i class="fa fa-arrow-down"/></div>
         </div>
       </div>
     </div>
@@ -50,11 +62,12 @@ export default {
   padding-left: 100px;
   padding-right: 2rem;
 }
+
 .thumbs {
   position: fixed;
   left: 0;
   top: 30%;
-  padding: 0.3rem 0.6rem;
+  padding: 0.25rem 0.5rem;
   background-color: #fff;
   width: 50px;
   color: #000;
@@ -64,7 +77,7 @@ export default {
     width: 100%;
     position: relative;
     cursor: pointer;
-    margin: 0.3rem 0;
+    margin: 0.25rem 0;
 
     span {
       position: absolute;
@@ -80,18 +93,102 @@ export default {
   }
 }
 
-.slides {
-  position: relative;
-  overflow: hidden;
+.step0 {
+  background-color: #fff;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  display: flex;
 
-  .step {
-    width: 100%;
-    display: none;
+  .detail {
+    width: 40%;
+    padding-right: 2rem;
+    position: relative;
+  }
 
-    &:first-child {
+  .img {
+    width: 60%;
+    line-height: 0;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background-image: url('/projects/pin.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+
+    &:after {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+
+    &:before {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+    }
+
+    span {
       display: block;
+      position: relative;
+      width: 100%;
+
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-image: url('/projects/pin.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        z-index: 2;
+      }
+
+      &:after {
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+      }
+
+      &:before {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+      }
     }
   }
+}
+
+.number {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.step {
+  width: 100%;
+
+  .desc {
+    background-color: #fff;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+  }
+}
+
+.next {
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  padding: 2rem 0;
 }
 
 </style>

@@ -8,13 +8,13 @@
       "mainimage": "/projects/nightlight/box.jpg",
       "steps": [
         {
-          "title": "Step 1 otsikko",
-          "description": "Step 1 kuvaus",
+          "title": "Mopon puhdistus",
+          "description": "Mopo oli linnunpaskassa ja pölyssä. Ensimmäinen tehtävä oli puhdistaa mopo, jotta sitä olisi mukavempi käsitellä.",
           "image": "/projects/nightlight/box.jpg"
         },
         {
-          "title": "Step 2 otsikko",
-          "description": "Step 2 kuvaus",
+          "title": "Käynnistys",
+          "description": "Ensimmäisenä piti tietenkin testata lähteekö peli käyntiin. Ei lähtenyt. Kaasarin läpi vuoti bensaa. Otin kaasarin irti ja puhdistin (oli paljon ryönää sisällä) ja sehän pärähti sit käyntiin. Ei tosin kauaa pyöriny, mutta ihme ku lähti käyntiin.",
           "image": "/projects/nightlight/box.jpg"
         }
       ]

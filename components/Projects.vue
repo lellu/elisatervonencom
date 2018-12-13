@@ -36,14 +36,19 @@ export default {
 <style lang="scss">
 @import 'assets/scss/projects.scss';
 
+h1 {
+  text-align: center;
+}
+
 .box {
   width: 300px;
-  padding: 1rem 1rem 4rem 1rem;
+  padding: 0.5rem 0.5rem 4rem 0.5rem;
   background-color: #fcfaf2;
   border-radius: 2px;
   position: relative;
   cursor: pointer;
   margin: 1rem;
+  color: #ffffff;
 
   &:after,
   &:before {
@@ -59,14 +64,14 @@ export default {
 
   &:after {
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 0px;
+    top: 0px;
   }
 
   &:before {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 0px;
+    top: 0px;
   }
 
   img {
@@ -95,14 +100,14 @@ export default {
 
     &:after {
       position: absolute;
-      left: 5px;
-      bottom: 5px;
+      left: 0px;
+      bottom: 0px;
     }
 
     &:before {
       position: absolute;
-      right: 5px;
-      bottom: 5px;
+      right: 0px;
+      bottom: 0px;
     }
 
     h2 {
@@ -112,7 +117,7 @@ export default {
   }
 
   &:hover {
-    box-shadow: inset 0 0 20px rgba(0,0,0,0.7);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
   }
 
   .steps {
