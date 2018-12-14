@@ -100,17 +100,51 @@
       "link": "kattolamppu",
       "year": "2015",
       "description": "Projektin kuvaus",
-      "mainimage": "/projects/nightlight/box.jpg",
+      "mainimage": "/projects/kattolamppu/box.jpg",
       "steps": [
       {
-        "title": "Step 1 otsikko",
+        "title": "Lautojen ja lamppujen puhdistus",
         "description": "Step 1 kuvaus",
-        "image": "/projects/nightlight/box.jpg"
+        "image": "/projects/kattolamppu/1-lautojen-puhdistus.jpg"
       },
       {
-        "title": "Step 2 otsikko",
+        "title": "Lamppujen paikkojen mallaillu",
         "description": "Step 2 kuvaus",
-        "image": "/projects/nightlight/box.jpg"
+        "image": "/projects/kattolamppu/2-lamppujen-mallailu.jpg"
+      },
+      {
+        "title": "Reikien poraus",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/kattolamppu/3-reikien-poraus.jpg"
+      },
+      {
+        "title": "Laitojen kiinnitys",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/kattolamppu/4-laitojen kiinnitys.jpg"
+      },
+      {
+        "title": "Kehikko valmiina",
+        "description": "Step 1 kuvaus",
+        "image": "/projects/kattolamppu/5-kehikko.jpg"
+      },
+      {
+        "title": "Lamppujen kiinnitys",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/kattolamppu/6-lamppujen kiinnitys.jpg"
+      },
+      {
+         "title": "Kettinkien kiinnitys",
+         "description": "Step 2 kuvaus",
+         "image": "/projects/kattolamppu/7-kettinkien-kiinnitys.jpg"
+      },
+      {
+         "title": "Sähköjen testaus",
+         "description": "Step 2 kuvaus",
+         "image": "/projects/kattolamppu/8-sahkojen-testaus.jpg"
+      }, {
+        "title": "Valmis lamppu katossa",
+        "description": "Step 2 kuvaus",
+        "image": "/projects/kattolamppu/10-valmislamppu.jpg"
       }
       ]
     },
@@ -118,18 +152,28 @@
       "name": "Yölamppu",
       "link": "yolamppu",
       "year": "2015",
-      "description": "Projektin kuvaus",
+      "description": "Vanhasta laudasta ja dyykatuista valoista rakennettu yölamppu",
       "mainimage": "/projects/nightlight/box.jpg",
       "steps": [
       {
-        "title": "Step 1 otsikko",
+        "title": "Lautojen ja lamppujen puhdistus",
         "description": "Step 1 kuvaus",
-        "image": "/projects/nightlight/box.jpg"
+        "image": "/projects/nightlight/1-lamppujen-malli.jpg"
       },
       {
-        "title": "Step 2 otsikko",
+        "title": "Lautojen käsittely",
         "description": "Step 2 kuvaus",
-        "image": "/projects/nightlight/box.jpg"
+        "image": "/projects/nightlight/2-urat-johdoille.jpg"
+      },
+      {
+        "title": "Johtojen kiinnitys",
+        "description": "Mies teki johtojen yhdistämisen katkaisijaan. Mie sit kiinnittelin johdot johtokiinnikkeillä lautoihin kiinni.",
+        "image": "/projects/nightlight/3-lamppujen-johdot.jpg"
+      },
+      {
+        "title": "Valmis lamppu seinällä",
+        "description": "Lamppu kiinnitettiin metallilevyjen avulla seinään.",
+        "image": "/projects/nightlight/4-lamppu.jpg"
       }
       ]
     },
