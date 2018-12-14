@@ -108,42 +108,37 @@
         "image": "/projects/kattolamppu/1-lautojen-puhdistus.jpg"
       },
       {
-        "title": "Lamppujen paikkojen mallaillu",
-        "description": "Step 2 kuvaus",
-        "image": "/projects/kattolamppu/2-lamppujen-mallailu.jpg"
-      },
-      {
         "title": "Reikien poraus",
-        "description": "Step 1 kuvaus",
+        "description": "Step 2 kuvaus",
         "image": "/projects/kattolamppu/3-reikien-poraus.jpg"
       },
       {
         "title": "Laitojen kiinnitys",
-        "description": "Step 2 kuvaus",
-        "image": "/projects/kattolamppu/4-laitojen kiinnitys.jpg"
+        "description": "Step 3 kuvaus",
+        "image": "/projects/kattolamppu/4-laitojen-kiinnitys.jpg"
       },
       {
         "title": "Kehikko valmiina",
-        "description": "Step 1 kuvaus",
+        "description": "Step 4 kuvaus",
         "image": "/projects/kattolamppu/5-kehikko.jpg"
       },
       {
         "title": "Lamppujen kiinnitys",
-        "description": "Step 2 kuvaus",
-        "image": "/projects/kattolamppu/6-lamppujen kiinnitys.jpg"
+        "description": "Step 5 kuvaus",
+        "image": "/projects/kattolamppu/6-lamppujen-kiinnitys.jpg"
       },
       {
          "title": "Kettinkien kiinnitys",
-         "description": "Step 2 kuvaus",
+         "description": "Step 6 kuvaus",
          "image": "/projects/kattolamppu/7-kettinkien-kiinnitys.jpg"
       },
       {
          "title": "Sähköjen testaus",
-         "description": "Step 2 kuvaus",
+         "description": "Step 7 kuvaus",
          "image": "/projects/kattolamppu/8-sahkojen-testaus.jpg"
       }, {
         "title": "Valmis lamppu katossa",
-        "description": "Step 2 kuvaus",
+        "description": "Step 8 kuvaus",
         "image": "/projects/kattolamppu/10-valmislamppu.jpg"
       }
       ]

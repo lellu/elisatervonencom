@@ -38,6 +38,9 @@ export default {
 
 h1 {
   text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  margin: 0 0 2rem 0;
 }
 
 .box {

@@ -1,24 +1,30 @@
 <template>
   <main>
     <div class="container">
+
       <div class="thumbs">
         <div class="thumb">
-          <a href="#section1">
-            <span/>
-            <img :src="project.mainimage" alt="">
+          <a href="/projektit">
+            <span><i class="fa fa-chevron-left" /></span>
           </a>
         </div>
+
+        <div class="thumb">
+          <a :style="{ backgroundImage: 'url('+project.mainimage+')'}" href="#section1">
+            <span/>
+          </a>
+        </div>
+
         <div v-for="(step, key) in project.steps" :key="key" class="thumb">
-          <a :href="'#step'+key">
+          <a :href="'#step'+key" :style="{ backgroundImage: 'url('+step.image+')'}" >
             <span>{{ key + 1 }}</span>
-            <img :src="step.image" alt="">
           </a>
         </div>
       </div>
 
       <div class="steps">
-        <div class="step0">
-          <div id="section1" class="detail">
+        <div id="section1" class="step0">
+          <div class="detail">
             <h1>{{ project.name }}</h1>
             <p>{{ project.description }}</p>
           </div>
@@ -28,8 +34,8 @@
         </div>
         <div class="next"><i class="fa fa-arrow-down"/></div>
         <div v-for="(step, key) in project.steps" :key="key" class="step">
-          <div class="desc">
-            <span :id="'step'+key" />
+          <div :id="'step'+key" class="desc">
+            <span />
             <h3><span class="number">{{ key + 1 }}</span> {{ step.title }}</h3>
             <img :src="step.image" alt="">
             <p>{{ step.description }}</p>
@@ -66,10 +72,10 @@ export default {
 .thumbs {
   position: fixed;
   left: 0;
-  top: 30%;
+  top: 2rem;
   padding: 0.25rem 0.5rem;
   background-color: #fff;
-  width: 50px;
+  width: 40px;
   color: #000;
 
   .thumb {
@@ -79,11 +85,28 @@ export default {
     cursor: pointer;
     margin: 0.25rem 0;
 
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-position: center center;
+      background-size: cover;
+
+      &:first-child {
+        background-color: #000;
+      }
+
+      &:hover span,
+      &.current {
+        background-color: transparent;
+      }
+    }
+
     span {
       position: absolute;
       background-color: rgba(0,0,0,0.3);
       width: 100%;
-      line-height: 50px;
+      line-height: 40px;
       text-align: center;
       color: #fff;
       left: 0;
@@ -161,6 +184,15 @@ export default {
         right: 5px;
         bottom: 5px;
       }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+
+    .detail,
+    .img {
+      width: 100%;
     }
   }
 }
