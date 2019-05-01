@@ -6,7 +6,8 @@
     <table class="work-table">
       <thead>
         <tr>
-          <th colspan="2">{{ $t('work.company') }}</th>
+          <th />
+          <th>{{ $t('work.company') }}</th>
           <th>{{ $t('work.time') }}</th>
           <th>{{ $t('work.title') }}</th>
           <th>{{ $t('work.worktasks') }}</th>

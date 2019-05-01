@@ -30,7 +30,7 @@ export default {
         ],
         en: [
           {id: 1, name: 'Voluntary work', description: 'Helping and walking elderly and helping in kitchen in various events', image: '/hobbies/hobby3.jpg', link: '', type: ''},
-          {id: 2, name: 'Exercise', description: 'Mountain biking and skiign', image: '/hobbies/hobby4.jpg', link: '', type: ''},
+          {id: 2, name: 'Exercise', description: 'Mountain biking and skiing', image: '/hobbies/hobby4.jpg', link: '', type: ''},
           {id: 3, name: 'Enjoy of nature', description: 'Hiking and nature photography', image: '/hobbies/hobby5.jpg', link: '', type: ''},
           {id: 4, name: 'Restoration', description: 'Furnitures, motorbike and car', image: '/hobbies/hobby6.jpg', link: '', type: ''},
           {id: 5, name: 'Martimoaapa.com', description: 'Maintaining website', image: '/hobbies/hobby1.jpg', link: 'https://www.martimoaapa.com', type: ''},
