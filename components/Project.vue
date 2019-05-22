@@ -1,7 +1,6 @@
 <template>
   <main>
     <div class="container">
-
       <div class="thumbs">
         <div class="thumb">
           <a href="/projektit">
