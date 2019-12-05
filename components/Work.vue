@@ -39,7 +39,8 @@ export default {
     return {
       works: {
         fi: [
-          {id: 1, name: 'Koodiviidakko Oy', time: '1.10.2017 alkaen', title: 'Senior Front-End developer, Team leader', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen kehitykset sekä spesifikaatiot. Sisäisen intranetin kehittäminen. Tiimin esimies', image: '/work/kv.png', type: 'web' },
+          {id: 1, name: 'Koodiviidakko Oy', time: '1.12.2019 alkaen', title: 'Senior Software Engineer', duties: 'Tuotekehitys', image: '/work/kv.png', type: 'web' },
+          {id: 1, name: 'Koodiviidakko Oy', time: '1.10.2017-30.11.2019', title: 'Senior Front-End developer, Team leader', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen kehitykset sekä spesifikaatiot. Sisäisen intranetin kehittäminen. Tiimin esimies', image: '/work/kv.png', type: 'web' },
           {id: 2, name: 'Koodiviidakko Oy', time: '1.3.2017-30.9.2017', title: 'Senior Front-End developer', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen kehitykset sekä spesifikaatiot. Tiimin vetäminen', image: '/work/kv.png', type: 'web' },
           {id: 3, name: 'Koodiviidakko Oy', time: '1.2.2016-30.2.2017', title: 'Senior Front-End developer', duties: 'Web-sivujen ja verkkokauppojen rakentaminen. Tiimin vetäminen', image: '/work/kv.png', type: 'web' },
           {id: 4, name: 'Koodiviidakko Oy', time: '1.9.2008-30.1.2016', title: 'Web-designer', duties: 'Sähköisten uutiskirjeiden ja web-sivujen suunnittelu ja rakentaminen sekä verkkokauppojen rakentaminen', image: '/work/kv.png', type: 'web' },
@@ -54,7 +55,8 @@ export default {
           {id: 13, name: 'Vuokatinrannan Leirikeskus', time: '27.-1.7.2000', title: 'Ryhmänohjaaja', duties: 'Varhaisnuortenleirin ryhmän ohjaus', image: '/work/vuokatinranta.png', type: 'other' },
         ],
         en: [
-          {id: 1, name: 'Liana Technologies', time: 'from 1.10.2017', title: 'Senior Front-End developer, Team leader', duties: 'Building websites as well as specifications and work estimations. Internal intranet development. Team superior', image: '/work/kv.png', type: 'web' },
+          {id: 1, name: 'Liana Technologies', time: 'from 1.12.2019', title: 'Senior Software Engineer', duties: 'Software development', image: '/work/kv.png', type: 'web' },
+          {id: 1, name: 'Liana Technologies', time: '1.10.2017-30.11.2019', title: 'Senior Front-End developer, Team leader', duties: 'Building websites as well as specifications and work estimations. Internal intranet development. Team superior', image: '/work/kv.png', type: 'web' },
           {id: 2, name: 'Liana Technologies', time: '1.3.2017-30.9.2017', title: 'Senior Front-End developer', duties: 'Building newsletters, websites and webshops as well as specifications and work estimations. Team leading.', image: '/work/kv.png', type: 'web' },
           {id: 3, name: 'Liana Technologies', time: '1.2.2016-30.2.2017', title: 'Senior Front-End developer', duties: 'Building websites and webshops. Team leading.', image: '/work/kv.png', type: 'web' },
           {id: 4, name: 'Liana Technologies', time: '1.9.2008-30.1.2016', title: 'Web-designer', duties: 'Building and designing newsletters, websites and webshops.', image: '/work/kv.png', type: 'web' },
