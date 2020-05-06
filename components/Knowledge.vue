@@ -4,14 +4,14 @@
     <h2>{{ $t('links.knowledge') }}</h2>
     <ul class="icon-list">
       <li v-show="filter=='web'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info1') }}</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info2') }}</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info3') }}</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info4') }}</li>
       <li><i class="fa fa-check"/> {{ $t('knowledge.info5') }}</li>
       <li><i class="fa fa-check"/> {{ $t('knowledge.info6') }}</li>
       <li><i class="fa fa-check"/> {{ $t('knowledge.info7') }}</li>
       <li><i class="fa fa-check"/> {{ $t('knowledge.info8') }}</li>
       <li><i class="fa fa-check"/> {{ $t('knowledge.info9') }}</li>
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info2') }}</li>
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info3') }}</li>
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info4') }}</li>
     </ul>
 
     <h3 class="tac">{{ $t('knowledge.softwares') }}</h3>
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <h3 v-show="filter=='web'||filter=='all'" class="tac">{{ $t('knowledge.social-media') }}</h3>
+    <!-- <h3 v-show="filter=='web'||filter=='all'" class="tac">{{ $t('knowledge.social-media') }}</h3>
     <div class="cols round-icons">
       <div v-for="service in services[$i18n.locale]" v-if="service.type==filter||filter=='all'||service.type==''" :key="'service-' + service.id" class="col square">
         <span class="round-icon">
@@ -46,7 +46,7 @@
           </div>
         </span>
       </div>
-    </div>
+    </div> -->
 
     <h3 class="tac">{{ $t('knowledge.other') }}</h3>
     <ul class="icon-list tac">
@@ -136,14 +136,16 @@ export default {
           {id: 2, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
           {id: 3, name: 'Indesign', level: 'perusteet', levelnumber: 40, type: 'web' },
           {id: 4, name: 'WordPress', level: '', levelnumber: 0, type: 'web' },
-          {id: 5, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' }
+          {id: 5, name: 'WooCommerce', level: 'perusteet', levelnumber: 40, type: 'web' },
+          {id: 6, name: 'Docker', level: '', levelnumber: 80, type: 'web' }
         ],
         en: [
           {id: 1, name: 'Github', level: '', levelnumber: 70, type: 'web', icon: 'fab fa-github' },
           {id: 2, name: 'Google Analytics', level: '', levelnumber: 40, type: 'web'  },
           {id: 3, name: 'Indesign', level: 'basics', levelnumber: 40, type: 'web' },
           {id: 4, name: 'WordPress', level: '', levelnumber: 0, type: 'web' },
-          {id: 5, name: 'WooCommerce', level: 'basics', levelnumber: 40, type: 'web' }
+          {id: 5, name: 'WooCommerce', level: 'basics', levelnumber: 40, type: 'web' },
+          {id: 6, name: 'Docker', level: '', levelnumber: 80, type: 'web' }
         ]
       },
       services: {

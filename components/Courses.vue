@@ -80,12 +80,12 @@ export default {
           {id: 16, name: 'Sign Language 2', duration: '30h', time: '8.9-17.11.2009', trainer: 'Oulu-opisto', type: 'other'},
           {id: 17, name: 'Sign Language 1 follow-up', duration: '30h', time: '26.1-20.4.2009', trainer: 'Oulu-opisto', type: 'other'},
           {id: 18, name: 'Sign Language 1', duration: '30h', time: '10.9-19.11.2008', trainer: 'Oulu-opisto', type: 'other'},
-          {id: 19, name: 'Hygienepassport', duration: '', time: '23.2.2008', trainer: '4H-association of Ouu', type: 'other'},
-          {id: 21, name: 'Customer service', duration: '5h', time: '22.5.1999', trainer: '4H-association of Nilsiä', type: 'other'},
-          {id: 22, name: 'Confirmation camp group leader', duration: '', time: '1998-1999', trainer: 'Nilsiä parish', type: 'other'},
-          {id: 23, name: 'Cleaning service', duration: '23h', time: '18.2-21.2.1998', trainer: '4H-association of Nilsiä', type: 'other'},
-          {id: 24, name: 'Elderly service', duration: '22h', time: '28.9-23.11.1998', trainer: '4H-association of Nilsiä', type: 'other'},
-          {id: 25, name: 'Youths visual art school', duration: '', time: '1993-1996', trainer: 'Nilsiän kansalaisopisto', type: 'other'}
+          {id: 19, name: 'Hygienepassport', duration: '', time: '23.2.2008', trainer: '4H-association of Ouu', type: 'other'}
+          // {id: 21, name: 'Customer service', duration: '5h', time: '22.5.1999', trainer: '4H-association of Nilsiä', type: 'other'},
+          // {id: 22, name: 'Confirmation camp group leader', duration: '', time: '1998-1999', trainer: 'Nilsiä parish', type: 'other'},
+          // {id: 23, name: 'Cleaning service', duration: '23h', time: '18.2-21.2.1998', trainer: '4H-association of Nilsiä', type: 'other'},
+          // {id: 24, name: 'Elderly service', duration: '22h', time: '28.9-23.11.1998', trainer: '4H-association of Nilsiä', type: 'other'},
+          // {id: 25, name: 'Youths visual art school', duration: '', time: '1993-1996', trainer: 'Nilsiän kansalaisopisto', type: 'other'}
         ]
       }
     }
