@@ -6,7 +6,7 @@
     <a href="https://github.com/lellu" title="Github profile"><span>Github</span><i class="fab fa-github" /></a>
     <a :title="$t('sidebar.printpage')" href="javascript:print();"><span>{{ $t('sidebar.print') }}</span> <i class="fas fa-print" /></a>
     <a v-if="false" href="#" title="Tallenna sivu pdf-tiedostona"><span>Tallenna pdf</span> <i class="fas fa-file-pdf"/></a>
-    <a :title="$t('sidebar.contactemail')" href="mailto:eeelisa.t( at )gmail.com"><span>{{ $t('sidebar.contact') }}</span> <i class="fas fa-envelope" /></a>
+    <a :title="$t('sidebar.contactemail')" href="mailto:kokkonen.elisa( at )gmail.com"><span>{{ $t('sidebar.contact') }}</span> <i class="fas fa-envelope" /></a>
   </div>
 </template>
 
