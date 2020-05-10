@@ -186,12 +186,12 @@ export default {
       },
       othersweb: {
         fi: [
-          {id: 1, name: 'SEO', level: '', type: 'web' },
+          {id: 1, name: 'Hakukoneoptimointi (SEO)', level: '', type: 'web' },
           {id: 2, name: 'Saavutettavuus (wcag)', level: '', type: 'web' },
           {id: 3, name: 'Statistiikkojen ja prosessien visualisointi', level: '', type: 'web' },
         ],
         en: [
-          {id: 1, name: 'SEO', level: '', type: 'web' },
+          {id: 1, name: 'Search Engine Optimization (SEO)', level: '', type: 'web' },
           {id: 2, name: 'Accessibility (wcag)', level: '', type: 'web' },
           {id: 3, name: 'Visualize statistics and processes', level: '', type: 'web' },
         ]
