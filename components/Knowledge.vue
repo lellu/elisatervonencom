@@ -25,7 +25,7 @@
     </ul>
 
     <h3 v-show="filter=='web'||filter=='all'" class="tac">{{ $t('knowledge.programming') }}</h3>
-    <div class="cols round-icons">
+    <div class="cols-5 round-icons">
       <div v-for="code in coding[$i18n.locale]" v-if="code.type==filter||filter=='all'||code.type==''" :key="'code-' + code.id" class="col square">
         <span class="round-icon">
           <div>
@@ -55,7 +55,7 @@
       </li>
     </ul>
 
-    <div class="cols round-icons">
+    <div class="cols-5 round-icons">
       <div v-for="other in others[$i18n.locale]" v-if="other.type==filter||filter=='all'||other.type==''" :key="'other-' + other.id" class="col square">
         <span class="round-icon">
           <div>
@@ -308,6 +308,7 @@ export default {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   @include border-radius(100%);
   background-color: $white;
@@ -332,21 +333,21 @@ export default {
       padding-bottom: 100%;
   }
 
-  .fab {
-    font-size: 4rem;
-    line-height: 4rem;
+  .fab,
+  .fa {
+    font-size: 3rem;
+    line-height: 3rem;
 
     @media only screen and (max-width: 400px) {
-      font-size: 5.5rem;
-      line-height: auto;
+      display: none;
     }
   }
 
   h4 {
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     .level {
       font-size: 80%;
@@ -354,27 +355,36 @@ export default {
 
     @media only screen and (max-width: 900px) {
       margin-top: 0.5rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     @media only screen and (max-width: 400px) {
-      margin-top: 1rem;
-      font-size: 1.3rem;
+      margin-top: 0rem;
+      font-size: 1rem;
     }
   }
 }
 
-.cols {
+.cols-5 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 
-  .col2 {
-    width: 50%;
-    padding: 1rem 0;
+  .col {
+    width: 20%;
+    padding: 0rem 1rem 2rem 1rem;
 
     @media only screen and (max-width: 920px) {
-      width: 100%;
+      width: 25%;
+    }
+
+    @media only screen and (max-width: 728px) {
+      width: 33.3333%;
+      padding: 1rem 1rem;
+    }
+
+    @media only screen and (max-width: 550px) {
+      width: 50%;
     }
   }
 }
