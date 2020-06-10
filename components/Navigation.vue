@@ -6,17 +6,19 @@
       <li><a :aria-label="$t('links.movetosection')+$t('links.knowledge')" :title="$t('links.movetosection')+$t('links.knowledge')" href="#knowledge" @click="scrollTo('#knowledge', $event)">{{ $t('links.knowledge') }}</a></li>
       <li><a :aria-label="$t('links.movetosection')+$t('links.other')" :title="$t('links.movetosection')+$t('links.other')" href="#others" @click="scrollTo('#others', $event)">{{ $t('links.other') }}</a></li>
     </ul>
-    <Filters/>
+
+    <Languages/>
+
   </nav>
 </template>
 
 <script>
 import VueScrollTo from 'vue-scrollto'
-import Filters from '~/components/Filters.vue'
+import Languages from '~/components/Languages.vue'
 
 export default {
   components: {
-    Filters
+    Languages
   },
   data: function () {
     return {

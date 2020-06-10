@@ -1,7 +1,7 @@
 <template>
   <section class="page-break">
     <span id="knowledge" class="anchor" />
-    <h2>{{ $t('links.knowledge') }}</h2>
+    <h2>{{ $t('knowledge.knowledge') }}</h2>
     <ul class="icon-list">
       <li v-show="filter=='web'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info1') }}</li>
       <li><i class="fa fa-check"/> {{ $t('knowledge.info5') }}</li>
@@ -9,9 +9,6 @@
       <li><i class="fa fa-check"/> {{ $t('knowledge.info7') }}</li>
       <li><i class="fa fa-check"/> {{ $t('knowledge.info8') }}</li>
       <li><i class="fa fa-check"/> {{ $t('knowledge.info9') }}</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info2') }}</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info3') }}</li>
-      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info4') }}</li>
     </ul>
 
     <h3 class="tac">{{ $t('knowledge.softwares') }}</h3>
@@ -36,6 +33,12 @@
       </div>
     </div>
 
+    <ul class="icon-list tac">
+      <li v-for="otherweb in othersweb[$i18n.locale]" v-if="otherweb.type==filter||filter=='all'||otherweb.type==''" :key="'other-' + otherweb.id">
+        <i class="fa fa-check"/> {{ otherweb.name }} <span v-if="otherweb.level">({{ otherweb.level }})</span>
+      </li>
+    </ul>
+
     <!-- <h3 v-show="filter=='web'||filter=='all'" class="tac">{{ $t('knowledge.social-media') }}</h3>
     <div class="cols round-icons">
       <div v-for="service in services[$i18n.locale]" v-if="service.type==filter||filter=='all'||service.type==''" :key="'service-' + service.id" class="col square">
@@ -48,11 +51,11 @@
       </div>
     </div> -->
 
-    <h3 class="tac">{{ $t('knowledge.other') }}</h3>
-    <ul class="icon-list tac">
-      <li v-for="otherweb in othersweb[$i18n.locale]" v-if="otherweb.type==filter||filter=='all'||otherweb.type==''" :key="'other-' + otherweb.id">
-        <i class="fa fa-check"/> {{ otherweb.name }} <span v-if="otherweb.level">({{ otherweb.level }})</span>
-      </li>
+    <h2>{{ $t('knowledge.other') }}</h2>
+    <ul class="icon-list">
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info2') }}</li>
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info3') }}</li>
+      <li v-show="filter=='other'||filter=='all'"><i class="fa fa-check"/> {{ $t('knowledge.info4') }}</li>
     </ul>
 
     <div class="cols-5 round-icons">

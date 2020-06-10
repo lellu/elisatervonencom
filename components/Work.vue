@@ -39,6 +39,7 @@ export default {
     return {
       works: {
         fi: [
+          {id: 13, name: 'Lellun Paja', time: '1.1.2020 alkaen', title: 'Toiminimi', duties: 'Opastusta ja koulutusta web-ympäristöihin liityen', image: '', type: 'web' },
           {id: 1, name: 'Koodiviidakko Oy', time: '1.12.2019 alkaen', title: 'Senior Software Engineer', duties: 'Tuotekehitys', image: '/work/kv.png', type: 'web' },
           {id: 2, name: 'Koodiviidakko Oy', time: '1.10.2017-30.11.2019', title: 'Senior Front-End developer, Team leader', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen kehitykset sekä spesifikaatiot. Sisäisen intranetin kehittäminen. Tiimin esimies', image: '/work/kv.png', type: 'web' },
           {id: 3, name: 'Koodiviidakko Oy', time: '1.3.2017-30.9.2017', title: 'Senior Front-End developer', duties: 'Web-sivujen, uutiskirjeiden ja verkkokauppojen kehitykset sekä spesifikaatiot. Tiimin vetäminen', image: '/work/kv.png', type: 'web' },
@@ -55,6 +56,7 @@ export default {
           //{id: 14, name: 'Vuokatinrannan Leirikeskus', time: '27.-1.7.2000', title: 'Ryhmänohjaaja', duties: 'Varhaisnuortenleirin ryhmän ohjaus', image: '/work/vuokatinranta.png', type: 'other' },
         ],
         en: [
+          {id: 13, name: 'Lellun Paja', time: 'from 1.1.2020', title: 'Self-employed entrepreneur', duties: 'Guiding and training for web-enviroments', image: '', type: 'web' },
           {id: 1, name: 'Liana Technologies', time: 'from 1.12.2019', title: 'Senior Software Engineer', duties: 'Software development', image: '/work/kv.png', type: 'web' },
           {id: 2, name: 'Liana Technologies', time: '1.10.2017-30.11.2019', title: 'Senior Front-End developer, Team leader', duties: 'Building websites as well as specifications and work estimations. Internal intranet development. Team superior', image: '/work/kv.png', type: 'web' },
           {id: 3, name: 'Liana Technologies', time: '1.3.2017-30.9.2017', title: 'Senior Front-End developer', duties: 'Building newsletters, websites and webshops as well as specifications and work estimations. Team leading.', image: '/work/kv.png', type: 'web' },
